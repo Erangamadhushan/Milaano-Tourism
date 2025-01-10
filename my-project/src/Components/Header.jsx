@@ -2,24 +2,43 @@ import React from "react"
 import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom"
 function Header() {
+    const Upper = {
+        textTransform:'uppercase'
+
+    }
     return (
         <>
-            <nav >
-                <ul className="bg-black p-5 space-x-5 flex justify-center items-center text-white">
-                    <li>
-                        <Link to="/" >Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/aboutus" >About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" >Contact</Link>
-                    </li>
-                    <li>
-                        <Link to="/service" >Service</Link>
-                    </li>
-                </ul>
-            </nav>
+            <div className="grid">
+                <div className="bg-gray-800 p-2">
+                    <h1 class="text-center text-white font-light" style={{Upper}}>Milaano Tourism</h1>
+                </div>
+                <nav className="bg-bg-mainColor grid grid-cols-2 justify-between items-baseline space-x-5 p-5">
+                    <div className="">
+                        <h1 className="text-white font-bold text-2xl ">Start to Finish</h1>
+                    </div>
+                    <div className="hidden md:block">
+                        <ul className="flex justify-start space-x-5">
+                            <li>
+                                <Link to="/" className="text-white text-bold text-xl">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/aboutus" className="text-white text-bold text-xl">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact" className="text-white text-bold text-xl">Contact</Link>
+                            </li>
+                            <li>
+                                <Link to="/service" className="text-white text-bold text-xl">Service</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="block md:hidden items-baseline">
+                        <div className="flex justify-end">
+                            <button className="bg-mainColor p-2 rounded-full text-white font-bold text-lg">&#9776;</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </>
     )
 }
