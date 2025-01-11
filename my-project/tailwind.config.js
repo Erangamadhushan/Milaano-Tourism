@@ -11,6 +11,9 @@ export default {
       },
       borderColor:{
         'border-mainColor':'#222'
+      },
+      backgroundSize:{
+        'custom':'860px'
       }
     },
   },
