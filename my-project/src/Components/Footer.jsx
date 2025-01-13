@@ -46,7 +46,7 @@ export default function Footer() {
 
             </div>
             <div class="bg-bg-mainColor p-3">
-                <h1 className="text-white text-center">EM956 Community</h1>
+                <h1 className="text-white text-center">Powered by EM956 Community</h1>
             </div>
             
             
