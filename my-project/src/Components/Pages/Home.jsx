@@ -1,32 +1,31 @@
 import React  from "react";
-import { latest, events }  from '../../assets/Home/HomeResource.js';
+import { latest, events, destinations }  from '../../assets/Home/HomeResource.js';
 
 function Home() {
     
     return (
         <>
-            {/* <div className="grid text-green-400">
-                <h1 className="font-bold text-3xl">This is a Home Page </h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, temporibus.</p>
-                <button type="button" onClick={()=>window.alert("hello This is a home page")}>Click Me</button>
-            </div> */}
             <div className="grid gap-5">
+                {
+                    
+                }
                 <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg">
                     <h1 className="text-4xl py-5 text-black font-bold text-center">Milaano Tourism </h1>
                     <p className="text-center text-lg" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2  p-5  my-5 justify-center items-center">
-                    <div className="flex justify-center flex-col py-5">
+                    <div className="flex justify-center flex-col py-5 w-[100%]">
                         {
                             latest.map((item, index) => {
                                 return (
-                                    <div className="max-w-[380px]">
-                                        <div className="grid grid-cols-1 rounded-md border border-blue-500">
+                                    <div className="my-5 shadow-lg hover:shadow-md">
+                                        <div className="grid grid-cols-1 lg:grid-cols-2 py-5 rounded-md ">
                                             <div className="p-3">
                                                 <img className="" src={item} alt="lorem20"/>
                                             </div>
-                                            <div className="px-3">
-                                                <h1 className="text-2xl text-blue-400 font-bold">Lorem, ipsum</h1>
+                                            <div className="p-5">
+                                                <h1 className="text-2xl text-center text-blue-400 font-bold">Lorem, ipsum</h1>
+                                                <p className="text-center" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -42,8 +41,8 @@ function Home() {
                         {
                             events.map((item, index) => {
                                 return (
-                                    <div className="w-[80vw] my-5 mx-auto max-w-[360px]  overflow-hidden object-cover text-center ">
-                                        <div className="grid grid-cols-1 rounded-md border border-blue-500 group">
+                                    <div className="w-[80vw] my-5 mx-auto max-w-[360px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center ">
+                                        <div className="grid grid-cols-1 rounded-md shadow-md group">
                                             <div className="p-3">
                                                 <img className="max-h-[300px]" src={item.img} alt={item.desc}/>
                                             </div>
@@ -73,13 +72,19 @@ function Home() {
                         <a href="/findout" className="border border-blue-500 p-5 text-lg hover:bg-blue-500 hover:text-white">Find Out More </a>
                     </div>
                 </div>
-                <div className="p-5">
-                    <div className="">
-
-                    </div>
-                    <div className="">
-
-                    </div>
+                <div className="p-5 grid">
+                    {
+                        destinations.map((item, index) => {
+                            return (
+                                <>
+                                    <div className="">
+                                        <img className="max-h-[300px]" src={item} alt=""/>
+                                    </div>
+                                    
+                                </>
+                            )
+                        })
+                    }
                 </div>
             </div>
 
