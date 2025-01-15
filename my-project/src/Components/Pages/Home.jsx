@@ -2,7 +2,17 @@ import React  from "react";
 import { mainImg, latest, events, destinations, recaps }  from '../../assets/Home/HomeResource.js';
 
 function Home() {
-    
+    const myImgStyles = {
+        backgroundSize:"cover"
+    }
+
+    const subContentParent = {
+        position:"relative", justifyContent:"center", alignItems:"center",overflow:"hidden"
+    }
+    const myhoverContent = {
+        position:"absolute", width:"100%", height:"100%", top:0, left:0, justifyContent:"center", 
+        alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#2196fe"
+    }
     return (
         <>
             <div className="grid gap-5">
@@ -115,41 +125,83 @@ function Home() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2">
-                <div className="grid gap-2">
-                    <div>
-                        <img src={recaps[0]} class="w-[100%]" alt="default Image"/>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                            <img src={recaps[1]} class="w-[100%]" alt="default Image"/>
+            <div >
+                <h1 className="text-[2.5em] text-black text-center md:text-left font-semibold px-5">Explorer More Island Stories</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2 py-5">
+                    <div className="grid gap-2">
+                        <div style={subContentParent} className="group">
+                            <div>
+                                <img src={recaps[0]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                            </div>
+                            <div style={myhoverContent} className="hidden  group-hover:flex">
+                                <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src={recaps[2]} class="w-[100%]" alt="default Image"/>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 group" style={subContentParent} >
+                            <div style={subContentParent} className="group">
+                                <div>
+                                    <img src={recaps[1]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                                </div>
+                                <div style={myhoverContent} className="hidden  group-hover:flex">
+                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                </div>
+                            </div>
+                            <div style={subContentParent} className="group">
+                                <div>
+                                    <img src={recaps[2]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                                </div>
+                                <div style={myhoverContent} className="hidden  group-hover:flex">
+                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={subContentParent} className="group">
+                            <div>
+                                <img src={recaps[3]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                            </div>
+                            <div style={myhoverContent} className="hidden  group-hover:flex">
+                                <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <img src={recaps[3]} class="w-[100%]" alt="default Image"/>
-                    </div>
-                </div>
-                <div className="grid">
-                    <div className="grid grid-cols-1 md:grid-cols-2 ">
-                        <div>
-                            <img src={recaps[4]} class="w-[100%] " alt="default Image"/>
+                    <div className="grid gap-3">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 group" >
+                            <div style={subContentParent} className="group">
+                                <div>
+                                    <img src={recaps[4]} class="w-[100%] " style={myImgStyles} alt="default Image"/>
+                                </div>
+                                <div style={myhoverContent} className="hidden  group-hover:flex">
+                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                </div>
+                            </div>
+                            <div style={subContentParent} >
+                                <div className="group">
+                                    <div>
+                                        <img src={recaps[7]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                                    </div>
+                                    <div style={myhoverContent} className="hidden  group-hover:flex">
+                                        <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src={recaps[5]} class="w-[100%] h-[100%]" alt="default Image"/>
+                        <div style={subContentParent} className="group">
+                            <div>
+                                <img src={recaps[6]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                            </div>
+                            <div style={myhoverContent} className="hidden  group-hover:flex">
+                                <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src={recaps[6]} class="w-[100%]" alt="default Image"/>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 items-stretch">
-                        <div>
-                            <img src={recaps[7]} class="w-[100%]" alt="default Image"/>
-                        </div>
-                        <div>
-                            <img src={recaps[8]} class="w-[100%]" alt="default Image"/>
+                        <div className="grid">
+                            <div style={subContentParent} className="group">
+                                <div>
+                                    <img src={recaps[8]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
+                                </div>
+                                <div style={myhoverContent} className="hidden  group-hover:flex">
+                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,12 +212,12 @@ function Home() {
                     <h3 className="text-3xl px-5 font-semibold text-white">Subscribe Our Newslatter</h3>
                 </div>
                 <form action="">
-                    <div className=" grid grid-cols-1 justify-center content-center items-center justify-center p-5 gap-3 md:grid-cols-2">
+                    <div className=" grid grid-cols-1 content-center items-center justify-center p-5 gap-3 md:grid-cols-2">
                         <div className="w-full">
-                            <input type="text" id="newslatterEmail" className="w-full border border-green-400 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
+                            <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-green-400 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
                         </div>
                         <div className="">
-                            <input type="button" className=" text-lg bg-red-600 text-white p-4 px-7 hover:bg-red-500" value="Subscribe"/>
+                            <input type="submit" className=" text-lg bg-red-600 text-white p-4 px-7 hover:bg-red-500" value="Subscribe"/>
                         </div>
                     </div>
                 </form>
