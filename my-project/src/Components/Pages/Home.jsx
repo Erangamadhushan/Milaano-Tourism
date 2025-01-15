@@ -10,8 +10,13 @@ function Home() {
                     mainImg.map((item) => {
                         return (
                             <>
-                                <div class="w-full min-h-[90vh]" style={{backgroundImage:{item}}}>
-                                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero repellat, magnam architecto quibusdam beatae adipisci. Optio fugiat similique ducimus autem doloremque, ipsum facilis facere ab, quos ea eos expedita.</h3>
+                                <div className="w-full min-h-[90vh]" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
+                                    <div className="grid grid-cols-2 h-[90vh]">
+                                        <div className="flex flex-col p-5">
+                                            <h1 className="text-5xl text-white">Welcome to our website</h1>
+                                            <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel incidunt blanditiis officiis, sint reprehenderit! Iure tempore amet maiores, pariatur ipsa quo debitis, deleniti nobis perferendis libero consectetur animi! Earum consequatur nulla nobis odit, ducimus tempore saepe recusandae cum assumenda ex debitis est aperiam enim. Ipsum, saepe tempora enim quos nisi deleniti expedita quam quae quod maiores ratione odit tempore.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </>
                         )
