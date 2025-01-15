@@ -1,5 +1,5 @@
 import React  from "react";
-import { mainImg, latest, events, destinations }  from '../../assets/Home/HomeResource.js';
+import { mainImg, latest, events, destinations, recaps }  from '../../assets/Home/HomeResource.js';
 
 function Home() {
     
@@ -11,10 +11,10 @@ function Home() {
                         return (
                             <>
                                 <div className="w-full min-h-[90vh]" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
-                                    <div className="grid grid-cols-2 h-[90vh]">
-                                        <div className="flex flex-col p-5">
-                                            <h1 className="text-5xl text-white">Welcome to our website</h1>
-                                            <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel incidunt blanditiis officiis, sint reprehenderit! Iure tempore amet maiores, pariatur ipsa quo debitis, deleniti nobis perferendis libero consectetur animi! Earum consequatur nulla nobis odit, ducimus tempore saepe recusandae cum assumenda ex debitis est aperiam enim. Ipsum, saepe tempora enim quos nisi deleniti expedita quam quae quod maiores ratione odit tempore.</p>
+                                    <div className="grid place-items-center grid-col-1 md:grid-cols-2 ">
+                                        <div className="flex flex-col justify-content-center p-5">
+                                            <h1 className="text-[4em] text-white font-bold py-3">Welcome to <br/>Sri Lanka</h1>
+                                            <p className="text-lg text-white">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Plak Strait.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -113,6 +113,62 @@ function Home() {
                         <a href="/findout" className="border border-blue-500 p-5 text-lg hover:bg-blue-500 hover:text-white">Find Out More </a>
                     </div>
                 </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2">
+                <div className="grid gap-2">
+                    <div>
+                        <img src={recaps[0]} class="w-[100%]" alt="default Image"/>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <img src={recaps[1]} class="w-[100%]" alt="default Image"/>
+                        </div>
+                        <div>
+                            <img src={recaps[2]} class="w-[100%]" alt="default Image"/>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={recaps[3]} class="w-[100%]" alt="default Image"/>
+                    </div>
+                </div>
+                <div className="grid">
+                    <div className="grid grid-cols-1 md:grid-cols-2 ">
+                        <div>
+                            <img src={recaps[4]} class="w-[100%] " alt="default Image"/>
+                        </div>
+                        <div>
+                            <img src={recaps[5]} class="w-[100%] h-[100%]" alt="default Image"/>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={recaps[6]} class="w-[100%]" alt="default Image"/>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 items-stretch">
+                        <div>
+                            <img src={recaps[7]} class="w-[100%]" alt="default Image"/>
+                        </div>
+                        <div>
+                            <img src={recaps[8]} class="w-[100%]" alt="default Image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className=" p-5 bg-bg-mainColor my-1">
+                <div>
+                    <h3 className="text-3xl px-5 font-semibold text-white">Subscribe Our Newslatter</h3>
+                </div>
+                <form action="">
+                    <div className=" grid grid-cols-1 justify-center content-center items-center justify-center p-5 gap-3 md:grid-cols-2">
+                        <div className="w-full">
+                            <input type="text" id="newslatterEmail" className="w-full border border-green-400 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
+                        </div>
+                        <div className="">
+                            <input type="button" className=" text-lg bg-red-600 text-white p-4 px-7 hover:bg-red-500" value="Subscribe"/>
+                        </div>
+                    </div>
+                </form>
             </div>
         </>
     )

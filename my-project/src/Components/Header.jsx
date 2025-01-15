@@ -14,7 +14,7 @@ function Header() {
                 </div>
                 <nav className="bg-bg-mainColor grid grid-cols-2 justify-between items-baseline space-x-5 p-5">
                     <div className="">
-                        <h1 className="text-white font-bold text-2xl "><span className="text-orange-500">M</span>ilaano <span className="text-orange-500">T</span>ourism </h1>
+                        <h1 className="text-white font-bold text-[2em] "><span className="text-orange-500">M</span>ilaano <span className="text-orange-500">T</span>ourism </h1>
                     </div>
                     <div className="hidden md:block">
                         <ul className="flex justify-start space-x-5">
