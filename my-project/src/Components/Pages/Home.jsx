@@ -1,5 +1,5 @@
 import React  from "react";
-import { latest, events, destinations }  from '../../assets/Home/HomeResource.js';
+import { mainImg, latest, events, destinations }  from '../../assets/Home/HomeResource.js';
 
 function Home() {
     
@@ -7,7 +7,15 @@ function Home() {
         <>
             <div className="grid gap-5">
                 {
-                    
+                    mainImg.map((item) => {
+                        return (
+                            <>
+                                <div class="w-full min-h-[90vh]" style={{backgroundImage:{item}}}>
+                                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero repellat, magnam architecto quibusdam beatae adipisci. Optio fugiat similique ducimus autem doloremque, ipsum facilis facere ab, quos ea eos expedita.</h3>
+                                </div>
+                            </>
+                        )
+                    })
                 }
                 <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg">
                     <h1 className="text-4xl py-5 text-black font-bold text-center">Milaano Tourism </h1>
@@ -63,7 +71,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 p-5 py-10">
+            <div className="grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10">
                 <div className="p-5">
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-black">Destination  Guide</h2>

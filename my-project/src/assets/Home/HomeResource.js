@@ -4,10 +4,10 @@ import latestimg3 from  './latest3.jpg';
 import event_news1 from './Event&News1.jpg';
 import event_news2 from './Event&News2.jpg';
 import destination1 from './destination1.jpg';
-import main from './destination2.jpg';
+//import main from './destination2.jpg';
 
 
-export const main = [main];
+export const mainImg = [ latestimg3 ];
 export  const  latest = [latestimg1, latestimg2, latestimg3];
 export const events = [
     {
