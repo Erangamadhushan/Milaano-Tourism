@@ -227,9 +227,7 @@ function Home() {
                     </div>
                 </form>
             </div>
-            {/* <div>
-                <button type="button" onClick={showAlert}>Click Me</button>
-            </div> */}
+            
         </>
     )
 }
