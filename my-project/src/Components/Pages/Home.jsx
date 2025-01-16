@@ -1,7 +1,12 @@
 import React  from "react";
 import { mainImg, latest, events, destinations, recaps }  from '../../assets/Home/HomeResource.js';
+import Swal from 'sweetalert2';
 
 function Home() {
+
+    // const showAlert = () => {
+    //     Swal.fire('Hello!', 'This is a SweetAlert2 alert.', 'success');
+    // };
     const myImgStyles = {
         backgroundSize:"cover"
     }
@@ -37,11 +42,11 @@ function Home() {
                     <p className="text-center text-lg" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2  p-5  my-5 justify-center items-center">
-                    <div className="flex justify-center flex-col py-5 w-[100%]">
+                    <div className="grid place-items-center py-5 w-[100%]">
                         {
                             latest.map((item, index) => {
                                 return (
-                                    <div className="my-5 shadow-lg hover:shadow-md">
+                                    <div className="my-5 shadow-lg hover:shadow-md" data-aos="fade-down" data-aos-duration="1000">
                                         <div className="grid grid-cols-1 lg:grid-cols-2 py-5 rounded-md ">
                                             <div className="p-3">
                                                 <img className="" src={item} alt="lorem20"/>
@@ -64,7 +69,7 @@ function Home() {
                         {
                             events.map((item, index) => {
                                 return (
-                                    <div className="w-[80vw] my-5 mx-auto max-w-[360px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center ">
+                                    <div className="w-[80vw] my-5 mx-auto max-w-[360px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center " >
                                         <div className="grid grid-cols-1 rounded-md shadow-md group">
                                             <div className="p-3">
                                                 <img className="max-h-[300px]" src={item.img} alt={item.desc}/>
@@ -86,8 +91,8 @@ function Home() {
                 </div>
             </div>
 
-            <div className="grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10">
-                <div className="p-5">
+            <div className="grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10" >
+                <div className="p-5" >
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-black">Destination  Guide</h2>
                         <p className="text-[2.5em] ">Holiday in Sri Lanka</p>
@@ -222,6 +227,9 @@ function Home() {
                     </div>
                 </form>
             </div>
+            {/* <div>
+                <button type="button" onClick={showAlert}>Click Me</button>
+            </div> */}
         </>
     )
 }
