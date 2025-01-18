@@ -8,7 +8,7 @@ export default function Service() {
                 <p className="text-center text-[1.25em]"> Your gateway to unforgettable experience and luxury accommodations</p>
             </div>
 
-            <div className="grid grid-cols-1 mx-auto">
+            <div className="grid grid-cols-1 mx-auto py-4">
                 {
                     services.map((service, index) => {
                         return (
@@ -27,15 +27,18 @@ export default function Service() {
                                     }
                                 </ul>
                                 <p className="py-2 text-lg underline">{service.featureTitle}</p>
-                                <ul>
+                                <ul className="py-4">
                                     {
                                         service.featureList.map((feature) => {
                                             return (
-                                                <li className=" text-md text-green-600">{feature}</li>
+                                                <li className="py-2 text-md text-green-600">{feature}</li>
                                             )
                                         })
                                     }
                                 </ul>
+                                <div className="py-3">
+                                    <a href="./findout" className="my-5 p-5 px-10 text-white bg-coral">Find Out</a>
+                                </div>
                             </div>
                         )
                     })
@@ -47,30 +50,33 @@ export default function Service() {
                     subServices.map((subservice) => {
                         return (
                             <div className="p-5 py-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg">
-                                <h2>{subservice.title}</h2>
-                                <p>{subservice.subTitle}</p>
-                                <ul>
+                                <h2 className="text-2xl py-3">{subservice.title}</h2>
+                                <p className="text-xl">{subservice.subTitle}</p>
+                                <ul className="py-4">
                                     {
                                         subservice.item.map((item) => {
                                             return (
-                                                <li>
-                                                    <p>{item.title}</p>
-                                                    <p>{item.content}</p>
+                                                <li className="py-1">
+                                                    <p className=" text-lg">{item.title}</p>
+                                                    <p className="">-{item.content}</p>
                                                 </li>
                                             )
                                         })
                                     }
                                 </ul>
+                                <div className="py-3">
+                                    <a href="./findout" className="my-5 p-5 px-10 text-white bg-coral">Find Out</a>
+                                </div>
                             </div>
                         )
                     })
                 }
             </div>
 
-            <div className=" p-5 py-5 my-5 mx-auto w-[95%] max-w-[1200px]">
+            <div className=" p-5 py-[2em] my-5 mx-auto w-[95%] max-w-[1200px]">
                 <h2 class="text-2xl">Ready to Plan Your Perfect Trip ?</h2>
                 <p className="text-xl py-5">Contact our travel experts for personalized assistance and exclusive offers</p>
-                <a href="./contact" className="bg-green-400 p-5 rounded-md text-white hover:bg-green-500">Contact Us Now</a>
+                <a href="./contact" className="bg-coral p-5 rounded-md text-white hover:bg-green-500">Contact Us Now</a>
             </div>
         </>
     )

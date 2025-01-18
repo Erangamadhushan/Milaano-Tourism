@@ -40,3 +40,55 @@ export const developers = [
     },
     
 ];
+
+export const contact = [
+    {
+        title:"Contact Us",
+        desc:"We're here to help make your travel dreams a reality. Get in touch with us through any of the following ways:",
+    }
+];
+
+export const contactContent = [
+    {
+        addressTitle:"Office Address:",
+        address:[
+            "123, Main Street",
+            "Colombo 07",
+            "Sri Lanka"
+        ]
+    },
+    {
+        informationTitle:"Contact Information:",
+        email:"info@milaanotourism.com",
+        customerSupportEmail:"support@milaanotourism.com",
+    },
+    {
+        operationTitle:"Operating Hours:",
+        duration1:"Monday-Friday:9.00AM - 6.00PM(EST)",
+        duration2:"Saturday-Sunday:9.00AM - 5.00PM(EST)",
+    },
+    {
+        responseTitle:"Get Quick Response",
+        responseDetails:[
+            "For tour bookings and packages: bookings@tourismguide.com",
+            "For emergency assistance: +94 0123-4567",
+            "For group tours: groups@milaanotourism.com"
+        ]
+    },
+    {
+        socialTitle:"Follow Us",
+        socialMedia:[
+            "Facebook:@Milaanotourism",
+            "Instragram:@milaanotourism_Official",
+            "Twitter:@milaanotourism",
+        ]
+    },
+    {
+        additinalInformation:"Additional Information:",
+        additionalDetails:[
+            "For immediate assistance, please call our 24/7 helpline",
+            "Response time: Within 24 hours",
+            "Prefer to meet in person? Schedule an appointment through email"
+        ]  
+    }
+]

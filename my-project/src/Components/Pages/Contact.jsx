@@ -1,5 +1,5 @@
 import React  from "react";
-import { developers } from "../../assets/Contact/contact";
+import { developers, contact, contactContent } from "../../assets/Contact/contact";
 export default function Contact() {
     return (
         <>
@@ -7,6 +7,9 @@ export default function Contact() {
                 <h2 className="text-3xl text-center text-black font-extrabold pb-3">Contact Us</h2>
                 <p className="text-2xl text-center text-black font-semibold pb-3">About who we are and what we do</p>
                 <p className="text-2xl text-center text-black font-semibold pb-3">We're here to answer any question you may have</p>
+            </div>
+            <div>
+
             </div>
             <div className="py-[20px] my-5 flex flex-wrap gap-5 justify-center items-center">
                 {

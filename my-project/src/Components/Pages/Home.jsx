@@ -25,7 +25,7 @@ function Home() {
                     mainImg.map((item) => {
                         return (
                             <>
-                                <div className="w-full min-h-[90vh]" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
+                                <div className="w-full min-h-[90vh] grid place-items-center" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
                                     <div className="grid place-items-center grid-col-1 md:grid-cols-2 ">
                                         <div className="flex flex-col justify-content-center p-5">
                                             <h1 className="text-[4em] text-white font-bold py-3">Welcome to <br/>Sri Lanka</h1>
@@ -37,7 +37,7 @@ function Home() {
                         )
                     })
                 }
-                <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg">
+                <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg w-[75%] max-w-[1200px] mx-auto">
                     <h1 className="text-4xl py-5 text-black font-bold text-center">Milaano Tourism </h1>
                     <p className="text-center text-lg" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
                 </div>

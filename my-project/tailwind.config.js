@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundColor:{
-        'bg-mainColor':'#222'
+        'bg-mainColor':'#222',
+        'coral':"coral"
       },
       borderColor:{
         'border-mainColor':'#222'

@@ -4,6 +4,9 @@ function Findout() {
 
     return (
         <>
+            <div className="container">
+                
+            </div>
         </>
     )
 }
