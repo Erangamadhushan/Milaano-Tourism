@@ -15,6 +15,9 @@ export default {
       },
       backgroundSize:{
         'custom':'860px'
+      },
+      colors:{
+        'coral':'coral'
       }
     },
   },
