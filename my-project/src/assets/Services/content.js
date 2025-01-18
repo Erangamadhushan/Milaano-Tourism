@@ -4,7 +4,7 @@ export const services = [
         subTitle:"5-Star Hotels",
         description:"Experience the ultimate in luxury and comfort at our 5-star hotels and accommodations. From",
         ex:[
-            "Ocean view resort = Beachfront paradise with private balconies",
+            "Ocean view resort - Beachfront paradise with private balconies",
             "Mountain Lodge - Scenic retreat with spa facilities",
             "City Center Hotel - Perfect for business and leisure travelers"
         ],
