@@ -46,8 +46,21 @@ export default function Service() {
                 {
                     subServices.map((subservice) => {
                         return (
-                            <div>
-                                
+                            <div className="p-5 py-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg">
+                                <h2>{subservice.title}</h2>
+                                <p>{subservice.subTitle}</p>
+                                <ul>
+                                    {
+                                        subservice.item.map((item) => {
+                                            return (
+                                                <li>
+                                                    <p>{item.title}</p>
+                                                    <p>{item.content}</p>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
                             </div>
                         )
                     })
