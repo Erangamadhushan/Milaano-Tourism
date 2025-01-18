@@ -2,10 +2,9 @@ import React  from "react";
 export default function Service() {
     return (
         <>
-            <div className="grid text-green-400">
-                <h1 className="font-bold text-3xl">This is a Service Page </h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, temporibus.</p>
-                <button type="button" onClick={()=>window.alert("hello This is a home page")}>Click Me</button>
+            <div className="grid">
+                <h2 className="text-[2.5em] text-center">Welcome to Milaano Tourism - Your Complete Travel Solutions </h2>
+                <p className="text-center"> Your gateway to unforgettable experience and luxury accommodations</p>
             </div>
         </>
     )
