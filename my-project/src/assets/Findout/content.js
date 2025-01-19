@@ -93,6 +93,10 @@ export const destinationGuide = {
                     {
                         title:"West Coast:",
                         content:"Bentota and Negombo for water sports and resort experiences"
+                    },
+                    {
+                        title:"Add Something",
+                        content:"Mirissa, Unawatuna, and Tangalle for pristine beaches and whale watching"
                     }
                 ]
             }
