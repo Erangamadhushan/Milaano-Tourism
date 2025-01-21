@@ -1,10 +1,14 @@
-import React from "react"
+import {React, useState} from "react"
 import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom"
 function Header() {
+    const [popover, setPopover] = useState(false);
     const Upper = {
         textTransform:'uppercase',
         
+    }
+    const popoverMobileNavbar = () => {
+        setPopover((prev ) => !prev);
     }
     return (
         <>
@@ -14,7 +18,7 @@ function Header() {
                 </div>
                 <nav className="bg-bg-mainColor grid grid-cols-2 justify-between items-baseline space-x-5 p-5 ">
                     <div className="">
-                        <h1 className="text-white font-bold text-[2em] "><span className="text-orange-500">M</span>ilaano <span className="text-orange-500">T</span>ourism </h1>
+                        <h1 className="text-white font-bold text-[1.25em] "><span className="text-orange-500">M</span>ilaano <span className="text-orange-500">T</span>ourism </h1>
                     </div>
                     <div className="hidden md:block ">
                         <ul className="flex justify-start space-x-5">
@@ -34,10 +38,13 @@ function Header() {
                     </div>
                     <div className="block md:hidden items-baseline">
                         <div className="flex justify-end">
-                            <button className="bg-mainColor p-2 rounded-full text-white font-bold text-lg hover:text-orange-400">&#9776;</button>
+                            <button className="bg-mainColor p-2 rounded-full text-white font-bold text-lg hover:text-orange-400" onClick={popoverMobileNavbar}>&#9776;</button>
                         </div>
                     </div>
                 </nav>
+            </div>
+            <div className=" p-2 bg-gray-950" style={{ display: {popover} ? 'block' : 'none'}}>
+                <h2 className="text-white">Eranga Madhushan</h2>
             </div>
         </>
     )
