@@ -3,7 +3,7 @@ import { services, subServices } from "../../assets/Services/content";
 export default function Service() {
     return (
         <>
-            <div className="grid py-5">
+            <div className="grid py-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <h2 className="text-[2.5em] text-center">Welcome to Milaano Tourism - Your Complete Travel Solutions </h2>
                 <p className="text-center text-[1.25em]"> Your gateway to unforgettable experience and luxury accommodations</p>
             </div>
@@ -12,7 +12,7 @@ export default function Service() {
                 {
                     services.map((service, index) => {
                         return (
-                            <div className="p-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg">
+                            <div className="p-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                                 <h2 className="text-3xl font-bold pb-3 ">{service.title}</h2>
                                 <hr/>
                                 <h3 className="text-2xl font-semibold py-3 underline">{service.subTitle}</h3>

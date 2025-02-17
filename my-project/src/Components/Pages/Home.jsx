@@ -26,8 +26,8 @@ function Home() {
                         return (
                             <>
                                 <div className="w-full min-h-[90vh] grid place-items-center" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
-                                    <div className="grid place-items-center grid-col-1 md:grid-cols-2 ">
-                                        <div className="flex flex-col justify-content-center p-5">
+                                    <div className="grid place-items-center mx-auto grid-col-1 md:grid-cols-2 ">
+                                        <div className="flex flex-col justify-content-center p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                                             <h1 className="text-[4em] text-white font-bold py-3">Welcome to <br/>Sri Lanka</h1>
                                             <p className="text-lg text-white">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Plak Strait.</p>
                                         </div>
@@ -37,16 +37,16 @@ function Home() {
                         )
                     })
                 }
-                <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg w-[75%] max-w-[1200px] mx-auto">
+                <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg w-[85%] max-w-[1300px] mx-auto">
                     <h1 className="text-4xl py-5 text-black font-bold text-center">Milaano Tourism </h1>
                     <p className="text-center text-lg" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2  p-5  my-5 justify-center items-center">
-                    <div className="grid place-items-center py-5 w-[100%]">
+                <div className="grid grid-cols-1 md:grid-cols-2   p-5  my-5 ">
+                    <div className="grid py-5 w-[100%] ">
                         {
                             latest.map((item, index) => {
                                 return (
-                                    <div className="my-5 shadow-lg hover:shadow-md" data-aos="fade-down" data-aos-duration="1000">
+                                    <div className="my-5 shadow-lg hover:shadow-md" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                                         <div className="grid grid-cols-1 lg:grid-cols-2 py-5 rounded-md ">
                                             <div className="p-3">
                                                 <img className="" src={item} alt="lorem20"/>
@@ -62,15 +62,15 @@ function Home() {
                         }
                     </div>
                     <div className=" mx-auto">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                             <h2 className=" text-center text-4xl text-black font-semibold ">News and Latest Event..</h2>
                         </div>
                         
                         {
                             events.map((item, index) => {
                                 return (
-                                    <div className="w-[80vw] my-5 mx-auto max-w-[360px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center " >
-                                        <div className="grid grid-cols-1 rounded-md shadow-md group">
+                                    <div className="w-[80vw] my-5 mx-auto max-w-[350px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center " data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                                        <div className="grid grid-cols-1 rounded-md shadow-md group" >
                                             <div className="p-3">
                                                 <img className="max-h-[300px]" src={item.img} alt={item.desc}/>
                                             </div>
@@ -105,7 +105,7 @@ function Home() {
                         destinations.map((item, index) => {
                             return (
                                 <>
-                                    <div className="">
+                                    <div className="" >
                                         <img className="max-h-[300px]" src={item} alt=""/>
                                     </div>
                                     
@@ -117,10 +117,10 @@ function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 p-5 py-10">
-                <div className="p-5">
+                <div className="p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015322.2095558839!2d80.18777706428749!3d6.250238567687185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bad9013377%3A0x44238fe850f6f47e!2sSouthern%20Province!5e0!3m2!1sen!2slk!4v1736763874158!5m2!1sen!2slk" loading="lazy" style={{width:'95%',margin:'auto',height:'350px'}} referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div className="p-5">
+                <div className="p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-black">Things to do</h2>
                         <p className="text-[2.5em] ">in Sri Lanka</p>
@@ -132,7 +132,7 @@ function Home() {
 
             <div >
                 <h1 className="text-[2.5em] text-black text-center md:text-left font-semibold px-5">Explorer More Island Stories</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2 py-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2 py-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div className="grid gap-2">
                         <div style={subContentParent} className="group">
                             <div>
@@ -169,7 +169,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid gap-3">
+                    <div className="grid gap-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 group" >
                             <div style={subContentParent} className="group">
                                 <div>

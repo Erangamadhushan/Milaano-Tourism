@@ -43,7 +43,7 @@ function Header() {
                     </div>
                 </nav>
             </div>
-            <div className=" p-2 bg-gray-950" style={{ display: {popover} ? 'block' : 'none'}}>
+            <div className=" p-2 bg-gray-950 hidden" >
                 <h2 className="text-white">Eranga Madhushan</h2>
             </div>
         </>
