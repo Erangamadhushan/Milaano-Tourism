@@ -15,8 +15,13 @@ import recap7 from './wildAnimals.jpg';
 import recap8 from './dance.jpg';
 import recap9 from './anuradhapura.jpg';
 
+import mainicons1  from './icons/bed.png';
+import mainicons2  from './icons/staff.png';
+import mainicons3  from './icons/client.png';
+
 
 export const mainImg = [ main ];
+export const icons = [mainicons1, mainicons2, mainicons3];
 export  const  latest = [latestimg1, latestimg2, latestimg3];
 export const events = [
     {

@@ -1,5 +1,5 @@
 import React  from "react";
-import { mainImg, latest, events, destinations, recaps }  from '../../assets/Home/HomeResource.js';
+import { mainImg, latest, events, destinations, recaps, icons }  from '../../assets/Home/HomeResource.js';
 
 
 function Home() {
@@ -25,11 +25,14 @@ function Home() {
                     mainImg.map((item) => {
                         return (
                             <>
-                                <div className="w-full min-h-[90vh] grid place-items-center" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
-                                    <div className="grid place-items-center mx-auto grid-col-1 md:grid-cols-2 ">
-                                        <div className="flex flex-col justify-content-center p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                                            <h1 className="text-[4em] text-white font-bold py-3">Welcome to <br/>Sri Lanka</h1>
-                                            <p className="text-lg text-white">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Plak Strait.</p>
+                                <div className="w-full min-h-[90vh] flex justify-center items-center bg-gray-200" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
+                                    <div className="w-[100%] p-5 min-h-[90vh] text-center bg-[#222222a0] mx-auto">
+                                        <div className="w-[100%] md:w-[60%] mx-auto min-h-[90vh] grid place-items-center items-center">
+                                            <div>
+                                                <h1 className=" text-[1.5em] md:text-[3em]  text-gray-100 font-bold py-3">Milaano Hotels, Your Luxury Gateway to Sri Lankan Paradise</h1>
+                                                <p className="text-lg text-white">Welcome to Milaano Hotels, where international travelers discover the true essence of Sri Lankan hospitality. Nestled along Sri Lanka's pristine coastline, our exclusive property offers a perfect blend of luxury, comfort, and authentic cultural experiences designed specifically for our foreign guests.</p>
+                                                <button type="button" class="mt-5 bg-blue-500 text-white text-lg p-5 px-[50px] font-semibold hover:bg-blue-600">Explorer </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -37,12 +40,38 @@ function Home() {
                         )
                     })
                 }
-                <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg w-[85%] max-w-[1300px] mx-auto">
-                    <h1 className="text-4xl py-5 text-black font-bold text-center">Milaano Tourism </h1>
-                    <p className="text-center text-lg" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
+                <div className="flex py-5 w-[100%] max-w-[1320px] mx-auto">
+                    <div className="w-[100%] lg:w-[65%] p-3">
+                        <h2 className="text-blue-500 text-[2em] md:ml-[40px] font-semibold">About Us</h2>
+                        <h2 className="text-xl pt-5 md:ml-[40px]">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
+                        <div class="grid p-3 py-5 mt-5 gap-3  grid-cols-1">
+                            <div className=" border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our rooms are designed to provide you with the ultimate comfort and relaxation. Each room is equipped with modern amenities and stunning views of the ocean.</p>
+                            </div>
+                            <div className=" border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our staff is dedicated to providing you with exceptional service and ensuring that your stay with us is nothing short of perfect.</p>
+                            </div>
+                            <div className="border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Client</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our clients are our top priority. We strive to provide them with the best possible experience and exceed their expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-[100%] lg:w-[30%]">
+
+                    </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2   p-5  my-5 ">
-                    <div className="grid py-5 w-[100%] ">
+                {/* <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg w-[85%] max-w-[1300px] mx-auto">
+                    <h1 className="text-[1.5em] md:text-[3em] py-5 text-black font-semibold text-center">Milaano Tourism </h1>
+                    <p className="text-center text-[1.25em] md:text-[1.5em]" >I'd be happy to provide you with some details about Sri Lankan tourism to use as content for your website. Here's some information you might find useful: Sri Lanka is an island nation in South Asia known for its diverse landscapes, rich cultural heritage, and warm hospitality. With its tropical climate, beautiful beaches, ancient cities, and abundant wildlife, it offers a wide range of experiences for tourists.</p>
+                </div> */}
+                <div className="relative w-[100%] max-w-[1320px] mx-auto flex gap-5">
+                    <div className="grid py-5 w-[100%] lg:w-[75%] md:w-[70%]">
                         {
                             latest.map((item, index) => {
                                 return (
@@ -61,15 +90,14 @@ function Home() {
                             })
                         }
                     </div>
-                    <div className=" mx-auto">
-                        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div className="grid py-5 w-[100%] lg:w-[20%] md:w-[25%]">
+                        <div>
                             <h2 className=" text-center text-4xl text-black font-semibold ">News and Latest Event..</h2>
                         </div>
-                        
                         {
                             events.map((item, index) => {
                                 return (
-                                    <div className="w-[80vw] my-5 mx-auto max-w-[350px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center " data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                                    <div className="w-[80vw] my-5 mx-auto max-w-[350px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center ">
                                         <div className="grid grid-cols-1 rounded-md shadow-md group" >
                                             <div className="p-3">
                                                 <img className="max-h-[300px]" src={item.img} alt={item.desc}/>

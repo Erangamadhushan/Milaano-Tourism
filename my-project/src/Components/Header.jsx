@@ -13,26 +13,23 @@ function Header() {
     return (
         <>
             <div className="grid">
-                <div className="bg-gray-900 p-2">
-                    <h1 class="text-center text-white font-light" style={{Upper}}>Milaano Tourism</h1>
-                </div>
-                <nav className="bg-gray-800 grid grid-cols-2 justify-between items-baseline space-x-5 p-5 sticky top-0">
+                <nav className="bg-blue-600 grid grid-cols-2 justify-between items-baseline space-x-5 p-5 sticky left-0 top-0">
                     <div className="">
-                        <h1 className="text-white font-bold text-[1.25em] "><span className="text-orange-500">M</span>ilaano <span className="text-orange-500">T</span>ourism </h1>
+                        <h1 className="text-white font-bold text-[1.25em] "><span className="text-orange-500">M</span>ILAANO <span className="text-orange-500">T</span>OURISM </h1>
                     </div>
                     <div className="hidden md:block ">
                         <ul className="flex justify-start space-x-5">
                             <li>
-                                <Link to="/" className="text-white text-bold text-xl hover:text-orange-400">Home</Link>
+                                <Link to="/" className="text-white text-bold text-xl hover:text-orange-400">HOME</Link>
                             </li>
                             <li>
-                                <Link to="/aboutus" className="text-white text-bold text-xl hover:text-orange-400">About</Link>
+                                <Link to="/aboutus" className="text-white text-bold text-xl hover:text-orange-400">ABOUT</Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="text-white text-bold text-xl hover:text-orange-400">Contact</Link>
+                                <Link to="/contact" className="text-white text-bold text-xl hover:text-orange-400">CONTACT</Link>
                             </li>
                             <li>
-                                <Link to="/service" className="text-white text-bold text-xl hover:text-orange-400">Service</Link>
+                                <Link to="/service" className="text-white text-bold text-xl hover:text-orange-400">SERVICES</Link>
                             </li>
                         </ul>
                     </div>
