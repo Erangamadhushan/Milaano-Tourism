@@ -6,12 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-package-lock.json
+
 node_modules
 dist
 dist-ssr
 *.local
-package.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,5 +22,3 @@ package.json
 *.njsproj
 *.sln
 *.sw?
-vite.config.js
-node_modules
