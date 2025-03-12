@@ -1,6 +1,6 @@
 import React  from "react";
 import { mainImg, latest, events, destinations, recaps }  from '../../assets/Home/HomeResource.js';
-import Swal from 'sweetalert2';
+
 
 function Home() {
 

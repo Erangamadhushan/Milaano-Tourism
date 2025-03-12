@@ -13,10 +13,10 @@ function Header() {
     return (
         <>
             <div className="grid">
-                <div className="bg-gray-800 p-2">
+                <div className="bg-gray-900 p-2">
                     <h1 class="text-center text-white font-light" style={{Upper}}>Milaano Tourism</h1>
                 </div>
-                <nav className="bg-bg-mainColor grid grid-cols-2 justify-between items-baseline space-x-5 p-5 ">
+                <nav className="bg-gray-800 grid grid-cols-2 justify-between items-baseline space-x-5 p-5 sticky top-0">
                     <div className="">
                         <h1 className="text-white font-bold text-[1.25em] "><span className="text-orange-500">M</span>ilaano <span className="text-orange-500">T</span>ourism </h1>
                     </div>
