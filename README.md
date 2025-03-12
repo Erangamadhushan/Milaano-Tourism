@@ -1,4 +1,0 @@
-# Milaano-Tourism
-
-Repository Structure
-=====================
