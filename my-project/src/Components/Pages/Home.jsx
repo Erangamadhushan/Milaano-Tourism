@@ -40,32 +40,82 @@ function Home() {
                         )
                     })
                 }
-                <div className="flex py-5 w-[100%] max-w-[1320px] mx-auto">
-                    <div className="w-[100%] lg:w-[65%] p-3">
-                        <h2 className="text-blue-500 text-[2em] md:ml-[40px] font-semibold">About Us</h2>
-                        <h2 className="text-xl pt-5 md:ml-[40px]">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
-                        <div class="grid p-3 py-5 mt-5 gap-3  grid-cols-1">
-                            <div className=" border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                <div className="flex flex-row py-5 max-w-[1320px] mx-auto">
+                    <div className="relative w-[100vw] lg:w-[65vw] p-3">
+                        <h2 className="text-[1.5em] py-4 text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
+                        <h2 className="text-[1.25em] lg:text-[1.5em] py-3">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-5 py-[3em]">
+                            <div className="w-[95%] max-w-[400px] mx-auto border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
                                 <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Our rooms are designed to provide you with the ultimate comfort and relaxation. Each room is equipped with modern amenities and stunning views of the ocean.</p>
                             </div>
-                            <div className=" border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                            <div className="w-[95%] max-w-[400px] mx-auto  border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
                                 <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Our staff is dedicated to providing you with exceptional service and ensuring that your stay with us is nothing short of perfect.</p>
                             </div>
-                            <div className="border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                            <div className="w-[95%] max-w-[400px] mx-auto  border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl  font-bold hover:text-white">Staff</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our staff is dedicated to providing you with exceptional service and ensuring that your stay with us is nothing short of perfect.</p>
+                            </div>
+                            <div className="w-[95%] max-w-[400px] mx-auto border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Client</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our clients are our top priority. We strive to provide them with the best possible experience and exceed their expectations.</p>
+                            </div>
+                            <div className="w-[95%] max-w-[400px] mx-auto border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our rooms are designed to provide you with the ultimate comfort and relaxation. Each room is equipped with modern amenities and stunning views of the ocean.</p>
+                            </div>
+                            <div className="w-[95%] max-w-[400px] mx-auto   border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our staff is dedicated to providing you with exceptional service and ensuring that your stay with us is nothing short of perfect.</p>
+                            </div>
+                            <div className="w-[95%] max-w-[400px] mx-auto  border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
+                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                                <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff</h2>
+                                <p className="text-gray-500 text-center group-hover:text-white">Our staff is dedicated to providing you with exceptional service and ensuring that your stay with us is nothing short of perfect.</p>
+                            </div>
+                            <div className="w-[95%] max-w-[400px] mx-auto border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 hover:translate-y-[-10px] duration-500">
                                 <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Client</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Our clients are our top priority. We strive to provide them with the best possible experience and exceed their expectations.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="w-[100%] lg:w-[30%]">
-
-                    </div>
+                    
                 </div>
+                <div className="relative py-5 max-w-[1320px] mx-auto">
+                        <div>
+                            <h2 className="text-center text-blue-500 font-semibold py-5 text-[1.5em] md:text-[2.5em]">Exclusive Hotel Offers</h2>
+                        </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-3 justify-center md:grid-cols-2 gap-5">
+                            <div className="w-[95%] mx-auto border border-blue-500 p-4">
+                                <h2 class="text-center text-[1.5em] text-blue-500 py-3">Weekend Escape Package</h2>
+                                <p class="text-center">Treat yourself to a perfect weekend getaway with our all-inclusive Weekend Escape Package. Enjoy luxurious accommodations for two nights, complimentary breakfast in bed each morning, and a special welcome amenity upon arrival. Unwind with included access to our premium spa facilities and take advantage of late checkout on Sunday. Book now and receive a $50 dining credit to use at any of our award-winning restaurants.</p>
+                            </div>
+                            <div className="w-[95%] mx-auto border border-blue-500 p-4">
+                                <h2 class="text-center text-[1.5em] text-blue-500 py-3">Family Adventure Bundle</h2>
+                                <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children's welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
+                            </div>
+                            <div className="w-[95%] mx-auto border border-blue-500 p-4">
+                                <h2 class="text-center text-[1.5em] text-blue-500 py-3">Business Success Package</h2>
+                                <p class="text-center">Designed for the discerning business traveler, our Business Success Package combines comfort with productivity. Enjoy early check-in and late checkout, premium high-speed Wi-Fi, daily breakfast, and complimentary pressing of two garments per stay. Your package includes access to our executive lounge with all-day refreshments and dedicated workspaces. Plus, receive a $30 credit per day for our 24-hour room service—perfect for those late-night work sessions.</p>
+                            </div>
+                            <div className="w-[95%] mx-auto border border-blue-500 p-4">
+                                <h2 class="text-center text-[1.5em] text-blue-500 py-3">Romantic Getaway</h2>
+                                <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple's massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
+                            </div>
+                            <div className="w-[95%] mx-auto border border-blue-500 p-3">
+                                <h2 class="text-center text-[1.5em] text-blue-500 py-3">Seasonal Special: Winter Warmth Retreat</h2>
+                                <p class="text-center">Escape the winter chill with our limited-time Winter Warmth Retreat. Cozy up in our luxury accommodations with a fireplace, complimentary hot chocolate, and warm cookies delivered daily. Your package includes breakfast each morning and a special winter-themed dinner experience. Take advantage of our indoor heated pool and hot tub facilities, and receive a 20% discount on all spa treatments. Book before December 15th for an additional night free.</p>
+                            </div>
+                        </div>
+                    </div>
                 {/* <div className="grid grid-cols-1 gap-4 p-4 bg-white rounded-lg w-[85%] max-w-[1300px] mx-auto">
                     <h1 className="text-[1.5em] md:text-[3em] py-5 text-black font-semibold text-center">Milaano Tourism </h1>
                     <p className="text-center text-[1.25em] md:text-[1.5em]" >I'd be happy to provide you with some details about Sri Lankan tourism to use as content for your website. Here's some information you might find useful: Sri Lanka is an island nation in South Asia known for its diverse landscapes, rich cultural heritage, and warm hospitality. With its tropical climate, beautiful beaches, ancient cities, and abundant wildlife, it offers a wide range of experiences for tourists.</p>
