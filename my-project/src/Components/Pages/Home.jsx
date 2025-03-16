@@ -116,7 +116,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-[100%] max-w-[1320px]  min-h-[40vh] bg-blue-500 mx-auto flex gap-5">
+                <div className="relative w-[100%] max-w-[1320px]  min-h-[40vh] bg-blue-500 mx-auto my-20 flex gap-5">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="p-5">
                              <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>
@@ -131,7 +131,7 @@ function Home() {
                     </div>
                 </div>
                 
-                <div className="relative w-[100%] max-w-[1320px] mx-auto flex gap-5">
+                {/* <div className="relative w-[100%] max-w-[1320px] mx-auto flex gap-5">
                     <div className="grid py-5 w-[100%] lg:w-[75%] md:w-[70%]">
                         {
                             latest.map((item, index) => {
@@ -177,10 +177,10 @@ function Home() {
                             })
                         }
                     </div>
-                </div>
+                </div> */}
             </div>
 
-            <div className="grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10" >
+            <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10" >
                 <div className="p-5" >
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-black">Destination  Guide</h2>
@@ -205,7 +205,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 p-5 py-10">
+            <div className="relative w-[100%] max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 p-5 py-10">
                 <div className="p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015322.2095558839!2d80.18777706428749!3d6.250238567687185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bad9013377%3A0x44238fe850f6f47e!2sSouthern%20Province!5e0!3m2!1sen!2slk!4v1736763874158!5m2!1sen!2slk" loading="lazy" style={{width:'95%',margin:'auto',height:'350px'}} referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -301,17 +301,17 @@ function Home() {
                 </div>
             </div>
 
-            <div className=" p-5 bg-bg-mainColor my-1">
+            <div className="relative w-[100%] max-w-[1320px] mx-auto p-5 bg-mainColor my-1">
                 <div>
-                    <h3 className="text-3xl px-5 font-semibold text-white">Subscribe Our Newslatter</h3>
+                    <h3 className="text-3xl px-5 font-semibold text-blue-500">Subscribe Our Newslatter</h3>
                 </div>
                 <form action="">
                     <div className=" grid grid-cols-1 content-center items-center justify-center p-5 gap-3 md:grid-cols-2">
                         <div className="w-full">
-                            <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-green-400 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
+                            <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-blue-400 text-blue-500 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
                         </div>
                         <div className="">
-                            <input type="submit" className=" text-lg bg-red-600 text-white p-4 px-7 hover:bg-red-500" value="Subscribe"/>
+                            <input type="submit" className=" text-lg bg-blue-600 text-white p-4 px-7 hover:bg-blue-800" value="Subscribe"/>
                         </div>
                     </div>
                 </form>

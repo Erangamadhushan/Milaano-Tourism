@@ -15,21 +15,21 @@ function Header() {
             <div className="grid">
                 <nav className="bg-blue-600 grid grid-cols-2 justify-between items-baseline space-x-5 p-5 sticky left-0 top-0">
                     <div className="">
-                        <h1 className="text-white font-bold text-[1.25em] "><span className="text-orange-500">M</span>ILAANO <span className="text-orange-500">T</span>OURISM </h1>
+                        <h1 className="text-white font-bold text-[1.25em] "><span className="text-blue-950">M</span>ILAANO <span className="text-blue-950">T</span>OURISM </h1>
                     </div>
                     <div className="hidden md:block ">
                         <ul className="flex justify-start space-x-5">
                             <li>
-                                <Link to="/" className="text-white text-bold text-xl hover:text-orange-400">HOME</Link>
+                                <Link to="/" className="text-white text-bold text-xl hover:text-blue-950">HOME</Link>
                             </li>
                             <li>
-                                <Link to="/aboutus" className="text-white text-bold text-xl hover:text-orange-400">ABOUT</Link>
+                                <Link to="/aboutus" className="text-white text-bold text-xl hover:text-blue-950">ABOUT</Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="text-white text-bold text-xl hover:text-orange-400">CONTACT</Link>
+                                <Link to="/contact" className="text-white text-bold text-xl hover:text-blue-950">CONTACT</Link>
                             </li>
                             <li>
-                                <Link to="/service" className="text-white text-bold text-xl hover:text-orange-400">SERVICES</Link>
+                                <Link to="/service" className="text-white text-bold text-xl hover:text-blue-950">SERVICES</Link>
                             </li>
                         </ul>
                     </div>
