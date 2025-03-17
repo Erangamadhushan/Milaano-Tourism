@@ -1,4 +1,5 @@
 import React  from "react";
+import useScrollReveal from '../../hooks/scrollReveal.js';
 export default function AboutUs() {
     return (
         <>
