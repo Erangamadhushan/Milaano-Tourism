@@ -2,9 +2,10 @@ import React  from "react";
 import { services, subServices } from "../../assets/Services/content";
 import useScrollReveal from '../../hooks/scrollReveal.js';
 export default function Service() {
+    useScrollReveal();
     return (
         <>
-            <div className="grid py-5 my-10" >
+            <div className="grid py-5 my-10 scroll-up" >
                 <h2 className="text-[2.5em] text-center text-blue-500">Welcome to Milaano Tourism - Your Complete Travel Solutions </h2>
                 <p className="text-center text-[1.25em] text-blue-500"> Your gateway to unforgettable experience and luxury accommodations</p>
             </div>
@@ -14,7 +15,7 @@ export default function Service() {
                     {
                         services.map((service, index) => {
                             return (
-                                <div className="p-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                                <div className="p-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg scroll-reveal" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                                     <h2 className="text-3xl font-bold text-blue-500 pb-3 ">{service.title}</h2>
                                     <hr/>
                                     <h3 className="text-2xl font-semibold text-blue-500 py-3 underline">{service.subTitle}</h3>

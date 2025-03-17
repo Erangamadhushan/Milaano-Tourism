@@ -1,3 +1,10 @@
+import address from './address.png';
+import contact from './contact.png';
+import follow from './follow.png';
+import information from './information.png';
+import lasthours from './lasthours.png';
+import response from './response.png';
+
 export const services = [
     {
         title:"Luxury Hotels & Accommodations",
