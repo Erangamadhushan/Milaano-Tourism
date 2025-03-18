@@ -12,8 +12,8 @@ function Findout() {
                     </h2>
                 </div>
             </div>
-            <div className="w-[95%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 mx-auto p-5 py-10 my-10 shadow-md" id={destinationGuide.bestTime.title}>
-                <div>
+            <div className="w-[95%] scroll-up max-w-[1200px] grid grid-cols-1 md:grid-cols-2 mx-auto p-5 py-10 my-10 shadow-md" id={destinationGuide.bestTime.title}>
+                <div className="scroll-up">
                     <h2 className=" text-[1.75em] md:text-[2.5em] text-blue-500 font-semibold py-2">
                         {destinationGuide.bestTime.title}
                     </h2>
@@ -61,7 +61,7 @@ function Findout() {
                 </div>
             </div>
             <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.practicalInformation.title}>
-                <h2 className="text-[2em] font-bold text-co py-2">{destinationGuide.practicalInformation.title}</h2>
+                <h2 className="text-[2.5em] font-semibold text-blue-500 py-2">{destinationGuide.practicalInformation.title}</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     {
                         destinationGuide.practicalInformation.description.map((element) => {
@@ -111,8 +111,8 @@ function Findout() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-10">
-                <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.packingEssentials.title}>
+            <div className="grid grid-cols-1 lg:grid-cols-2 content-center gap-4 py-10">
+                <div className="w-[95%] max-w-[500px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.packingEssentials.title}>
                     <h2 className="py-2 text-[2em] font-bold">{destinationGuide.packingEssentials.title}</h2>
                     {
                         destinationGuide.packingEssentials.example.map((component) => {
@@ -123,7 +123,7 @@ function Findout() {
                     }
                 </div>
 
-                <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.commonExpenses.title}>
+                <div className="w-[95%] max-w-[500px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.commonExpenses.title}>
                     <h2 className="py-2 text-[2em] font-bold">{destinationGuide.commonExpenses.title}</h2>
                     {
                         destinationGuide.commonExpenses.example.map((component) => {
@@ -134,29 +134,29 @@ function Findout() {
                     }
                 </div>
 
-                <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.budgetConsideration.title}>
-                    <h2 className="py-2 text-[2em] font-bold">{destinationGuide.budgetConsideration.title}</h2>
+                <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.budgetConsideration.title}>
+                    <h2 className="py-2 text-blue-500 text-[1.75em] md:text-[2.2em] font-bold">{destinationGuide.budgetConsideration.title}</h2>
                     {
                         destinationGuide.budgetConsideration.example.map((component) => {
                             return (
-                                <p className="text-semibold text-[1.05em]">{component}</p>
+                                <p className="text-semibold py-1 text-[1.05em]">{component}</p>
                             )
                         })
                     }
                 </div>
 
-                <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md">
-                    <h2 className="py-2 text-[2em] font-bold">Additional Tips For You </h2>
+                <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md">
+                    <h2 className="py-2 text-[2.2em] text-blue-500 font-bold">Additional Tips For You </h2>
                     {
                         destinationGuide.others.map((component) => {
                             return (
-                                <div className="p-5 my-5 border-2 border-blue-400">
-                                    <h2 className="py-2 text-2xl font-semibold">{component.title}</h2>
+                                <div className="p-5 my-5 border-2 scroll-up">
+                                    <h2 className="py-4 text-2xl font-semibold text-blue-500">{component.title}</h2>
                                     <ul>
                                         {
                                             component.example.map((tip) => {
                                                 return (
-                                                    <li className="text-semibold text-[1.05em]">{tip}</li>
+                                                    <li className="text-semibold py-1 text-[1.05em]">{tip}</li>
                                                 )
                                             })
                                         }
