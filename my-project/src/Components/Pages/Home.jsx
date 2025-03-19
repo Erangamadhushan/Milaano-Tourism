@@ -19,7 +19,7 @@ function Home() {
     }
     return (
         <>
-            <div className="grid gap-5">
+            <div className="grid gap-5 bg-blue-50">
                 {
                     mainImg.map((item) => {
                         return (
@@ -39,7 +39,7 @@ function Home() {
                         )
                     })
                 }
-                <div className="flex flex-row py-5 max-w-[1320px] mx-auto">
+                <div className="flex flex-row py-5 max-w-[1320px] mx-auto ">
                     <div className="relative w-[100vw] lg:w-[65vw] p-3">
                         <h2 className="text-[1.5em] py-4 text-center lg:text-justify text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
                         <h2 className="text-[1.25em] lg:text-[1.5em] py-3">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
@@ -92,24 +92,25 @@ function Home() {
                     <div>
                         <h2 className="text-center text-blue-500 font-semibold py-5 text-[1.5em] md:text-[2.5em]">Exclusive Hotel Offers</h2>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 justify-center md:grid-cols-2 gap-5 ">
+                    {/*  */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 justify-center md:grid-cols-2 place-content-center gap-5 gap-y-[3em] ">
                         <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Weekend Escape Package</h2>
                             <p class="text-center">Treat yourself to a perfect weekend getaway with our all-inclusive Weekend Escape Package. Enjoy luxurious accommodations for two nights, complimentary breakfast in bed each morning, and a special welcome amenity upon arrival. Unwind with included access to our premium spa facilities and take advantage of late checkout on Sunday. Book now and receive a $50 dining credit to use at any of our award-winning restaurants.</p>
                         </div>
-                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
+                        <div className="w-[95%]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Family Adventure Bundle</h2>
                             <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children's welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
                         </div>
-                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
+                        <div className="w-[95%]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Business Success Package</h2>
                             <p class="text-center">Designed for the discerning business traveler, our Business Success Package combines comfort with productivity. Enjoy early check-in and late checkout, premium high-speed Wi-Fi, daily breakfast, and complimentary pressing of two garments per stay. Your package includes access to our executive lounge with all-day refreshments and dedicated workspaces. Plus, receive a $30 credit per day for our 24-hour room service—perfect for those late-night work sessions.</p>
                         </div>
-                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
+                        <div className="w-[95%]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Romantic Getaway</h2>
                             <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple's massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
                         </div>
-                        <div className="w-[95%] mx-auto  p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
+                        <div className="w-[95%]  mx-auto  p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Seasonal Special: Winter Warmth Retreat</h2>
                             <p class="text-center">Escape the winter chill with our limited-time Winter Warmth Retreat. Cozy up in our luxury accommodations with a fireplace, complimentary hot chocolate, and warm cookies delivered daily. Your package includes breakfast each morning and a special winter-themed dinner experience. Take advantage of our indoor heated pool and hot tub facilities, and receive a 20% discount on all spa treatments. Book before December 15th for an additional night free.</p>
                         </div>
@@ -133,7 +134,7 @@ function Home() {
                 
             </div>
 
-            <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10" >
+            <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10 scroll-reveal" >
                 <div className="p-5" >
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-black">Destination  Guide</h2>
@@ -148,7 +149,7 @@ function Home() {
                             return (
                                 <>
                                     <div className="" >
-                                        <img className="max-h-[300px]" src={item} alt=""/>
+                                        <img className="h-uato w-full object-cover" src={item} alt=""/>
                                     </div>
                                     
                                 </>
@@ -264,7 +265,7 @@ function Home() {
                             <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-blue-400 text-blue-500 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
                         </div>
                         <div className="">
-                            <input type="submit" className=" text-lg bg-blue-600 text-white p-4 px-7 hover:bg-blue-800" value="Subscribe"/>
+                            <input type="submit" className=" text-lg bg-blue-600 text-white p-4 px-7 hover:bg-blue-800 cursor-pointer" value="Subscribe"/>
                         </div>
                     </div>
                 </form>
