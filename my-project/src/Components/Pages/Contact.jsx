@@ -21,7 +21,7 @@ export default function Contact() {
                     })
                 }
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div className="shadow-md scroll-up p-5 my-10 min-h-[200px] grid items-center duration-300  hover:text-coral ">
+                    <div className="shadow-lg shadow-blue-400 scroll-up p-5 my-10 min-h-[200px] grid items-center duration-300  hover:text-coral ">
                         <h3 className="text-2xl text-blue-500">{contactContent[0].addressTitle}</h3>
                         <ul>
                             {
@@ -34,7 +34,7 @@ export default function Contact() {
                         </ul>
                     </div>
 
-                    <div className="shadow-md p-5  my-10 scroll-up min-h-[200px] grid items-center  duration-300 ">
+                    <div className="shadow-lg shadow-blue-500 p-5  my-10 scroll-up min-h-[200px] grid items-center  duration-300 ">
                         <div className=" scroll-up">
                             <p className="text-2xl text-blue-500">{contactContent[1].informationTitle}</p>
                             <p>Email : {contactContent[1].email}</p>
@@ -42,7 +42,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-md p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 ">
+                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 ">
                         <div className="scroll-up">
                             <p className="text-2xl text-blue-500">{contactContent[2].operationTitle}</p>
                             <p>{contactContent[2].duration1}</p>
@@ -50,7 +50,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-md p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
+                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
                         <div className="scroll-up">
                             <h3 className="text-2xl text-blue-500">{contactContent[3].responseTitle}</h3>
                             <ul>
@@ -65,7 +65,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-md p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
+                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
                         <div className="scroll-up">
                             <h3 className="text-blue-500 text-2xl">{contactContent[4].socialTitle}</h3>
                             <ul>
@@ -80,7 +80,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-md p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
+                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
                         <div className="scroll-up">
                             <h3 className="text-2xl text-blue-500">{contactContent[5].additinalInformation}</h3>
                             <ul>

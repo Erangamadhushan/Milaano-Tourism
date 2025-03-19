@@ -41,7 +41,7 @@ function Home() {
                 }
                 <div className="flex flex-row py-5 max-w-[1320px] mx-auto">
                     <div className="relative w-[100vw] lg:w-[65vw] p-3">
-                        <h2 className="text-[1.5em] py-4 text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
+                        <h2 className="text-[1.5em] py-4 text-center lg:text-justify text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
                         <h2 className="text-[1.25em] lg:text-[1.5em] py-3">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-5 py-[3em]">
                             <div className="w-[95%] scroll-items max-w-[400px] mx-auto border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 duration-500 ">
@@ -93,23 +93,23 @@ function Home() {
                         <h2 className="text-center text-blue-500 font-semibold py-5 text-[1.5em] md:text-[2.5em]">Exclusive Hotel Offers</h2>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-3 justify-center md:grid-cols-2 gap-5 ">
-                        <div className="w-[95%] mx-auto p-4 shadow-xl hover:shadow-2xl scroll-up">
+                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Weekend Escape Package</h2>
                             <p class="text-center">Treat yourself to a perfect weekend getaway with our all-inclusive Weekend Escape Package. Enjoy luxurious accommodations for two nights, complimentary breakfast in bed each morning, and a special welcome amenity upon arrival. Unwind with included access to our premium spa facilities and take advantage of late checkout on Sunday. Book now and receive a $50 dining credit to use at any of our award-winning restaurants.</p>
                         </div>
-                        <div className="w-[95%] mx-auto p-4 shadow-xl hover:shadow-2xl scroll-up">
+                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Family Adventure Bundle</h2>
                             <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children's welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
                         </div>
-                        <div className="w-[95%] mx-auto p-4 shadow-xl hover:shadow-2xl scroll-up">
+                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Business Success Package</h2>
                             <p class="text-center">Designed for the discerning business traveler, our Business Success Package combines comfort with productivity. Enjoy early check-in and late checkout, premium high-speed Wi-Fi, daily breakfast, and complimentary pressing of two garments per stay. Your package includes access to our executive lounge with all-day refreshments and dedicated workspaces. Plus, receive a $30 credit per day for our 24-hour room service—perfect for those late-night work sessions.</p>
                         </div>
-                        <div className="w-[95%] mx-auto p-4 shadow-xl hover:shadow-2xl scroll-up">
+                        <div className="w-[95%] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Romantic Getaway</h2>
                             <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple's massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
                         </div>
-                        <div className="w-[95%] mx-auto  p-4 shadow-xl hover:shadow-2xl scroll-up">
+                        <div className="w-[95%] mx-auto  p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Seasonal Special: Winter Warmth Retreat</h2>
                             <p class="text-center">Escape the winter chill with our limited-time Winter Warmth Retreat. Cozy up in our luxury accommodations with a fireplace, complimentary hot chocolate, and warm cookies delivered daily. Your package includes breakfast each morning and a special winter-themed dinner experience. Take advantage of our indoor heated pool and hot tub facilities, and receive a 20% discount on all spa treatments. Book before December 15th for an additional night free.</p>
                         </div>
@@ -130,53 +130,7 @@ function Home() {
                     </div>
                 </div>
                 
-                {/* <div className="relative w-[100%] max-w-[1320px] mx-auto flex gap-5">
-                    <div className="grid py-5 w-[100%] lg:w-[75%] md:w-[70%]">
-                        {
-                            latest.map((item, index) => {
-                                return (
-                                    <div className="my-5 shadow-lg hover:shadow-md" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
-                                        <div className="grid grid-cols-1 lg:grid-cols-2 py-5 rounded-md ">
-                                            <div className="p-3">
-                                                <img className="" src={item} alt="lorem20"/>
-                                            </div>
-                                            <div className="p-5">
-                                                <h1 className="text-2xl text-center text-blue-400 font-bold">Lorem, ipsum</h1>
-                                                <p className="text-center" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minima provident sed vel commodi repudiandae expedita, iste dolor molestiae distinctio doloribus debitis laudantium placeat alias aperiam nulla? Libero ipsa nulla veritatis numquam cumque dicta, reiciendis earum optio! Sequi fugit consequuntur aspernatur odio, culpa tempore debitis animi id soluta delectus placeat.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="grid py-5 w-[100%] lg:w-[20%] md:w-[25%]">
-                        <div>
-                            <h2 className=" text-center text-4xl text-black font-semibold ">News and Latest Event..</h2>
-                        </div>
-                        {
-                            events.map((item, index) => {
-                                return (
-                                    <div className="w-[80vw] my-5 mx-auto max-w-[350px] shadow-md hover:shadow-lg  overflow-hidden object-cover text-center ">
-                                        <div className="grid grid-cols-1 rounded-md shadow-md group" >
-                                            <div className="p-3">
-                                                <img className="max-h-[300px]" src={item.img} alt={item.desc}/>
-                                            </div>
-                                            <div className="p-3">
-                                                <h2 className=" text-2xl text-center text-blue-500">{item.title}</h2>
-                                                <p>{item.desc}</p>
-                                            </div>
-                                            <div className="p-3 my-3">
-                                                <a href="/aboutus" className=" p-3 bg-blue-500 border text-white rounded-lg group-hover:bg-transparent transition-[3s] group-hover:border-blue-500 group-hover:text-blue-500">Explorer More ..</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div> */}
+                
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10" >
