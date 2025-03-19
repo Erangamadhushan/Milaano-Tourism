@@ -100,7 +100,7 @@ export default function Contact() {
                 <h2 className="text-3xl text-blue-500">Who We are ?</h2>
             </div>
             <div className="py-[20px] my-5 flex flex-wrap gap-5 justify-center items-center">
-                
+{/*                 
                 {
                     developers.map((developer, $index) => {
                         return (
@@ -117,7 +117,7 @@ export default function Contact() {
                             </div>
                         )
                     })
-                }
+                } */}
             </div>
         </>
     )

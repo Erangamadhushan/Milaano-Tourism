@@ -66,8 +66,8 @@ function Findout() {
                     {
                         destinationGuide.practicalInformation.description.map((element) => {
                             return (
-                                <div className="py-4">
-                                <h3 className="text-[1.5em] text-coral font-bold py-2">{element.title}</h3> 
+                                <div className="py-4 scroll-reveal">
+                                <h3 className="text-[1.5em] text-coral text-blue-500 font-bold py-2">{element.title}</h3> 
                                 <h4 className="text-[1.1em] font-semibold py-2">{element.content}</h4>
                                 <ul>
                                         {
@@ -86,14 +86,14 @@ function Findout() {
             </div>
 
             <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.sampleItineraries.title}>
-                <h2 className="text-[2em] font-bold">{destinationGuide.sampleItineraries.title}</h2>
+                <h2 className="text-[2em] font-bold text-blue-500">{destinationGuide.sampleItineraries.title}</h2>
                 <p>{destinationGuide.sampleItineraries.content}</p>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     {
                         destinationGuide.sampleItineraries.example.map((component) => {
                             return (
                                 <div className="py-4">
-                                    <h3 className="text-[1.5em] text-coral py-2">{component.title}</h3>
+                                    <h3 className="text-[1.5em] text-coral py-2 text-blue-500">{component.title}</h3>
                                     <p>{component.content}</p>
                                     <ul>
                                         {
@@ -111,8 +111,8 @@ function Findout() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 content-center gap-4 py-10">
-                <div className="w-[95%] max-w-[500px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.packingEssentials.title}>
+            <div className="grid grid-cols-1 lg:grid-cols-2 -center gap-4 py-10">
+                <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.packingEssentials.title}>
                     <h2 className="py-2 text-[2em] font-bold">{destinationGuide.packingEssentials.title}</h2>
                     {
                         destinationGuide.packingEssentials.example.map((component) => {
@@ -123,7 +123,7 @@ function Findout() {
                     }
                 </div>
 
-                <div className="w-[95%] max-w-[500px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.commonExpenses.title}>
+                <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.commonExpenses.title}>
                     <h2 className="py-2 text-[2em] font-bold">{destinationGuide.commonExpenses.title}</h2>
                     {
                         destinationGuide.commonExpenses.example.map((component) => {
@@ -133,7 +133,8 @@ function Findout() {
                         })
                     }
                 </div>
-
+            </div>
+            <div>
                 <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.budgetConsideration.title}>
                     <h2 className="py-2 text-blue-500 text-[1.75em] md:text-[2.2em] font-bold">{destinationGuide.budgetConsideration.title}</h2>
                     {

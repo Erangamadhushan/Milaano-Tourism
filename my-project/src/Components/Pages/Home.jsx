@@ -6,9 +6,6 @@ import useScrollReveal from '../../hooks/scrollReveal.js';
 function Home() {
 
     useScrollReveal();
-    // const showAlert = () => {
-    //     Swal.fire('Hello!', 'This is a SweetAlert2 alert.', 'success');
-    // };
     const myImgStyles = {
         backgroundSize:"cover"
     }
