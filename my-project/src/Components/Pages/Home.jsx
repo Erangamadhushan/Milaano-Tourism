@@ -121,11 +121,11 @@ function Home() {
                         <div className="p-5">
                              <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>
                              <p className="text-white text-[1.25em] md:text-[1.75] py-5">Our opulent rooms and suites redefine luxury with handcrafted furniture, Egyptian cotton linens, and panoramic views. Indulge in marble bathrooms with rainfall showers, smart climate control, and curated mini-bars featuring artisanal selections for an unparalleled retreat.</p>
-                             <button className=" hover:bg-blue-400 m-4 p-5 hover:text-white duration-300 bg-white text-blue-500 font-bold ">Book Room</button>
+                             <a href="/bookroom" className=" hover:bg-blue-400 m-4 my-10 p-5 hover:text-white duration-300 bg-white text-blue-500 font-bold ">Book Room</a>
                         </div>
                         <div className="" style={{backgroundImage:`url(${luxuryRoomImg})`,backgroundSize:"cover"}}>
                             <div className="bg-[#2222226b] w-full h-full flex justify-center items-center">
-                                <h2 className="text-lg text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta qui temporibus ipsum sed hic consequatur id fugit pariatur? Nesciunt velit, minus laboriosam veniam totam voluptates earum molestias, iusto placeat tenetur maxime aliquam nostrum reprehenderit!</h2>
+                                <p  className="text-lg text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta qui temporibus ipsum sed hic consequatur id fugit pariatur? Nesciunt velit, minus laboriosam veniam totam voluptates earum molestias, iusto placeat tenetur maxime aliquam nostrum reprehenderit!</p>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@ function Home() {
                                 <img src={recaps[0]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                {/* input content here */}
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 group" style={subContentParent} >
@@ -191,7 +191,7 @@ function Home() {
                                     <img src={recaps[1]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                    {/* input content here */}
                                 </div>
                             </div>
                             <div style={subContentParent} className="group">
@@ -199,7 +199,7 @@ function Home() {
                                     <img src={recaps[2]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                    {/* input content here */}
                                 </div>
                             </div>
                         </div>
@@ -208,7 +208,7 @@ function Home() {
                                 <img src={recaps[3]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                {/* input content here */}
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ function Home() {
                                     <img src={recaps[4]} class="w-[100%] " style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                    {/* input content here */}
                                 </div>
                             </div>
                             <div style={subContentParent} >
@@ -228,7 +228,7 @@ function Home() {
                                         <img src={recaps[7]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                     </div>
                                     <div style={myhoverContent} className="hidden  group-hover:flex">
-                                        <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                        {/* input content here */}
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ function Home() {
                                 <img src={recaps[6]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                {/* input content here */}
                             </div>
                         </div>
                         <div className="grid">
@@ -247,7 +247,7 @@ function Home() {
                                     <img src={recaps[8]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam numquam delectus odio velit dolores in rerum quibusdam natus fugiat, at impedit error dolorum totam blanditiis tempora ut assumenda deserunt consectetur architecto.</p>
+                                    {/* input content here */}
                                 </div> 
                             </div>
                         </div>
