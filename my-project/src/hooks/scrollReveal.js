@@ -30,6 +30,11 @@ const useScrollReveal = (options = {}) => {
       dealy: 300
     }
 
+    sr.reveal(`.scroll-down`, {
+      origin: 'top',
+      interval: 100,
+
+    })
     return () => sr.destroy();
   }, [options]);
 };

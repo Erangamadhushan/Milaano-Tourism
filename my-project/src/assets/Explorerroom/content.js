@@ -1,8 +1,17 @@
+import babyroom from './BabyRoom.jpg';
+import familyroom from './FamilyRoom.jpg';
+import LuxuryRoom from './LuxuryRoom.jpg';
+import EconomyRoom from './EconomyRoom.jpg';
+
+const roomCategory = [babyroom, familyroom, LuxuryRoom, EconomyRoom];
+// This file contains the content for the room categories in a hotel booking application.
+// This file contains the content for the room categories in a hotel booking application.
 export const roomContent = [
     {
         room_type:"Standard/Economy Room",
         room_price: 1000,
         room_capacity: 2,
+        room_image:roomCategory[0],
         room_description: "A standard room with basic amenities. Suitable for budget travelers.",
         room_features: [
             "Most basic and affordable room type",
@@ -15,6 +24,7 @@ export const roomContent = [
         room_type: "Deluxe Room",
         room_price: 2000,
         room_capacity: 3,
+        room_image:roomCategory[1],
         room_description: "A step up from standard rooms, offering more space and better amenities.",
         room_features: [
             "Slightly upgraded from standard rooms",
@@ -28,6 +38,7 @@ export const roomContent = [
         room_type: "Luxury Room",
         room_price: 3000,
         room_capacity: 4,
+        room_image:roomCategory[2],
         room_description: "High-end rooms with premium amenities and services.",
         room_features: [
             "High-end accommodation with premium amenities",
@@ -41,6 +52,7 @@ export const roomContent = [
         room_type: "Suite Room",
         room_price: 5000,
         room_capacity: 4,
+        room_image:roomCategory[3],
         room_description: "Spacious rooms with separate living areas and luxury amenities.",
         room_features: [
             "Separate living and sleeping areas",
@@ -54,6 +66,7 @@ export const roomContent = [
         room_type: "Executive Room",
         room_price: 8000,
         room_capacity: 4,
+        room_image:roomCategory[0],
         room_description: "Rooms designed for business travelers with additional amenities.",
         room_features: [
             "Designed for business traverlers",
@@ -67,6 +80,7 @@ export const roomContent = [
         room_type: "Family Room",
         room_price: 6000,
         room_capacity: 5,
+        room_image:roomCategory[1],
         room_description: "Larger rooms or suites designed to accommodate families.",
         room_description: [
             "Specifically designed for families",
@@ -80,6 +94,7 @@ export const roomContent = [
         room_type: "Accessible Room",
         room_price: 6500,
         room_capacity: 2,
+        room_image:roomCategory[2],
         room_description: "Rooms designed for guests with mobility or accessibility needs.",
         room_features: [
             "Specially designed for guests with disabilities",
@@ -92,6 +107,7 @@ export const roomContent = [
         room_type: "Penthouse Room",
         room_price: 10000,
         room_capacity: 4,
+        room_image:roomCategory[3],
         room_description: "Luxury rooms located on the top floor with stunning views.",
         room_features: [
             "Top-floor accommodation with panoramic views",
