@@ -43,8 +43,10 @@ function Home() {
                 }
                 <div className="flex flex-row py-5 max-w-[1320px] mx-auto ">
                     <div className="relative w-[100vw] lg:w-[65vw] p-3">
-                        <h2 className="text-[1.5em] py-4 text-center lg:text-justify text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
-                        <h2 className="text-[1.25em] lg:text-[1.5em] py-3">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
+                        <div className="scroll-up">
+                            <h2 className="text-[1.5em] py-4 text-center lg:text-justify text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
+                            <h2 className="text-[1.25em] lg:text-[1.5em] py-3">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
+                        </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-5 py-[3em]">
                             <div className="w-[95%] scroll-items max-w-[400px] mx-auto border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 duration-500 ">
                                 <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
@@ -92,7 +94,7 @@ function Home() {
                 </div>
                 <div className="relative py-5 max-w-[1320px] mx-auto">
                     <div>
-                        <h2 className="text-center text-blue-500 font-semibold py-5 text-[1.5em] md:text-[2.5em]">Exclusive Hotel Offers</h2>
+                        <h2 className="text-center text-blue-500 font-semibold py-5 text-[1.5em] md:text-[2.5em] scroll-reveal">Exclusive Hotel Offers</h2>
                     </div>
                     {/*  */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 justify-center md:grid-cols-2 place-content-center gap-5 gap-y-[3em] ">
@@ -118,8 +120,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-[100%] max-w-[1320px]  min-h-[40vh] bg-blue-500 mx-auto my-20 flex gap-5">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="relative w-[100%] max-w-[1320px] scroll-up  min-h-[40vh] bg-blue-500 mx-auto my-20 flex gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 ">
                         <div className="p-5">
                              <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>
                              <p className="text-white text-[1.25em] md:text-[1.75] py-5">Our opulent rooms and suites redefine luxury with handcrafted furniture, Egyptian cotton linens, and panoramic views. Indulge in marble bathrooms with rainfall showers, smart climate control, and curated mini-bars featuring artisanal selections for an unparalleled retreat.</p>

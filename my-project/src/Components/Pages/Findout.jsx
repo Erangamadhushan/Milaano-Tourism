@@ -111,9 +111,9 @@ function Findout() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 -center gap-4 py-10">
-                <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.packingEssentials.title}>
-                    <h2 className="py-2 text-[2em] font-bold">{destinationGuide.packingEssentials.title}</h2>
+            <div className="flex flex-wrap justify-center items-center content-stretch gap-5 py-10">
+                <div className="w-[95%] max-w-[500px] min-h-[380px] py-10  p-5 my-5 shadow-md shadow-blue-400 scroll-up" id={destinationGuide.packingEssentials.title}>
+                    <h2 className="py-2 text-[2em] font-bold text-blue-500">{destinationGuide.packingEssentials.title}</h2>
                     {
                         destinationGuide.packingEssentials.example.map((component) => {
                             return (
@@ -123,8 +123,8 @@ function Findout() {
                     }
                 </div>
 
-                <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.commonExpenses.title}>
-                    <h2 className="py-2 text-[2em] font-bold">{destinationGuide.commonExpenses.title}</h2>
+                <div className="w-[95%] max-w-[500px] min-h-[380px] py-10 p-5 my-5 shadow-md shadow-blue-400 scroll-up" id={destinationGuide.commonExpenses.title}>
+                    <h2 className="py-2 text-[2em] font-bold text-blue-500">{destinationGuide.commonExpenses.title}</h2>
                     {
                         destinationGuide.commonExpenses.example.map((component) => {
                             return (
@@ -134,7 +134,7 @@ function Findout() {
                     }
                 </div>
             </div>
-            <div>
+            <div className="flex flex-wrap justify-center items-center gap-5 ">
                 <div className="w-[95%] max-w-[600px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.budgetConsideration.title}>
                     <h2 className="py-2 text-blue-500 text-[1.75em] md:text-[2.2em] font-bold">{destinationGuide.budgetConsideration.title}</h2>
                     {
@@ -151,7 +151,7 @@ function Findout() {
                     {
                         destinationGuide.others.map((component) => {
                             return (
-                                <div className="p-5 my-5 border-2 scroll-up">
+                                <div className="p-5 my-5 scroll-up">
                                     <h2 className="py-4 text-2xl font-semibold text-blue-500">{component.title}</h2>
                                     <ul>
                                         {
