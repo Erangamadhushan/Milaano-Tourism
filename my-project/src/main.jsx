@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
-import {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore} from './Components/Pages'
+import {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, Notfound} from './Components/Pages'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +15,8 @@ const router = createBrowserRouter(
       <Route path="findout" element={<Findout/>}/>
       <Route path="bookroom" element={<BookRoom/>}/>
       <Route path="explorermore" element={<Explorermore/>}/>
+      <Route path="exploreroom" element={<Exploreroom/>}/>
+      <Route path="*" element={<Notfound/>}/>
     </Route>
 
   )

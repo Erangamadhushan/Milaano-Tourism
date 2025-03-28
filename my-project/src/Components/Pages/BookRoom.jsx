@@ -1,32 +1,39 @@
-import React  from "react";
+import React, {useState}  from "react";
 import useScrollReveal from '../../hooks/scrollReveal.js';
 
 function BookRoom() {
     useScrollReveal();
-    const countries = [
-        'United States', 
-        'Canada', 
-        'United Kingdom', 
-        'Australia', 
-        'Germany', 
-        'France', 
-        'Japan', 
-        'China', 
-        'India', 
-        'Brazil'
-      ];
-
-      const handleCountryChange = (selectedCountry) => {
-        setFormData(prevState => ({
-          ...prevState,
-          country: selectedCountry
-        }));
-      };
+    const [room ,setRoom] = useState("");
+    const roomTypes = [
+        "Single Room",
+        "Double Room",
+        "Deluxe Room",
+        "Suite Room",
+        "Family Room",
+        "Presidential Room",
+        "Luxury Room",
+        "Executive Room",
+        "Standard Room",
+        "Superior Room",
+        "Economy Room",
+        "Budget Room",
+        "Penthouse Room",
+        "Studio Room",
+        "Loft Room",
+        "Bungalow Room",
+    ]
     return (
         <>
             <div className="">
                 <div className="w-[95%] mx-auto max-w-[1200px] my-10 scroll-up">
                     <h3 className="py-3 text-[1.25em] md:text-[2em] text-center text-blue-500">Sri Lanka's luxury hotels blend traditional hospitality with modern extravagance to create memorable experiences for discerning guests.</h3>
+                    <div className="text-center text-lg text-gray-500 py-3 font-bold">
+                        <div className="py-10 ">
+                            <a href="/explorerooms" className="text-white bg-blue-500 p-4 px-10 cursor-pointer my-10 hover:bg-blue-700">Explore</a>
+                        </div>
+                        <p> the best hotels in Sri Lanka, where luxury meets comfort and hospitality. From stunning beachfront resorts to serene mountain retreats, we have the perfect accommodation for your dream getaway.
+                        <br /> Whether you're seeking a romantic escape, a family adventure, or a solo retreat, our curated selection of hotels offers something for everyone. Indulge in world-class amenities, exquisite dining options, and breathtaking views that will leave you in awe. Experience the warmth of Sri Lankan hospitality and create unforgettable memories during your stay.</p>
+                    </div>
                 </div>
                 <div className="w-[95%]  mx-auto max-w-[1000px] grid my-5">
                     <div>
@@ -64,20 +71,15 @@ function BookRoom() {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                <Select 
-                                    onValueChange={handleCountryChange}
-                                    value={country}>
-                                    <SelectTrigger>
-                                        <SelectValue placeholder="Select your country" />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                    {countries.map((country) => (
-                                        <SelectItem key={country} value={country}>
-                                        {country}
-                                        </SelectItem>
-                                    ))}
-                                    </SelectContent>
-                                </Select>
+                                    <select onSelect={(e) => setRoom(e.target.value)} className="border border-gray-200 p-2 rounded-lg w-[85%]">
+                                        {
+                                            roomTypes.map((roomType) => {
+                                                return (
+                                                    <option value={roomType} key={roomType}>{roomType}</option>
+                                                )
+                                            })
+                                        }
+                                    </select>
                                 </div>
                             </div>
                         </div>
