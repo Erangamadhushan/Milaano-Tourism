@@ -29,7 +29,7 @@ function BookRoom() {
                     <h3 className="py-3 text-[1.25em] md:text-[2em] text-center text-blue-500">Sri Lanka's luxury hotels blend traditional hospitality with modern extravagance to create memorable experiences for discerning guests.</h3>
                     <div className="text-center text-lg text-gray-500 py-3 font-bold">
                         <div className="py-10 ">
-                            <a href="/explorerooms" className="text-white bg-blue-500 p-4 px-10 cursor-pointer my-10 hover:bg-blue-700">Explore</a>
+                            <a href="/exploreroom" className="text-white bg-blue-500 p-4 px-10 cursor-pointer my-10 hover:bg-blue-700">Explore</a>
                         </div>
                         <p> the best hotels in Sri Lanka, where luxury meets comfort and hospitality. From stunning beachfront resorts to serene mountain retreats, we have the perfect accommodation for your dream getaway.
                         <br /> Whether you're seeking a romantic escape, a family adventure, or a solo retreat, our curated selection of hotels offers something for everyone. Indulge in world-class amenities, exquisite dining options, and breathtaking views that will leave you in awe. Experience the warmth of Sri Lankan hospitality and create unforgettable memories during your stay.</p>
