@@ -1,52 +1,3 @@
-// import {React, useState} from "react"
-// import { Link } from "react-router-dom";
-// //import { Link } from "react-router-dom"
-// function Header() {
-//     const [popover, setPopover] = useState(false);
-//     const Upper = {
-//         textTransform:'uppercase',
-        
-//     }
-//     const popoverMobileNavbar = () => {
-//         setPopover((prev ) => !prev);
-//     }
-//     return (
-//         <>
-//             {/* <div className="grid">
-//                 <nav className="bg-blue-600 grid grid-cols-2 justify-between items-baseline space-x-5 p-5 sticky left-0 top-0">
-//                     <div className="">
-//                         <h1 className="text-white font-bold text-[1em] md:text-[1.25em] "><Link to="/" ><span className="text-blue-950">M</span>ILAANO <span className="text-blue-950">T</span>OURISM </Link></h1>
-//                     </div>
-//                     <div className="hidden md:block ">
-//                         <ul className="flex justify-start space-x-5">
-//                             <li>
-//                                 <Link to="/" className="text-white text-bold text-xl hover:text-blue-950">HOME</Link>
-//                             </li>
-//                             <li>
-//                                 <Link to="/aboutus" className="text-white text-bold text-xl hover:text-blue-950">ABOUT</Link>
-//                             </li>
-//                             <li>
-//                                 <Link to="/contact" className="text-white text-bold text-xl hover:text-blue-950">CONTACT</Link>
-//                             </li>
-//                             <li>
-//                                 <Link to="/service" className="text-white text-bold text-xl hover:text-blue-950">SERVICES</Link>
-//                             </li>
-//                         </ul>
-//                     </div>
-//                     <div className="block md:hidden items-baseline">
-//                         <div className="flex justify-end">
-//                             <button className="bg-mainColor p-2 rounded-full text-white font-bold text-lg hover:text-orange-400" onClick={popoverMobileNavbar}>&#9776;</button>
-//                         </div>
-//                     </div>
-//                 </nav>
-//             </div> */}
-
-            
-//         </>
-//     )
-// }
-
-// export {Header}
 
 import { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -74,7 +25,7 @@ const Header = () => {
           {/* <a href="#" className="text-white hover:text-gray-300">Home</a>
           <a href="#" className="text-white hover:text-gray-300">About</a>
           <a href="#" className="text-white hover:text-gray-300">Services</a> */}
-          {/* <div className="relative">
+          <div className="relative">
             <button 
               onClick={toggleDropdown}
               className="text-white hover:text-gray-300 focus:outline-none flex items-center"
@@ -90,7 +41,7 @@ const Header = () => {
               </svg>
             </button>
             
-            Dropdown Menu
+            {/* Dropdown Menu */}
             {isOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
@@ -98,7 +49,7 @@ const Header = () => {
                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
               </div>
             )}
-          </div> */}
+          </div>
           {/* <a href="#" className="text-white hover:text-gray-300">Contact</a> */}
         </div>
         
