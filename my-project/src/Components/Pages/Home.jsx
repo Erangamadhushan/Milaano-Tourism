@@ -179,8 +179,8 @@ function Home() {
                 </div>
             </div>
 
-            <div >
-                <h1 className="text-[2.5em] text-black text-center md:text-left font-semibold px-5">Explorer More Island Stories</h1>
+            <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center scroll-reveal">
+                <h1 className="text-[2.5em] text-black text-center py-10 md:text-left font-semibold px-5">Explorer More Island Stories</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2 py-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div className="grid gap-2">
                         <div style={subContentParent} className="group">
