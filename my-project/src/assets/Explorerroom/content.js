@@ -80,7 +80,7 @@ export const roomContent = [
         room_capacity: 5,
         room_image:roomCategory[1],
         room_description: "Larger rooms or suites designed to accommodate families.",
-        room_description: [
+        room_features: [
             "Specifically designed for families",
             "Multiple beds or adjoining rooms",
             "Child-friendly amenities like cribs or play areas",
