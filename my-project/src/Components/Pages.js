@@ -9,5 +9,6 @@ import Exploreroom from './Pages/Explorerroom.jsx'
 import Notfound from './Pages/Notfound.jsx'
 import BookNow from './Pages/BookNow.jsx'
 import ViewDetails from './Pages/ViewDetails.jsx'
+import RoomCategory from './Pages/RoomCategory.jsx'
 
-export {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, BookNow, ViewDetails, Notfound};
+export {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, BookNow, ViewDetails, RoomCategory, Notfound};

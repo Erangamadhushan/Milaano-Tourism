@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
-import {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, BookNow, ViewDetails, Notfound} from './Components/Pages'
+import {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, BookNow, ViewDetails, RoomCategory, Notfound} from './Components/Pages'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +19,8 @@ const router = createBrowserRouter(
       <Route path="booknow" element={<BookNow/>}/>
       <Route path="viewdetails" element={<ViewDetails/>}/>
       <Route path="*" element={<Notfound/>}/>
+      <Route path="roomcategory" element={<RoomCategory/>}/>
+      <Route path="roomcategory/:id" element={<RoomCategory/>}/>
     </Route>
 
   )

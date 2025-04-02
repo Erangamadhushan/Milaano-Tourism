@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { roomContent } from '../../assets/Explorerroom/content.js';
 import useScrollReveal from '../../hooks/scrollReveal.js';
 import BookNow from './BookNow.jsx';
+import RoomCategory from './RoomCategory.jsx';
 
 function Exploreroom() {
     useScrollReveal();
@@ -41,7 +42,7 @@ function Exploreroom() {
             {
                 roomContent.map((roomDetails) => {
                     return (
-                        <BookNow key={roomDetails.room_type} roomDetails={roomDetails} />
+                        <RoomCategory key={roomDetails.room_type} roomDetails={roomDetails} />
                     )
                 })
             }
