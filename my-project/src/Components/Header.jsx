@@ -22,35 +22,6 @@ const Header = () => {
             <Link to="/aboutus" className="text-white text-bold text-xl hover:text-blue-950">ABOUT</Link>
             <Link to="/contact" className="text-white text-bold text-xl hover:text-blue-950">CONTACT</Link>
             <Link to="/service" className="text-white text-bold text-xl hover:text-blue-950">SERVICES</Link>
-          {/* <a href="#" className="text-white hover:text-gray-300">Home</a>
-          <a href="#" className="text-white hover:text-gray-300">About</a>
-          <a href="#" className="text-white hover:text-gray-300">Services</a> */}
-          <div className="relative">
-            <button 
-              onClick={toggleDropdown}
-              className="text-white hover:text-gray-300 focus:outline-none flex items-center"
-            >
-              Products
-              <svg 
-                className={`ml-1 w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            
-            {/* Dropdown Menu */}
-            {isOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
-                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
-              </div>
-            )}
-          </div>
-          {/* <a href="#" className="text-white hover:text-gray-300">Contact</a> */}
         </div>
         
         {/* Mobile Navigation Toggle */}
@@ -78,18 +49,7 @@ const Header = () => {
                 <Link to="/contact" className="text-white text-bold text-lg hover:text-blue-950">CONTACT</Link>
                 <Link to="/service" className="text-white text-bold text-lg hover:text-blue-950">SERVICES</Link>
             </div>
-          {/* <a href="#" className="block px-3 py-2 rounded-md text-white hover:bg-gray-700">Home</a>
-          <a href="#" className="block px-3 py-2 rounded-md text-white hover:bg-gray-700">About</a>
-          <a href="#" className="block px-3 py-2 rounded-md text-white hover:bg-gray-700">Services</a> */}
-          {/* <div>
-            <a href="#" className="block px-3 py-2 rounded-md text-white hover:bg-gray-700">Products</a>
-            <div className="pl-4 space-y-1">
-              <a href="#" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Product 1</a>
-              <a href="#" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Product 2</a>
-              <a href="#" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Product 3</a>
-            </div>
-          </div> */}
-          {/* <a href="#" className="block px-3 py-2 rounded-md text-white hover:bg-gray-700">Contact</a> */}
+          
         </div>
       )}
     </nav>

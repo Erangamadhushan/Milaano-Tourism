@@ -4,8 +4,6 @@ import LuxuryRoom from './LuxuryRoom.jpg';
 import EconomyRoom from './EconomyRoom.jpg';
 
 const roomCategory = [babyroom, familyroom, LuxuryRoom, EconomyRoom];
-// This file contains the content for the room categories in a hotel booking application.
-// This file contains the content for the room categories in a hotel booking application.
 export const roomContent = [
     {
         room_type:"Standard/Economy Room",
