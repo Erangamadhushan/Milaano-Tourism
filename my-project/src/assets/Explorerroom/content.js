@@ -7,7 +7,7 @@ const roomCategory = [babyroom, familyroom, LuxuryRoom, EconomyRoom];
 export const roomContent = [
     {
         room_type:"Standard/Economy Room",
-        room_price: 1000,
+        room_price: 2000,
         room_capacity: 2,
         room_image:roomCategory[0],
         room_description: "A standard room with basic amenities. Suitable for budget travelers.",
@@ -20,7 +20,7 @@ export const roomContent = [
     },
     {
         room_type: "Deluxe Room",
-        room_price: 2000,
+        room_price: 3500,
         room_capacity: 3,
         room_image:roomCategory[1],
         room_description: "A step up from standard rooms, offering more space and better amenities.",
@@ -34,7 +34,7 @@ export const roomContent = [
     },
     {
         room_type: "Luxury Room",
-        room_price: 3000,
+        room_price: 5000,
         room_capacity: 4,
         room_image:roomCategory[2],
         room_description: "High-end rooms with premium amenities and services.",
@@ -48,7 +48,7 @@ export const roomContent = [
     },
     {
         room_type: "Suite Room",
-        room_price: 5000,
+        room_price: 7000,
         room_capacity: 4,
         room_image:roomCategory[3],
         room_description: "Spacious rooms with separate living areas and luxury amenities.",
@@ -76,7 +76,7 @@ export const roomContent = [
     },
     {
         room_type: "Family Room",
-        room_price: 6000,
+        room_price: 7500,
         room_capacity: 5,
         room_image:roomCategory[1],
         room_description: "Larger rooms or suites designed to accommodate families.",

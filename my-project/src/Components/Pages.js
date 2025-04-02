@@ -7,5 +7,7 @@ import BookRoom from './Pages/BookRoom'
 import Explorermore from './Pages/Explorermore'
 import Exploreroom from './Pages/Explorerroom.jsx'
 import Notfound from './Pages/Notfound.jsx'
+import BookNow from './Pages/BookNow.jsx'
+import ViewDetails from './Pages/ViewDetails.jsx'
 
-export {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, Notfound};
+export {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, BookNow, ViewDetails, Notfound};
