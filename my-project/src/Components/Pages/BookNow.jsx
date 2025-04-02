@@ -31,41 +31,43 @@ const BookNow = () => {
                     <div>
                         <h3 className="text-3xl text-center text-blue-500 font-bold">Check Out</h3>
                     </div>
-                    <div className="grid grid-cols-1 py-4">
-                        <div className="p-2">
-                            <p>Name :</p>
-                        </div>
-                        <div className="grid grid-cols-2 gap-2">
-                            <div>
-                                <input type="text" placeholder="First Name" className="border border-gray-200 p-2 rounded-lg w-[85%]" />
+                    <form onSubmit={(e) => e.preventDefault()} className="grid grid-cols-1">
+                        <div className="grid grid-cols-1 py-4">
+                            <div className="p-2">
+                                <p>Name :</p>
                             </div>
-                            <div>
-                                <input type="text" placeholder="Last Name" className="border border-gray-200 p-2 rounded-lg w-[85%]" />
+                            <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <input type="text" placeholder="First Name" className="border border-blue-400 p-2 rounded-lg w-[85%]" />
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Last Name" className="border border-blue-400 p-2 rounded-lg w-[85%]" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="grid grid-cols-1 py-4">
-                        <div className="p-2">
-                            <p>E-mail :</p>
-                        </div>
-                        <div className="grid grid-cols-1 gap-2">
-                            <div>
-                                <input type="text" placeholder="example@gmail.com" className="border border-gray-200 p-2 rounded-lg w-[85%]" />
+                        <div className="grid grid-cols-1 py-4">
+                            <div className="p-2">
+                                <p>E-mail :</p>
                             </div>
-                            
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-1">
-                        <div className="p-2">
-                            <p>Address :</p>
-                        </div>
-                        <div className="grid grid-cols-1 gap-2">
-                            <div>
-                                <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-gray-200 p-2 rounded-lg w-[85%]" />
+                            <div className="grid grid-cols-1 gap-2">
+                                <div>
+                                    <input type="text" placeholder="example@gmail.com" className="border border-blue-400 p-2 mx-auto rounded-lg w-[90%]" />
+                                </div>
+                                
                             </div>
-                            
                         </div>
-                    </div>
+                        <div className="grid grid-cols-1">
+                            <div className="p-2">
+                                <p>Address :</p>
+                            </div>
+                            <div className="grid grid-cols-1 gap-2">
+                                <div>
+                                    <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 mx-auto p-2 rounded-lg w-[90%]" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 </div>
             </div>
