@@ -1,6 +1,7 @@
 import React  from "react";
 import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg }  from '../../assets/Home/HomeResource.js';
 import useScrollReveal from '../../hooks/scrollReveal.js';
+import { roomContent } from '../../assets/Home/rooms/content.js';
 
 
 function Home() {
@@ -16,6 +17,12 @@ function Home() {
     const myhoverContent = {
         position:"absolute", width:"100%", height:"100%", top:0, left:0, justifyContent:"center", 
         alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#2196fe"
+    }
+
+    const handleBookNow = () => {
+        // Handle the booking logic here
+        console.log("Booking room:", roomDetails);
+        localStorage.setItem("roomDetails", JSON.stringify(roomDetails));
     }
     return (
         <>
@@ -91,6 +98,39 @@ function Home() {
                         </div>
                     </div>
                     
+                </div>
+                <div className="relative grid mx-auto">
+                    <div className="py-5 mx-auto">
+                        <h2 className="text-[1.25em] lg:text-[1.75em] py-3 text-center lg:text-justify text-blue-500 font-semibold ">------- Our Rooms -------</h2>
+                        <h2 className="text-[1.25em] lg:text-[2.25em] py-3 text-center lg:text-justify text-blue-500 font-semibold">Explorer Our Rooms</h2>
+                    </div>
+                    <div className="relative py-5 max-w-[1400px] flex flex-wrap justify-center items-center mx-auto">
+                        {
+                            roomContent.map((roomDetails, index) => {
+                            return (
+                                <div className="w-[95%] min-h-[400px] max-w-[380px] scroll-up">
+                                    <div className="p-5 gap-2 w-full">
+                                        
+                                        <img src={roomDetails.room_image} className="w-[100%] h-[200px] object-cover " alt={roomDetails.room_type} />
+                                    </div>
+                                    <div className="p-5 gap-2 w-[95%] max-w-[450px]">
+                                        <h2 className="text-[1.25em] py-2 font-semibold text-blue-500">{roomDetails.room_type}</h2>
+                                        <p className=" py-2">Price: Rs.{roomDetails.room_price}.00</p>
+                                        <p className=" py-2">Capacity: {roomDetails.room_capacity}</p>
+                                        <p className=" py-2">Description: {roomDetails.room_description}</p>
+                                        
+                                        <div className="flex gap-x-5">
+                                            <a href="/booknow"  onClick={handleBookNow} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg" >Book Now</a>
+                                            <a href="/viewdetails"  onClick={handleBookNow} className="border border-blue-500 hover:bg-blue-700 text-blue-500 hover:text-white font-bold py-2 px-4 rounded-lg" >View Details</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            )
+                        }
+                        )
+                        }
+                    </div>
                 </div>
                 <div className="relative py-5 max-w-[1320px] mx-auto">
                     <div>
