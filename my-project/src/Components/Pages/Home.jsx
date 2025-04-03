@@ -129,7 +129,7 @@ function Home() {
                                 <a href="/bookroom" className=" hover:bg-blue-400 m-4 my-10 p-5 hover:text-white duration-300 bg-white text-blue-500 font-bold ">Book Room</a>
                              </div>
                         </div>
-                        <div className="" style={{backgroundImage:`url(${luxuryRoomImg})`,backgroundSize:"cover"}}>
+                        <div className="min-h-[300px]" style={{backgroundImage:`url(${luxuryRoomImg})`,backgroundSize:"cover",}}>
                             <div className="bg-[#2222226b] w-full h-full flex justify-center items-center">
                                 <p  className="text-lg text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta qui temporibus ipsum sed hic consequatur id fugit pariatur? Nesciunt velit, minus laboriosam veniam totam voluptates earum molestias, iusto placeat tenetur maxime aliquam nostrum reprehenderit!</p>
                             </div>

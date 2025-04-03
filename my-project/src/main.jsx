@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import {Home, AboutUs, Contact, Service, Findout, BookRoom, Explorermore, Exploreroom, BookNow, ViewDetails, RoomCategory, Notfound} from './Components/Pages'
 
 const router = createBrowserRouter(
