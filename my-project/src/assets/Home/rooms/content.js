@@ -46,19 +46,5 @@ export const roomContent = [
             "Additional amenities like espresso machines, premium toiletries, and minibars",
             "Potentially includes access to exclusive hotel services."
         ]
-    },
-    // {
-    //     room_type: "Suite Room",
-    //     room_price: 7000,
-    //     room_capacity: 4,
-    //     room_image:roomCategory[3],
-    //     room_description: "Spacious rooms with separate living areas and luxury amenities.",
-    //     room_features: [
-    //         "Separate living and sleeping areas",
-    //         "Multiple rooms, often including a living room and bedroom",
-    //         "Kitchenette or full kitchen in some cases",
-    //         "Ideal for families or extended stays",
-    //         "May include dining area and multiple bathrooms"
-    //     ]
-    // }
+    }
 ];

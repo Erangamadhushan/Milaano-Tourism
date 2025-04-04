@@ -16,7 +16,7 @@ function Home() {
     }
     const myhoverContent = {
         position:"absolute", width:"100%", height:"100%", top:0, left:0, justifyContent:"center", 
-        alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#2196fe"
+        alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#2196fa"
     }
 
     const handleBookNow = () => {
@@ -228,24 +228,24 @@ function Home() {
                                 <img src={recaps[0]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                {/* input content here */}
+                                <p className="p-10 text-white text-[1em] md:text-[1.5em] text-center">Golden sands meet turquoise waters along Sri Lanka's stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 group" style={subContentParent} >
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2" style={subContentParent} >
                             <div style={subContentParent} className="group">
                                 <div>
                                     <img src={recaps[1]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    {/* input content here */}
+                                    <p className="text-white text-[1em]">Golden sands meet turquoise waters along Sri Lanka's stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
                                 </div>
                             </div>
                             <div style={subContentParent} className="group">
                                 <div>
                                     <img src={recaps[2]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
-                                <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    {/* input content here */}
+                                <div style={myhoverContent} className="hidden  group-hover:flex duration-1000">
+                                    <p className="text-center text-white">The railway journey through Sri Lanka offers one of the world's most scenic rides. Vintage trains wind through misty mountains, tea plantations, and dense forests, providing breathtaking panoramas at every turn.</p>
                                 </div>
                             </div>
                         </div>
@@ -254,18 +254,18 @@ function Home() {
                                 <img src={recaps[3]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                {/* input content here */}
+                                <p className="text-white text-center text-[1em] md:text-[1.5em]">Lush hillside plantations produce world-renowned Ceylon tea. Workers skillfully pluck tender leaves from emerald slopes, contributing to the country's signature export.</p>
                             </div>
                         </div>
                     </div>
                     <div className="grid gap-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 group" >
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2" >
                             <div style={subContentParent} className="group">
                                 <div>
                                     <img src={recaps[4]} class="w-[100%] " style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    {/* input content here */}
+                                    <p className="text-center text-white">This ancient rock fortress rises dramatically from the jungle, topped with the ruins of King Kasyapa's palace. Its frescoes and mirror wall attract visitors worldwide.</p>
                                 </div>
                             </div>
                             <div style={subContentParent} >
@@ -274,7 +274,7 @@ function Home() {
                                         <img src={recaps[7]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                     </div>
                                     <div style={myhoverContent} className="hidden  group-hover:flex">
-                                        {/* input content here */}
+                                        <p className="text-center text-white">This grand Buddhist festival features elaborately decorated elephants, traditional dancers, and fire performers parading through Kandy's streets.</p>
                                     </div>
                                 </div>
                             </div>
@@ -284,7 +284,7 @@ function Home() {
                                 <img src={recaps[6]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                {/* input content here */}
+                                <p className="text-center text-white text-[1em] md:text-[1.5em]">This UNESCO World Heritage site houses remarkable biodiversity, with endemic birds, butterflies, and rare plant species thriving in its dense rainforest.</p>
                             </div>
                         </div>
                         <div className="grid">
@@ -293,7 +293,7 @@ function Home() {
                                     <img src={recaps[8]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    {/* input content here */}
+                                    <p className="text-center text-white text-[1em] md:text-[1.5em]">Sri Lanka's ancient capital showcases towering stupas, sacred Bodhi trees, and intricate stone carvings from the island's earliest Buddhist civilization.</p>
                                 </div> 
                             </div>
                         </div>
