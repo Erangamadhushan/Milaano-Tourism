@@ -23,11 +23,13 @@ const BookNow = () => {
                                 }
                             </ul>
                         </div>
-                        <div className='bg-white p-2 rounded-lg flex flex-wrap justify-center items-center'>
+                        <div className='bg-white p-2 rounded-lg flex flex-wrap  items-center gap-3'>
                             {
                                 roomDetails.room_amenities.map((amenity, index) => {
                                     return (
-                                        <div></div>
+                                        <div className='p-2 bg-blue-100 rounded-lg'>
+                                            <p className='text-gray-500'>{amenity}</p>
+                                        </div>
                                     )
                                 }
                                     
@@ -49,10 +51,10 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <div>
-                                    <input type="text" placeholder="First Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" />
+                                    <input type="text" placeholder="First Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto"  required/>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Last Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" />
+                                    <input type="text" placeholder="Last Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +64,7 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="email" placeholder="example@gmail.com" className="border border-blue-400 p-2 mx-auto rounded-lg w-[95%]" />
+                                    <input type="email" placeholder="example@gmail.com" className="border border-blue-400 p-2 mx-auto rounded-lg w-[95%]" required/>
                                 </div>
                                 
                             </div>
@@ -73,14 +75,14 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" />
+                                    <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
                                 </div>
                                 
                             </div>
                             <div className="grid grid-cols-1 gap-2 py-4">
                                 <div>
                                     <label htmlFor='phononumber'>Phone Number :</label>
-                                    <input type="tel" placeholder="011-1212321" className="border border-blue-400 mx-auto p-2 rounded-lg w-[95%]" />
+                                    <input type="tel" placeholder="011-1212321" className="border border-blue-400 mx-auto p-2 rounded-lg w-[95%]" required/>
                                 </div>
                                 
                             </div>

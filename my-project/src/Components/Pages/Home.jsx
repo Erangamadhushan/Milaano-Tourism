@@ -1,6 +1,7 @@
 import React  from "react";
 import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg }  from '../../assets/Home/HomeResource.js';
 import useScrollReveal from '../../hooks/scrollReveal.js';
+import RoomCategory from "./RoomCategory.jsx";
 import { roomContent } from '../../assets/Home/rooms/content.js';
 
 
@@ -19,11 +20,6 @@ function Home() {
         alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#2196fa"
     }
 
-    const handleBookNow = () => {
-        // Handle the booking logic here
-        console.log("Booking room:", roomDetails);
-        localStorage.setItem("roomDetails", JSON.stringify(roomDetails));
-    }
     return (
         <>
             <div className="grid gap-5 bg-blue-50">
@@ -105,30 +101,13 @@ function Home() {
                         <h2 className="text-[1.25em] lg:text-[2.25em] py-3 text-center lg:text-justify text-blue-500 font-semibold">Explorer Our Rooms</h2>
                     </div>
                     <div className="relative py-5 max-w-[1400px] flex flex-wrap justify-center items-center mx-auto">
+                        
                         {
-                            roomContent.map((roomDetails, index) => {
-                            return (
-                                <div className="w-[95%] min-h-[400px] max-w-[380px] scroll-up">
-                                    <div className="p-5 gap-2 w-full">
-                                        
-                                        <img src={roomDetails.room_image} className="w-[100%] h-[200px] object-cover " alt={roomDetails.room_type} />
-                                    </div>
-                                    <div className="p-5 gap-2 w-[95%] max-w-[450px]">
-                                        <h2 className="text-[1.25em] py-2 font-semibold text-blue-500">{roomDetails.room_type}</h2>
-                                        <p className=" py-2">Price: Rs.{roomDetails.room_price}.00</p>
-                                        <p className=" py-2">Capacity: {roomDetails.room_capacity}</p>
-                                        <p className=" py-2">Description: {roomDetails.room_description}</p>
-                                        
-                                        <div className="flex gap-x-5">
-                                            <a href="/booknow"  onClick={handleBookNow} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg" >Book Now</a>
-                                            <a href="/viewdetails"  onClick={handleBookNow} className="border border-blue-500 hover:bg-blue-700 text-blue-500 hover:text-white font-bold py-2 px-4 rounded-lg" >View Details</a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            )
-                        }
-                        )
+                            roomContent.map((roomDetails) => {
+                                return (
+                                    <RoomCategory key={roomDetails.room_type} roomDetails={roomDetails} />
+                                )
+                            })
                         }
                     </div>
                 </div>

@@ -17,7 +17,7 @@ export const roomContent = [
             "Basic amenities like TV, private bathroom, and minimal furnishings",
             "Suitable for budget-conscious travelers or short stays"
         ],
-        oom_amenities: [
+        room_amenities: [
             "Flat-screen TV",
             "Coffee Maker",
             "Room Service"
@@ -77,6 +77,13 @@ export const roomContent = [
             "Kitchenette or full kitchen in some cases",
             "Ideal for families or extended stays",
             "May include dining area and multiple bathrooms"
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
