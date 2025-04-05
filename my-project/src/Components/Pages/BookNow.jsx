@@ -1,8 +1,62 @@
 import react from 'react';
 import { useState } from 'react';
+import { useRef } from 'react';
+import Swal from 'sweetalert2';
 
 const BookNow = () => {
+    const formRef = useRef(null);
     const roomDetails = JSON.parse(localStorage.getItem("roomDetails"));
+
+    const formSubmission = (event) => {
+        event.preventDefault();
+
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+              confirmButton: "bg-blue-500 rounded-lg p-3 text-white",
+              cancelButton: "bg-red-500 rounded-lg p-3 mx-2 text-white"
+            },
+            buttonsStyling: false
+          });
+
+          swalWithBootstrapButtons.fire({
+            title: "Confirm Booking",
+            text: "Your booking is confirmed.",
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonText: "Yes, Keep it!",
+            cancelButtonText: "No, cancell it!",
+            reverseButtons: true
+
+          }).then((result) => {
+            if (result.isConfirmed) {
+              swalWithBootstrapButtons.fire({
+                title: "Confirmed!",
+                text: "Your Booking is Completed !!.",
+                icon: "success"
+              });
+
+              const form = formRef.current;
+        
+                const formData = {
+                    username: form.firstname.value +" "+ form.lastname.value,
+                    email: form.email.value,
+                    address: form.address.value,
+                    phone_number: form.phonenumber.value,
+                    request: form.request.value
+                };
+                console.log('Form data:', formData);
+            } else if (
+              /* Read more about handling dismissals below */
+              result.dismiss === Swal.DismissReason.cancel
+            ) {
+              swalWithBootstrapButtons.fire({
+                title: "Cancelled",
+                text: "Your Booking was cancelled !!",
+                icon: "error"
+              });
+            }
+          });
+    }
     return (
         <>
             <div className='w-[95%] grid grid-cols-1 md:grid-cols-2 max-w-[1200px] mx-auto my-5 p-5'>
@@ -44,17 +98,21 @@ const BookNow = () => {
                     <div>
                         <h3 className="text-3xl text-center text-blue-500 font-bold">Check Out</h3>
                     </div>
-                    <form onSubmit={(e) => e.preventDefault()} className="grid grid-cols-1">
+                    <form ref={formRef} onSubmit={formSubmission} className="grid grid-cols-1">
                         <div className="grid grid-cols-1 py-4">
-                            <div className="p-2">
-                                <p>Name :</p>
-                            </div>
+                            
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <div>
-                                    <input type="text" placeholder="First Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto"  required/>
+                                <div className="p-2">
+                                    <p>First Name :</p>
+                                </div>
+                                    <input type="text" placeholder="First Name" name='firstname' className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto"  required/>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Last Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
+                                <div className="p-2">
+                                    <p>Last Name :</p>
+                                </div>
+                                    <input type="text" placeholder="Last Name" name="lastname" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +122,7 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="email" placeholder="example@gmail.com" className="border border-blue-400 p-2 mx-auto rounded-lg w-[95%]" required/>
+                                    <input type="email" placeholder="example@gmail.com" name='email' className="border border-blue-400 p-2 mx-auto rounded-lg w-[95%]" required/>
                                 </div>
                                 
                             </div>
@@ -75,21 +133,21 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
+                                    <input type="text" name='address' placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
                                 </div>
                                 
                             </div>
                             <div className="grid grid-cols-1 gap-2 py-4">
                                 <div>
                                     <label htmlFor='phononumber'>Phone Number :</label>
-                                    <input type="tel" placeholder="011-1212321" className="border border-blue-400 mx-auto p-2 rounded-lg w-[95%]" required/>
+                                    <input type="tel" name='phonenumber' placeholder="011-1212321" className="border border-blue-400 mx-auto p-2 rounded-lg w-[95%]" required/>
                                 </div>
                                 
                             </div>
                             <div className="grid grid-cols-1 gap-2 py-4">
                                 <div>
                                     <label htmlFor='special_request'>Special Request :</label><br/>
-                                    <textarea rows="8" placeholder="Any special request you have" className="border border-blue-400 w-[95%] mx-auto resize-none p-2 rounded-lg"></textarea>
+                                    <textarea rows="8" name='request' placeholder="Any special request you have" className="border border-blue-400 w-[95%] mx-auto resize-none p-2 rounded-lg"></textarea>
                                 </div>
                                 <div className='w-full  text-white'>
                                     <button type="submit" className="bg-blue-700 w-[95%] mx-auto text-center text-white p-2 py-3 text-xl rounded-lg">Complete Booking</button>

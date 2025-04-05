@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Footer from './Components/Footer';
 
 
+
 // import withReactContent from '@sweetalert2/react-content';
 
 export default function Layout() {
