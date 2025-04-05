@@ -16,6 +16,11 @@ export const roomContent = [
             "Typically includes a queen or twin beds",
             "Basic amenities like TV, private bathroom, and minimal furnishings",
             "Suitable for budget-conscious travelers or short stays"
+        ],
+        oom_amenities: [
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
@@ -30,6 +35,13 @@ export const roomContent = [
             "Additional amenities like mini-refrigerator or coffee maker",
             "Often includes a seating area or balcony",
             "More comfortable bedding and slightly more sophisticated decor"
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
@@ -44,6 +56,13 @@ export const roomContent = [
             "High-quality bedding, often with designer linens",
             "Additional amenities like espresso machines, premium toiletries, and minibars",
             "Potentially includes access to exclusive hotel services."
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
@@ -72,6 +91,13 @@ export const roomContent = [
             "High-speed internet access",
             "Additional electical outlets and USB ports",
             "Sometimes includes access to business center or lounge"
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
@@ -86,6 +112,13 @@ export const roomContent = [
             "Child-friendly amenities like cribs or play areas",
             "Extra space for children to play",
             "Sometimes includes kid-specific entertainment options"
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
@@ -101,6 +134,13 @@ export const roomContent = [
             "Lower counters and accessible facilities",
             "Safety features for guests with mobility challenges"
         ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
+        ]
     }, {
         room_type: "Penthouse Room",
         room_price: 10000,
@@ -116,6 +156,13 @@ export const roomContent = [
             "Highest level of personalized service and amenities",
             "Often includes private check-in exclusively for penthouse guests",
             "Access to exclusive hotel services and facilities",
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     }
 ];

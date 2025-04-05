@@ -17,6 +17,11 @@ export const roomContent = [
             "Typically includes a queen or twin beds",
             "Basic amenities like TV, private bathroom, and minimal furnishings",
             "Suitable for budget-conscious travelers or short stays"
+        ],
+        room_amenities: [
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Room Service"
         ]
     },
     {
@@ -31,6 +36,13 @@ export const roomContent = [
             "Additional amenities like mini-refrigerator or coffee maker",
             "Often includes a seating area or balcony",
             "More comfortable bedding and slightly more sophisticated decor"
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     },
     {
@@ -45,6 +57,13 @@ export const roomContent = [
             "High-quality bedding, often with designer linens",
             "Additional amenities like espresso machines, premium toiletries, and minibars",
             "Potentially includes access to exclusive hotel services."
+        ],
+        room_amenities: [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Flat-screen TV",
+            "Coffee Maker",
+            "Room Service"
         ]
     }
 ];

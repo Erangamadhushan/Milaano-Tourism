@@ -12,7 +12,7 @@ const BookNow = () => {
                     </div>
                     <div className='grid grid-cols-1  gap-5 mt-5'>
                         <div className='bg-white p-2 rounded-lg'>
-                            <p className='text-[1.5em] font-bold text-blue-500'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00`}</span></p>
+                            <p className='text-[1.5em] font-bold text-blue-500'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00 /Per Day`}</span></p>
                             <p className='text-gray-500'>{roomDetails.room_description}</p>
                             <p className='text-blue-500 py-4'>Room Features</p>
                             <ul>
@@ -22,6 +22,17 @@ const BookNow = () => {
                                     ))
                                 }
                             </ul>
+                        </div>
+                        <div className='bg-white p-2 rounded-lg flex flex-wrap justify-center items-center'>
+                            {
+                                roomDetails.room_amenities.map((amenity, index) => {
+                                    return (
+                                        <div></div>
+                                    )
+                                }
+                                    
+                                )
+                            }
                         </div>
                     </div>
                 </div>
@@ -36,12 +47,12 @@ const BookNow = () => {
                             <div className="p-2">
                                 <p>Name :</p>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <div>
-                                    <input type="text" placeholder="First Name" className="border border-blue-400 p-2 rounded-lg w-[85%]" />
+                                    <input type="text" placeholder="First Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" />
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Last Name" className="border border-blue-400 p-2 rounded-lg w-[85%]" />
+                                    <input type="text" placeholder="Last Name" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" />
                                 </div>
                             </div>
                         </div>
@@ -51,7 +62,7 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="text" placeholder="example@gmail.com" className="border border-blue-400 p-2 mx-auto rounded-lg w-[90%]" />
+                                    <input type="email" placeholder="example@gmail.com" className="border border-blue-400 p-2 mx-auto rounded-lg w-[95%]" />
                                 </div>
                                 
                             </div>
@@ -62,9 +73,25 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 mx-auto p-2 rounded-lg w-[90%]" />
+                                    <input type="text" placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" />
                                 </div>
                                 
+                            </div>
+                            <div className="grid grid-cols-1 gap-2 py-4">
+                                <div>
+                                    <label htmlFor='phononumber'>Phone Number :</label>
+                                    <input type="tel" placeholder="011-1212321" className="border border-blue-400 mx-auto p-2 rounded-lg w-[95%]" />
+                                </div>
+                                
+                            </div>
+                            <div className="grid grid-cols-1 gap-2 py-4">
+                                <div>
+                                    <label htmlFor='special_request'>Special Request :</label><br/>
+                                    <textarea rows="8" placeholder="Any special request you have" className="border border-blue-400 w-[95%] mx-auto resize-none p-2 rounded-lg"></textarea>
+                                </div>
+                                <div className='w-full  text-white'>
+                                    <button type="submit" className="bg-blue-700 w-[95%] mx-auto text-center text-white p-2 py-3 text-xl rounded-lg">Complete Booking</button>
+                                </div>
                             </div>
                         </div>
                     </form>
