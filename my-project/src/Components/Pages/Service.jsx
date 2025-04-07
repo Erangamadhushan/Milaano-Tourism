@@ -15,7 +15,7 @@ export default function Service() {
                     {
                         services.map((service, index) => {
                             return (
-                                <div className="p-5 my-10 shadow-lg shadow-blue-400 mx-auto w-[95%] max-w-[1200px] scroll-reveal" >
+                                <div className="p-5 my-10  mx-auto w-[95%] max-w-[1000px] scroll-reveal" >
                                     <h2 className="text-3xl font-bold text-blue-500 pb-3 ">{service.title}</h2>
                                     <hr/>
                                     <h3 className="text-2xl font-semibold text-blue-500 py-3 underline">{service.subTitle}</h3>
@@ -49,11 +49,11 @@ export default function Service() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 mx-auto">
                 {
                     subServices.map((subservice) => {
                         return (
-                            <div className="p-5 scroll-reveal py-5 my-5 shadow-md mx-auto w-[95%] max-w-[1200px] hover:shadow-lg">
+                            <div className="p-5 scroll-up py-5 my-5  mx-auto w-[95%] max-w-[600px] shadow-lg">
                                 <h2 className="text-3xl text-blue-500 py-3">{subservice.title}</h2>
                                 <p className="text-xl">{subservice.subTitle}</p>
                                 <ul className="py-4">
@@ -77,7 +77,7 @@ export default function Service() {
                 }
             </div>
 
-            <div className=" p-5 py-[2em] my-5 mx-auto w-[95%] max-w-[1200px] scroll-up">
+            <div className=" p-5 py-[2em] my-5 mx-auto w-[95%] max-w-[1000px] scroll-up">
                 <h2 class="text-3xl text-blue-500">Ready to Plan Your Perfect Trip ?</h2>
                 <p className="text-xl py-5">Contact our travel experts for personalized assistance and exclusive offers</p>
                 <a href="./contact" className="bg-coral p-5 rounded-md text-white hover:bg-green-500">Contact Us Now</a>

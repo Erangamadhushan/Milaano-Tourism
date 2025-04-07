@@ -12,7 +12,7 @@ function Findout() {
                     </h2>
                 </div>
             </div>
-            <div className="w-[95%] scroll-up max-w-[1200px] grid grid-cols-1 md:grid-cols-2 mx-auto p-5 py-10 my-10 shadow-md" id={destinationGuide.bestTime.title}>
+            <div className="w-[95%] scroll-up max-w-[1000px] grid grid-cols-1 md:grid-cols-2 mx-auto p-5 py-10 my-10 " id={destinationGuide.bestTime.title}>
                 <div className="scroll-up">
                     <h2 className=" text-[1.75em] md:text-[2.5em] text-blue-500 font-semibold py-2">
                         {destinationGuide.bestTime.title}
@@ -31,7 +31,7 @@ function Findout() {
                     {/* insert image here */}
                 </div>
             </div>
-            <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-10 shadow-md" id={destinationGuide.mustVisitDestination.title}>
+            <div className="w-[95%] max-w-[1000px] mx-auto p-5 my-10" id={destinationGuide.mustVisitDestination.title}>
                 <h2 className="text-[1.75em] md:text-[2.5em] text-blue-500 scroll-up text-bold py-2">
                     {destinationGuide.mustVisitDestination.title}
                 </h2>
@@ -60,7 +60,7 @@ function Findout() {
                     }
                 </div>
             </div>
-            <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.practicalInformation.title}>
+            <div className="w-[95%] max-w-[1000px] mx-auto p-5 my-5 " id={destinationGuide.practicalInformation.title}>
                 <h2 className="text-[2.5em] font-semibold text-blue-500 py-2">{destinationGuide.practicalInformation.title}</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     {
@@ -85,7 +85,7 @@ function Findout() {
                 </div>
             </div>
 
-            <div className="w-[95%] max-w-[1200px] mx-auto p-5 my-5 shadow-md" id={destinationGuide.sampleItineraries.title}>
+            <div className="w-[95%] max-w-[1000px] mx-auto p-5 my-5 " id={destinationGuide.sampleItineraries.title}>
                 <h2 className="text-[2em] font-bold text-blue-500">{destinationGuide.sampleItineraries.title}</h2>
                 <p>{destinationGuide.sampleItineraries.content}</p>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
