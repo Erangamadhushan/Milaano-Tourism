@@ -9,6 +9,9 @@ function ItemList() {
     const fetchItems = async () => {
       try {
         const response = await fetch('http://localhost:5000/api/items');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
         setItems(data);
         setLoading(false);
