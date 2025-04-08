@@ -139,7 +139,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-[100%] max-w-[1320px] scroll-up  min-h-[40vh] bg-blue-500 mx-auto my-20 flex gap-5">
+                <div className="relative w-[100%] max-w-[1320px] scroll-up  min-h-[40vh] p-5 bg-blue-500 mx-auto my-20 flex gap-5">
                     <div className="grid grid-cols-1 md:grid-cols-2 ">
                         <div className="p-5">
                              <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>

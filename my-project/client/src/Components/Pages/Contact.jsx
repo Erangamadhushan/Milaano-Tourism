@@ -10,18 +10,18 @@ export default function Contact() {
                 <p className="text-2xl text-center text-blue-500 font-semibold pb-3">About who we are and what we do</p>
                 <p className="text-2xl text-center text-blue-500 font-semibold pb-3">We're here to answer any question you may have</p>
             </div>
-            <div className="w-[75%] max-w-[1200px] mx-auto py-5 my-5">
+            <div className="w-[90%] max-w-[1400px] mx-auto py-5 my-5">
                 {
                     contact.map((item, index) => {
                         return (
                             <div className="pb-5 scroll-up">
-                                <h3 className="text-2xl">{item.desc}</h3>
+                                <h3 className="text-2xl text-center">{item.desc}</h3>
                             </div>
                         )
                     })
                 }
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div className="shadow-lg shadow-blue-400 scroll-up p-5 my-10 min-h-[200px] grid items-center duration-300  hover:text-coral ">
+                <div className="flex flex-wrap justify-center items-center gap-5">
+                    <div className="shadow-lg shadow-blue-400 w-[380px] max-w-[400px] scroll-up p-5 my-10 min-h-[200px] grid items-center duration-300  hover:text-coral ">
                         <h3 className="text-2xl text-blue-500">{contactContent[0].addressTitle}</h3>
                         <ul>
                             {
@@ -34,7 +34,7 @@ export default function Contact() {
                         </ul>
                     </div>
 
-                    <div className="shadow-lg shadow-blue-500 p-5  my-10 scroll-up min-h-[200px] grid items-center  duration-300 ">
+                    <div className="shadow-lg shadow-blue-500 w-[380px] max-w-[400px]  p-5  my-10 scroll-up min-h-[200px] grid items-center  duration-300 ">
                         <div className=" scroll-up">
                             <p className="text-2xl text-blue-500">{contactContent[1].informationTitle}</p>
                             <p>Email : {contactContent[1].email}</p>
@@ -42,7 +42,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 ">
+                    <div className="shadow-lg shadow-blue-500 p-5 w-[380px] max-w-[400px]  scroll-up my-10 min-h-[200px] grid items-center duration-300 ">
                         <div className="scroll-up">
                             <p className="text-2xl text-blue-500">{contactContent[2].operationTitle}</p>
                             <p>{contactContent[2].duration1}</p>
@@ -50,7 +50,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
+                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 w-[380px] max-w-[400px]  min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
                         <div className="scroll-up">
                             <h3 className="text-2xl text-blue-500">{contactContent[3].responseTitle}</h3>
                             <ul>
@@ -65,7 +65,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
+                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 w-[380px] max-w-[400px]  min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
                         <div className="scroll-up">
                             <h3 className="text-blue-500 text-2xl">{contactContent[4].socialTitle}</h3>
                             <ul>
@@ -80,7 +80,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
+                    <div className="w-[380px] max-w-[400px] shadow-lg shadow-blue-500 p-5 scroll-up my-10 min-h-[200px] grid items-center duration-300 hover:scale-y-[1.05] hover:text-coral">
                         <div className="scroll-up">
                             <h3 className="text-2xl text-blue-500">{contactContent[5].additinalInformation}</h3>
                             <ul>
@@ -96,29 +96,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div class="container py-5 text-center">
-                <h2 className="text-3xl text-blue-500">Who We are ?</h2>
-            </div>
-            <div className="py-[20px] my-5 flex flex-wrap gap-5 justify-center items-center">
-{/*                 
-                {
-                    developers.map((developer, $index) => {
-                        return (
-                            <div class="w-[75%] max-w-[380px] grid p-3 shadow-md relative hover:shadow-2xl hover:scale-[1.01] duration-300">
-                                <div>
-                                    <img src={developer.img} alt={developer.desc} className="w-[75%] mx-auto"/>
-                                </div>
-                                <div className="py-5">
-                                    <h2 className="text-center text-2xl font-semibold text-blue-500">{developer.name}</h2>
-                                    <h4 className="text-xl text-center py-2 text-blue-600">{developer.title}</h4>
-                                    <p className="text-center">{developer.desc}</p>
-                                </div>
-                                
-                            </div>
-                        )
-                    })
-                } */}
-            </div>
+            
         </>
     )
 }
