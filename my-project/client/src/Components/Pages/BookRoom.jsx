@@ -55,7 +55,7 @@ function BookRoom() {
                                 </div>
                                 <div className="grid grid-cols-1 gap-2">
                                     <div>
-                                        <input type="email" placeholder="example@gmail.com" className="border border-gray-200 p-2 rounded-lg w-[85%]" required/>
+                                        <input type="email" placeholder="example@gmail.com" className="border border-gray-200 p-2 rounded-lg w-[90%]" required/>
                                     </div>
                                     
                                 </div>
@@ -66,7 +66,7 @@ function BookRoom() {
                                 </div>
                                 <div className="grid grid-cols-1 gap-2">
                                     <div>
-                                        <select onSelect={(e) => setRoom(e.target.value)} className="border border-gray-200 p-2 rounded-lg w-[85%]" required>
+                                        <select onSelect={(e) => setRoom(e.target.value)} className="border border-gray-200 p-2 rounded-lg w-[90%]" required>
                                             {
                                                 roomTypes.map((roomType) => {
                                                     return (
@@ -84,7 +84,7 @@ function BookRoom() {
                                 </div>
                                 <div className="grid grid-cols-1 gap-2">
                                     <div>
-                                        <input type="number" placeholder="eg:2,3,4" className="border border-gray-200 p-2 rounded-lg w-[85%]" required/>
+                                        <input type="number" placeholder="eg:2,3,4" className="border border-gray-200 p-2 rounded-lg w-[90%]" required/>
                                     </div>
                                     
                                 </div>

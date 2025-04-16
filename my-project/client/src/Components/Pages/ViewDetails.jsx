@@ -19,7 +19,7 @@ const BookNow = () => {
                 </div>
                 <div className='grid grid-cols-1 p-5'>
                     <div className='bg-white p-2 rounded-lg'>
-                        <p className='text-[1.5em] font-bold text-blue-500'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00`}</span></p>
+                        <p className='text-[1.5em] font-bold text-blue-500'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00/Per Day`}</span></p>
                         <p className='text-gray-500'>{roomDetails.room_description}</p>
                         <p className='text-blue-500 py-4'>Room Features</p>
                         <ul>
@@ -29,6 +29,13 @@ const BookNow = () => {
                                 ))
                             }
                         </ul>
+                        <div className='flex flex-wrap gap-3 mt-5'>
+                            {
+                                roomDetails.room_amenities.map((amenity, index) => (
+                                    <div key={index} className='bg-gray-100 p-2 rounded-lg'>{amenity}</div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
                 <div>
