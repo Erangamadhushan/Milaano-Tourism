@@ -8,20 +8,29 @@ const Header = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  // if(document.scrollY > 0){
+  //   document.querySelector('nav').classList.remove('bg-transparent');
+  //   document.querySelector('nav').classList.add('bg-white');
+  // }
+  // else{
+  //   document.querySelector('nav').classList.remove('bg-white');
+  //   document.querySelector('nav').classList.add('bg-transparent');
+  // }
 
+  // bg-transparent p-4 sticky top-0 z-50 shadow-xl
   return (
-    <nav className="bg-blue-700 p-4 sticky top-0 z-50 shadow-lg">
+    <nav className="bg-white p-4 sticky top-0 z-50 shadow-xl">
       {/* Logo and Navigation */}
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-center gap-10 items-center">
         {/* Logo */}
-        <div className="text-white font-bold text-xl"><Link to="/" ><span className="text-blue-950">M</span>ILAANO <span className="text-blue-950">T</span>OURISM </Link></div>
+        <div className="text-black font-bold text-xl"><Link to="/" ><span className="text-blue-950">M</span>ILAANO <span className="text-blue-950">T</span>OURISM </Link></div>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-            <Link to="/" className="text-white text-bold text-xl hover:text-blue-950">HOME</Link>
-            <Link to="/aboutus" className="text-white text-bold text-xl hover:text-blue-950">ABOUT</Link>
-            <Link to="/contact" className="text-white text-bold text-xl hover:text-blue-950">CONTACT</Link>
-            <Link to="/service" className="text-white text-bold text-xl hover:text-blue-950">SERVICES</Link>
+            <Link to="/" className="text-black text-bold text-xl hover:text-blue-950">HOME</Link>
+            <Link to="/aboutus" className="text-black text-bold text-xl hover:text-blue-950">ABOUT</Link>
+            <Link to="/contact" className="text-black text-bold text-xl hover:text-blue-950">CONTACT</Link>
+            <Link to="/service" className="text-black text-bold text-xl hover:text-blue-950">SERVICES</Link>
         </div>
         
         {/* Mobile Navigation Toggle */}
@@ -42,7 +51,7 @@ const Header = () => {
       
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-2 px-2 pt-2 pb-4 space-y-1">
+        <div className="md:hidden mt-2 px-2 pt-2 pb-4 space-y-1 bg-gray-500">
             <div className='grid space-y-3'>
                 <Link to="/" className="text-white text-bold text-lg hover:text-blue-950">HOME</Link>
                 <Link to="/aboutus" className="text-white text-bold text-lg hover:text-blue-950">ABOUT</Link>

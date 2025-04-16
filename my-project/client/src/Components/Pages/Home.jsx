@@ -44,14 +44,24 @@ function Home() {
                         )
                     })
                 }
-                <div className="flex flex-row py-5 max-w-[1320px] mx-auto ">
-                    <div className="relative w-[100vw] lg:w-[65vw] p-3">
-                        <div className="scroll-up">
-                            <h2 className="text-[1.5em] py-4 text-center lg:text-justify text-blue-500 font-semibold lg:text-[2em]">About Us</h2>
-                            <h2 className="text-[1.25em] lg:text-[1.5em] py-3">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
+                <div className="flex flex-row py-5 max-w-[1420px] mx-auto ">
+                    <div className="relative p-3">
+                        <div className="w-[95%] mx-auto md:float-left max-w-[800px] scroll-up">
+                            <h2 className="text-[1.5em] md:text-[3em] lg:text-[5em] py-4 text-center lg:text-justify text-zinc-700 font-semibold">About Us</h2>
+                            <h2 className="text-[1.25em] lg:text-[2.5em] py-3 text-zinc-700">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
                         </div>
-                        <div class="flex flex-wrap justify-center items-center gap-3 gap-y-5 py-[3em]">
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 duration-500 ">
+                        <div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div>
+                <div className="relative p-3">
+                        <div class="flex flex-wrap justify-center items-center gap-3 gap-y-5 py-[3em] float:left">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-s-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
@@ -93,7 +103,6 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 <div className="relative grid mx-auto">
                     <div className="py-5 mx-auto">
