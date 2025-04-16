@@ -1,11 +1,19 @@
-import React  from "react";
-import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg }  from '../../assets/Home/HomeResource.js';
+import React, {useEffect, useState}  from "react";
+import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg, introduceAbout }  from '../../assets/Home/HomeResource.js';
 import useScrollReveal from '../../hooks/scrollReveal.js';
 import RoomCategory from "./RoomCategory.jsx";
 import { roomContent } from '../../assets/Home/rooms/content.js';
 
 
 function Home() {
+
+    const [aboutImage, setAboutImage] = useState(introduceAbout[0]);
+
+    useEffect(() => {
+        setTimeout(()=> {
+            setAboutImage((aboutImage == introduceAbout[0] ? introduceAbout[0]:introduceAbout[1]))
+        },5000)
+    },[])
 
     useScrollReveal();
     const myImgStyles = {
@@ -44,14 +52,14 @@ function Home() {
                         )
                     })
                 }
-                <div className="flex flex-row py-5 max-w-[1420px] mx-auto ">
+                <div className="flex flex-row py-5 max-w-[1420px] mx-auto my-10">
                     <div className="relative p-3">
-                        <div className="w-[95%] mx-auto md:float-left max-w-[800px] scroll-up">
+                        <div className="w-[95%] mx-auto md:float-left max-w-[900px] scroll-up">
                             <h2 className="text-[1.5em] md:text-[3em] lg:text-[5em] py-4 text-center lg:text-justify text-zinc-700 font-semibold">About Us</h2>
                             <h2 className="text-[1.25em] lg:text-[2.5em] py-3 text-zinc-700">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
                         </div>
-                        <div>
-                            
+                        <div className="w-[95%] mx-auto md:float-left max-w-[350px] scroll-up">
+                            <img src={aboutImage} className="rounded-[15%]" alt="introduce about content "/>
                         </div>
                         
                     </div>

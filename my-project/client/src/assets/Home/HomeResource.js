@@ -15,6 +15,8 @@ import recap7 from './wildAnimals.jpg';
 import recap8 from './dance.jpg';
 import recap9 from './anuradhapura.jpg';
 import luxuryRoom from './luxuryRoom.jpg';
+import lobby from './lobby.jpg';
+import bed_ex from './bed_ex.jpg';
 
 import mainicons1  from './icons/bed.png';
 import mainicons2  from './icons/staff.png';
@@ -41,3 +43,4 @@ export const events = [
 ];
 export const destinations = [destination1];
 export const recaps = [recap1, recap2, recap3, recap4, recap5, recap6, recap7, recap8, recap9];
+export const introduceAbout = [lobby, bed_ex];
