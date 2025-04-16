@@ -40,7 +40,7 @@ function Home() {
                                         <div className="w-[100%] md:w-[60%] mx-auto min-h-[90vh] grid place-items-center items-center">
                                             <div className="scroll-reveal">
                                                 <h1 className=" text-[1.5em] md:text-[3em]  text-gray-100 font-bold py-3">Milaano Hotels, Your Luxury Gateway to Sri Lankan Paradise</h1>
-                                                <p className="text-lg text-white">Welcome to Milaano Hotels, where international travelers discover the true essence of Sri Lankan hospitality. Nestled along Sri Lanka's pristine coastline, our exclusive property offers a perfect blend of luxury, comfort, and authentic cultural experiences designed specifically for our foreign guests.</p>
+                                                <p className="text-lg text-white">Welcome to Milaano Hotels, where international travelers discover the true essence of Sri Lankan hospitality. Nestled along Sri Lanka pristine coastline, our exclusive property offers a perfect blend of luxury, comfort, and authentic cultural experiences designed specifically for our foreign guests.</p>
                                                 <div className="py-4 my-3">
                                                     <a href="/explorermore" class="mt-5 bg-blue-500 text-white text-lg p-5 px-[50px] font-semibold hover:bg-blue-600">Explorer </a>
                                                 </div>
@@ -60,51 +60,54 @@ function Home() {
                         </div>
                         <div className="w-[95%] mx-auto md:float-left max-w-[350px] scroll-up">
                             <img src={aboutImage} className="rounded-[15%]" alt="introduce about content "/>
+                            <div className="absolute top-[-20%] left-[-15%] w-[60%] h-full scroll-up-500">
+                                <img src={introduceAbout[1]} className="rounded-[15%]" alt="introduce about content "/>
+                            </div>
+                            <div className="absolute bottom-[-20%] right-[-5%] w-[90%] he-full scroll-up-1000">
+                                <img src={introduceAbout[2]} className="rounded-[15%]" alt="introduce about content "/>
+                            </div>
                         </div>
-                        
                     </div>
-                    
-                    
                 </div>
                 <div>
                 <div className="relative p-3">
-                        <div class="flex flex-wrap justify-center items-center gap-3 gap-y-5 py-[3em] float:left">
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-s-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div class="flex flex-wrap justify-center items-center gap-3 py-[3em] float:left">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto  border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff & Service</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Our dedicated team delivers exceptional hospitality with 24/7 attentive service. From swift check-in to personalized concierge assistance, our professional staff anticipates your needs with warmth and efficiency, ensuring every moment of your stay exceeds expectations.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto  border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl  font-bold hover:text-white">Dining & Food</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Wellness & Recreation</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-blue-500 min-h-[200px] p-3 py-5 group hover:bg-blue-400 duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Business & Events</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto   border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Location & Accessibility</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto  border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400 duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Technology & Connectivity</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs.</p>
                             </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-blue-500 min-h-[200px] py-5 p-3 group hover:bg-blue-400  duration-500">
+                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
                                 <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
                                 <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Safety & Security</h2>
                                 <p className="text-gray-500 text-center group-hover:text-white">Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed.</p>
@@ -114,8 +117,8 @@ function Home() {
                 </div>
                 <div className="relative grid mx-auto">
                     <div className="py-5 mx-auto">
-                        <h2 className="text-[1.25em] lg:text-[1.75em] py-3 text-center lg:text-justify text-blue-500 font-semibold ">------- Our Rooms -------</h2>
-                        <h2 className="text-[1.25em] lg:text-[2.25em] py-3 text-center lg:text-justify text-blue-500 font-semibold">Explorer Our Rooms</h2>
+                        <h2 className="text-[1.25em] md:text-[1.75em] lg:text-[2.5em] py-3 text-center lg:text-justify text-zinc-500 font-semibold ">------- Our Rooms -------</h2>
+                        <h2 className="text-[1.25em] md:text-[2.25em] lg:text-[2.5em] py-3 text-center lg:text-justify text-zinc-500 font-semibold">Explorer Our Rooms</h2>
                     </div>
                     <div className="relative py-5 max-w-[1380px] flex flex-wrap justify-center items-center mx-auto">
                         
@@ -140,7 +143,7 @@ function Home() {
                         </div>
                         <div className="w-[95%] max-w-[400px]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Family Adventure Bundle</h2>
-                            <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children's welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
+                            <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
                         </div>
                         <div className="w-[95%] max-w-[400px]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Business Success Package</h2>
@@ -148,7 +151,7 @@ function Home() {
                         </div>
                         <div className="w-[95%] max-w-[400px]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Romantic Getaway</h2>
-                            <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple's massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
+                            <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
                         </div>
                         <div className="w-[95%] max-w-[400px]  mx-auto  p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
                             <h2 class="text-center text-[1.5em] text-blue-500 py-3">Seasonal Special: Winter Warmth Retreat</h2>
@@ -209,7 +212,7 @@ function Home() {
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-black">Things to do</h2>
                         <p className="text-[2.5em] ">in Sri Lanka</p>
-                        <p className="text-lg py-10">We want to share Sri Lanka's extraordinarily diverse and authentic story with the rest of the world. We want to help you discover the many thousands of different ways in which you can fall in love with our home & plan the perfect trip; local experts, local perspective and all the best tips on where to eat, what to do, who to meet, how to get there and where to make your next favourite memory.</p>
+                        <p className="text-lg py-10">We want to share Sri Lanka extraordinarily diverse and authentic story with the rest of the world. We want to help you discover the many thousands of different ways in which you can fall in love with our home & plan the perfect trip; local experts, local perspective and all the best tips on where to eat, what to do, who to meet, how to get there and where to make your next favourite memory.</p>
                         <a href="/findout" className="border border-blue-500 p-5 text-lg hover:bg-blue-500 hover:text-white">Find Out More </a>
                     </div>
                 </div>
@@ -224,7 +227,7 @@ function Home() {
                                 <img src={recaps[0]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="p-10 text-white text-[1em] md:text-[1.5em] text-center">Golden sands meet turquoise waters along Sri Lanka's stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
+                                <p className="p-10 text-white text-[1em] md:text-[1.5em] text-center">Golden sands meet turquoise waters along Sri Lanka stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2" style={subContentParent} >
@@ -233,7 +236,7 @@ function Home() {
                                     <img src={recaps[1]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-white text-[1em]">Golden sands meet turquoise waters along Sri Lanka's stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
+                                    <p className="text-white text-[1em]">Golden sands meet turquoise waters along Sri Lanka stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
                                 </div>
                             </div>
                             <div style={subContentParent} className="group">
@@ -241,7 +244,7 @@ function Home() {
                                     <img src={recaps[2]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex duration-1000">
-                                    <p className="text-center text-white">The railway journey through Sri Lanka offers one of the world's most scenic rides. Vintage trains wind through misty mountains, tea plantations, and dense forests, providing breathtaking panoramas at every turn.</p>
+                                    <p className="text-center text-white">The railway journey through Sri Lanka offers one of the world most scenic rides. Vintage trains wind through misty mountains, tea plantations, and dense forests, providing breathtaking panoramas at every turn.</p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +253,7 @@ function Home() {
                                 <img src={recaps[3]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                             </div>
                             <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="text-white text-center text-[1em] md:text-[1.5em]">Lush hillside plantations produce world-renowned Ceylon tea. Workers skillfully pluck tender leaves from emerald slopes, contributing to the country's signature export.</p>
+                                <p className="text-white text-center text-[1em] md:text-[1.5em]">Lush hillside plantations produce world-renowned Ceylon tea. Workers skillfully pluck tender leaves from emerald slopes, contributing to the country signature export.</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +264,7 @@ function Home() {
                                     <img src={recaps[4]} class="w-[100%] " style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-center text-white">This ancient rock fortress rises dramatically from the jungle, topped with the ruins of King Kasyapa's palace. Its frescoes and mirror wall attract visitors worldwide.</p>
+                                    <p className="text-center text-white">This ancient rock fortress rises dramatically from the jungle, topped with the ruins of King Kasyapa palace. Its frescoes and mirror wall attract visitors worldwide.</p>
                                 </div>
                             </div>
                             <div style={subContentParent} >
@@ -270,7 +273,7 @@ function Home() {
                                         <img src={recaps[7]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                     </div>
                                     <div style={myhoverContent} className="hidden  group-hover:flex">
-                                        <p className="text-center text-white">This grand Buddhist festival features elaborately decorated elephants, traditional dancers, and fire performers parading through Kandy's streets.</p>
+                                        <p className="text-center text-white">This grand Buddhist festival features elaborately decorated elephants, traditional dancers, and fire performers parading through Kandy streets.</p>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +292,7 @@ function Home() {
                                     <img src={recaps[8]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
                                 </div>
                                 <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-center text-white text-[1em] md:text-[1.5em]">Sri Lanka's ancient capital showcases towering stupas, sacred Bodhi trees, and intricate stone carvings from the island's earliest Buddhist civilization.</p>
+                                    <p className="text-center text-white text-[1em] md:text-[1.5em]">Sri Lanka ancient capital showcases towering stupas, sacred Bodhi trees, and intricate stone carvings from the island earliest Buddhist civilization.</p>
                                 </div> 
                             </div>
                         </div>
