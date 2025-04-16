@@ -42,7 +42,7 @@ function Home() {
                                                 <h1 className=" text-[1.5em] md:text-[3em]  text-gray-100 font-bold py-3">Milaano Hotels, Your Luxury Gateway to Sri Lankan Paradise</h1>
                                                 <p className="text-lg text-white">Welcome to Milaano Hotels, where international travelers discover the true essence of Sri Lankan hospitality. Nestled along Sri Lanka pristine coastline, our exclusive property offers a perfect blend of luxury, comfort, and authentic cultural experiences designed specifically for our foreign guests.</p>
                                                 <div className="py-4 my-3">
-                                                    <a href="/explorermore" class="mt-5 bg-blue-500 text-white text-lg p-5 px-[50px] font-semibold hover:bg-blue-600">Explorer </a>
+                                                    <a href="/explorermore" class="mt-5 bg-zinc-500 text-white text-lg p-5 px-[50px] font-semibold hover:bg-zinc-600">Explorer </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,7 +63,7 @@ function Home() {
                             <div className="absolute top-[-20%] left-[-15%] w-[60%] h-full scroll-up-500">
                                 <img src={introduceAbout[1]} className="rounded-[15%]" alt="introduce about content "/>
                             </div>
-                            <div className="absolute bottom-[-20%] right-[-5%] w-[90%] he-full scroll-up-1000">
+                            <div className="absolute bottom-[-20%] right-[-5%] w-[90%] he-full scroll-up-700">
                                 <img src={introduceAbout[2]} className="rounded-[15%]" alt="introduce about content "/>
                             </div>
                         </div>
@@ -71,49 +71,50 @@ function Home() {
                 </div>
                 <div>
                 <div className="relative p-3">
-                        <div class="flex flex-wrap justify-center items-center gap-3 py-[3em] float:left">
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff & Service</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Our dedicated team delivers exceptional hospitality with 24/7 attentive service. From swift check-in to personalized concierge assistance, our professional staff anticipates your needs with warmth and efficiency, ensuring every moment of your stay exceeds expectations.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl  font-bold hover:text-white">Dining & Food</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Wellness & Recreation</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Business & Events</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Location & Accessibility</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Technology & Connectivity</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs.</p>
-                            </div>
-                            <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
-                                <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
-                                <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Safety & Security</h2>
-                                <p className="text-gray-500 text-center group-hover:text-white">Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed.</p>
-                            </div>
+                    <div className="flex flex-wrap justify-center items-center gap-3 py-[3em] float:left">
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff & Service</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Our dedicated team delivers exceptional hospitality with 24/7 attentive service. From swift check-in to personalized concierge assistance, our professional staff anticipates your needs with warmth and efficiency, ensuring every moment of your stay exceeds expectations.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl  font-bold hover:text-white">Dining & Food</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Wellness & Recreation</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Business & Events</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Location & Accessibility</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Technology & Connectivity</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs.</p>
+                        </div>
+                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                            <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
+                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Safety & Security</h2>
+                            <p className="text-gray-500 text-center group-hover:text-white">Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed.</p>
                         </div>
                     </div>
+                    
+                </div>
                 </div>
                 <div className="relative grid mx-auto">
                     <div className="py-5 mx-auto">
@@ -159,20 +160,16 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-[100%] max-w-[1320px] scroll-up  min-h-[40vh] p-5 bg-blue-500 mx-auto my-20 flex gap-5">
+                <div className="relative w-[100%] scroll-up  min-h-[80vh] p-5 bg-blue-500 mx-auto my-20 flex gap-5" style={{backgroundImage:`url(${introduceAbout[3]})`,backgroundSize:"cover"}}>
                     <div className="grid grid-cols-1 md:grid-cols-2 ">
-                        <div className="p-5">
+                        <div className="p-5 w-[95%] max-w-[800px] mx-auto justify-center">
                              <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>
                              <p className="text-white text-[1.25em] md:text-[1.75] py-5">Our opulent rooms and suites redefine luxury with handcrafted furniture, Egyptian cotton linens, and panoramic views. Indulge in marble bathrooms with rainfall showers, smart climate control, and curated mini-bars featuring artisanal selections for an unparalleled retreat.</p>
                              <div className="py-4">
                                 <a href="/bookroom" className=" hover:bg-blue-400 m-4 my-10 p-5 hover:text-white duration-300 bg-white text-blue-500 font-bold ">Book Room</a>
                              </div>
                         </div>
-                        <div className="min-h-[300px]" style={{backgroundImage:`url(${luxuryRoomImg})`,backgroundSize:"cover",}}>
-                            <div className="bg-[#2222226b] w-full h-full flex justify-center items-center">
-                                <p  className="text-lg text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. In soluta qui temporibus ipsum sed hic consequatur id fugit pariatur? Nesciunt velit, minus laboriosam veniam totam voluptates earum molestias, iusto placeat tenetur maxime aliquam nostrum reprehenderit!</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 
