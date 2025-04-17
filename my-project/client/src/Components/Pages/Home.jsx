@@ -138,35 +138,35 @@ function Home() {
                     </div>
                     {/*  */}
                     <div className="flex flex-wrap justify-center items-center py-5">
-                        <div className="w-[95%] max-w-[350px] mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
+                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
                             <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Weekend Escape Package</h2>
                             <p class="text-center">Treat yourself to a perfect weekend getaway with our all-inclusive Weekend Escape Package. Enjoy luxurious accommodations for two nights, complimentary breakfast in bed each morning, and a special welcome amenity upon arrival. Unwind with included access to our premium spa facilities and take advantage of late checkout on Sunday. Book now and receive a $50 dining credit to use at any of our award-winning restaurants.</p>
                         </div>
-                        <div className="w-[95%] max-w-[350px]  mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
+                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
                             <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Family Adventure Bundle</h2>
                             <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
                         </div>
-                        <div className="w-[95%] max-w-[350px]  mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
+                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
                             <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Business Success Package</h2>
                             <p class="text-center">Designed for the discerning business traveler, our Business Success Package combines comfort with productivity. Enjoy early check-in and late checkout, premium high-speed Wi-Fi, daily breakfast, and complimentary pressing of two garments per stay. Your package includes access to our executive lounge with all-day refreshments and dedicated workspaces. Plus, receive a $30 credit per day for our 24-hour room service—perfect for those late-night work sessions.</p>
                         </div>
-                        <div className="w-[95%] max-w-[350px]  mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
+                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
                             <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Romantic Getaway</h2>
                             <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
                         </div>
-                        <div className="w-[95%] max-w-[350px]  mx-auto  p-4 shadow-xl shadow-zinc-300  scroll-up">
+                        <div className="w-[95%] max-w-[350px] my-4 mx-auto  p-4 shadow-xl shadow-zinc-300  scroll-up">
                             <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Seasonal Special: Winter Warmth Retreat</h2>
                             <p class="text-center">Escape the winter chill with our limited-time Winter Warmth Retreat. Cozy up in our luxury accommodations with a fireplace, complimentary hot chocolate, and warm cookies delivered daily. Your package includes breakfast each morning and a special winter-themed dinner experience. Take advantage of our indoor heated pool and hot tub facilities, and receive a 20% discount on all spa treatments. Book before December 15th for an additional night free.</p>
                         </div>
                     </div>
                 </div>
-                <div className="relative w-[100%] scroll-up  min-h-[80vh] p-5 bg-blue-500 mx-auto my-20 flex gap-5" style={{backgroundImage:`url(${introduceAbout[3]})`,backgroundSize:"cover"}}>
+                <div className="relative w-[100%] scroll-up  min-h-[80vh] p-5 bg-zinc-500 mx-auto my-20 flex gap-5" style={{backgroundImage:`url(${introduceAbout[3]})`,backgroundSize:"cover"}}>
                     <div className="grid grid-cols-1 md:grid-cols-2 ">
                         <div className="p-5 w-[95%] max-w-[800px] mx-auto justify-center">
                              <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>
                              <p className="text-white text-[1.25em] md:text-[1.75] py-5">Our opulent rooms and suites redefine luxury with handcrafted furniture, Egyptian cotton linens, and panoramic views. Indulge in marble bathrooms with rainfall showers, smart climate control, and curated mini-bars featuring artisanal selections for an unparalleled retreat.</p>
                              <div className="py-4">
-                                <a href="/bookroom" className=" hover:bg-blue-400 m-4 my-10 p-5 hover:text-white duration-300 bg-white text-blue-500 font-bold ">Book Room</a>
+                                <a href="/bookroom" className=" hover:bg-zinc-400 m-4 my-10 p-5 hover:text-white duration-300 bg-white text-zinc-500 font-bold ">Book Room</a>
                              </div>
                         </div>
                         
@@ -179,10 +179,10 @@ function Home() {
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10 scroll-reveal" >
                 <div className="p-5" >
                     <div className="">
-                        <h2 className="text-[3.5em] font-extrabold text-black">Destination  Guide</h2>
-                        <p className="text-[2.5em] ">Holiday in Sri Lanka</p>
+                        <h2 className="text-[3.5em] font-extrabold text-zinc-500">Destination  Guide</h2>
+                        <p className="text-[2.5em] text-zinc-500">Holiday in Sri Lanka</p>
                         <p className="text-lg py-10">Sri Lanka is a meeting place of friendly faces who share their homes and trade; a space for spiritual healing; a land for learning from the old and the new; a hub of commercial activity; a spot for tranquility. Sri Lanka casts a spell unlike anywhere else. It draws people in, not with artificial attractions and grand gestures, but by spellbinding soul and sincerity.</p>
-                        <a href="/findout" className="border border-blue-500 p-5 text-lg hover:bg-blue-500 hover:text-white">Find Out More </a>
+                        <a href="/findout" className="border border-zinc-500 p-5 text-lg hover:bg-zinc-500 hover:text-white">Find Out More </a>
                     </div>
                 </div>
                 <div className="p-5 grid">
@@ -207,10 +207,10 @@ function Home() {
                 </div>
                 <div className="p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div className="">
-                        <h2 className="text-[3.5em] font-extrabold text-black">Things to do</h2>
-                        <p className="text-[2.5em] ">in Sri Lanka</p>
+                        <h2 className="text-[3.5em] font-extrabold text-zinc-500">Things to do</h2>
+                        <p className="text-[2.5em] text-zinc-500">in Sri Lanka</p>
                         <p className="text-lg py-10">We want to share Sri Lanka extraordinarily diverse and authentic story with the rest of the world. We want to help you discover the many thousands of different ways in which you can fall in love with our home & plan the perfect trip; local experts, local perspective and all the best tips on where to eat, what to do, who to meet, how to get there and where to make your next favourite memory.</p>
-                        <a href="/findout" className="border border-blue-500 p-5 text-lg hover:bg-blue-500 hover:text-white">Find Out More </a>
+                        <a href="/findout" className="border border-zinc-500 p-5 text-lg hover:bg-zinc-500 hover:text-white">Find Out More </a>
                     </div>
                 </div>
             </div>
@@ -299,15 +299,15 @@ function Home() {
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto p-5 bg-mainColor my-1">
                 <div>
-                    <h3 className="text-3xl px-5 font-semibold text-blue-500">Subscribe Our Newslatter</h3>
+                    <h3 className="text-3xl px-5 font-semibold text-zinc-500">Subscribe Our Newslatter</h3>
                 </div>
                 <form action="">
                     <div className=" grid grid-cols-1 content-center items-center justify-center p-5 gap-3 md:grid-cols-2">
                         <div className="w-full">
-                            <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-blue-400 text-blue-500 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
+                            <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-zinc-400 text-zinc-500 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
                         </div>
                         <div className="">
-                            <input type="submit" className=" text-lg bg-blue-600 text-white p-4 px-7 hover:bg-blue-800 cursor-pointer" value="Subscribe"/>
+                            <input type="submit" className=" text-lg bg-zinc-600 text-white p-4 px-7 hover:bg-zinc-800 cursor-pointer" value="Subscribe"/>
                         </div>
                     </div>
                 </form>
