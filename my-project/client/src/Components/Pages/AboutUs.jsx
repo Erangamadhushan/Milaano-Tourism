@@ -35,8 +35,8 @@ export default function AboutUs() {
                                     <p className="text-lg font-semibold">{item.role}</p>
                                     <p className="text-gray-500">{item.email}</p>
                                     <div className="flex justify-center items-center gap-2 py-3">
-                                        <a href={item.linkedin} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin text-[1.5em] text-blue-500"></i></a>
-                                        <a href={item.facebook} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook text-[1.5em] text-blue-500"></i></a>
+                                        <a href={item.linkedin} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin text-[1.5em] text-zinc-500 hover:text-zinc-800"></i></a>
+                                        <a href={item.facebook} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook text-[1.5em] text-zinc-500 hover:text-zinc-800"></i></a>
                                     </div>
 
                                 </div>
