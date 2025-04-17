@@ -63,7 +63,7 @@ function Home() {
                             <div className="absolute top-[-20%] left-[-15%] w-[60%] h-full scroll-up-500">
                                 <img src={introduceAbout[1]} className="rounded-[15%]" alt="introduce about content "/>
                             </div>
-                            <div className="absolute bottom-[-20%] right-[-5%] w-[90%] he-full scroll-up-700">
+                            <div className="absolute bottom-[-20%] right-[-15%] w-[55%] he-full scroll-up-700">
                                 <img src={introduceAbout[2]} className="rounded-[15%]" alt="introduce about content "/>
                             </div>
                         </div>
@@ -71,46 +71,46 @@ function Home() {
                 </div>
                 <div>
                 <div className="relative p-3">
-                    <div className="flex flex-wrap justify-center items-center gap-3 py-[3em] float:left">
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 items-center md:grid-cols- py-[3em] float:left">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Rooms</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
+                            <h2 className="text-black text-center text-xl font-bold">Rooms</h2>
+                            <p className="text-gray-500 text-center">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Staff & Service</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Our dedicated team delivers exceptional hospitality with 24/7 attentive service. From swift check-in to personalized concierge assistance, our professional staff anticipates your needs with warmth and efficiency, ensuring every moment of your stay exceeds expectations.</p>
+                            <h2 className="text-black text-center text-xl  font-bold">Staff & Service</h2>
+                            <p className="text-gray-500 text-center">Our dedicated team delivers exceptional hospitality with 24/7 attentive service. From swift check-in to personalized concierge assistance, our professional staff anticipates your needs with warmth and efficiency, ensuring every moment of your stay exceeds expectations.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold hover:text-white">Dining & Food</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request.</p>
+                            <h2 className="text-black text-center text-xl  font-bold">Dining & Food</h2>
+                            <p className="text-gray-500 text-center">Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Wellness & Recreation</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal.</p>
+                            <h2 className="text-black text-center text-xl font-bold">Wellness & Recreation</h2>
+                            <p className="text-gray-500 text-center">Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Business & Events</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution.</p>
+                            <h2 className="text-black text-center text-xl font-bold">Business & Events</h2>
+                            <p className="text-gray-500 text-center">Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Location & Accessibility</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities.</p>
+                            <h2 className="text-black text-center text-xl  font-bold">Location & Accessibility</h2>
+                            <p className="text-gray-500 text-center">Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold group-hover:text-white">Technology & Connectivity</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs.</p>
+                            <h2 className="text-black text-center text-xl  font-bold">Technology & Connectivity</h2>
+                            <p className="text-gray-500 text-center">Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs.</p>
                         </div>
-                        <div className="w-[95%] scroll-items max-w-[380px] mx-auto border border-zinc-700 min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg hover:bg-zinc-700 duration-500 ">
+                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto  min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
                             <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold group-hover:text-white">Safety & Security</h2>
-                            <p className="text-gray-500 text-center group-hover:text-white">Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed.</p>
+                            <h2 className="text-black text-center text-xl font-bold">Safety & Security</h2>
+                            <p className="text-gray-500 text-center">Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed.</p>
                         </div>
                     </div>
                     
@@ -134,28 +134,28 @@ function Home() {
                 </div>
                 <div className="relative py-5 max-w-[1320px] mx-auto">
                     <div>
-                        <h2 className="text-center text-blue-500 font-semibold py-5 text-[1.5em] md:text-[2.5em] scroll-reveal">Exclusive Hotel Offers</h2>
+                        <h2 className="text-center text-zinc-700 font-semibold py-5 text-[1.5em] md:text-[2.5em] scroll-reveal">Exclusive Hotel Offers</h2>
                     </div>
                     {/*  */}
                     <div className="flex flex-wrap justify-center items-center py-5">
-                        <div className="w-[95%] max-w-[400px] mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-blue-500 py-3">Weekend Escape Package</h2>
+                        <div className="w-[95%] max-w-[350px] mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
+                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Weekend Escape Package</h2>
                             <p class="text-center">Treat yourself to a perfect weekend getaway with our all-inclusive Weekend Escape Package. Enjoy luxurious accommodations for two nights, complimentary breakfast in bed each morning, and a special welcome amenity upon arrival. Unwind with included access to our premium spa facilities and take advantage of late checkout on Sunday. Book now and receive a $50 dining credit to use at any of our award-winning restaurants.</p>
                         </div>
-                        <div className="w-[95%] max-w-[400px]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-blue-500 py-3">Family Adventure Bundle</h2>
+                        <div className="w-[95%] max-w-[350px]  mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
+                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Family Adventure Bundle</h2>
                             <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
                         </div>
-                        <div className="w-[95%] max-w-[400px]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-blue-500 py-3">Business Success Package</h2>
+                        <div className="w-[95%] max-w-[350px]  mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
+                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Business Success Package</h2>
                             <p class="text-center">Designed for the discerning business traveler, our Business Success Package combines comfort with productivity. Enjoy early check-in and late checkout, premium high-speed Wi-Fi, daily breakfast, and complimentary pressing of two garments per stay. Your package includes access to our executive lounge with all-day refreshments and dedicated workspaces. Plus, receive a $30 credit per day for our 24-hour room service—perfect for those late-night work sessions.</p>
                         </div>
-                        <div className="w-[95%] max-w-[400px]  mx-auto p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-blue-500 py-3">Romantic Getaway</h2>
+                        <div className="w-[95%] max-w-[350px]  mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
+                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Romantic Getaway</h2>
                             <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
                         </div>
-                        <div className="w-[95%] max-w-[400px]  mx-auto  p-4 shadow-xl shadow-blue-300 hover:shadow-2xl hover:shadow-blue-500 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-blue-500 py-3">Seasonal Special: Winter Warmth Retreat</h2>
+                        <div className="w-[95%] max-w-[350px]  mx-auto  p-4 shadow-xl shadow-zinc-300  scroll-up">
+                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Seasonal Special: Winter Warmth Retreat</h2>
                             <p class="text-center">Escape the winter chill with our limited-time Winter Warmth Retreat. Cozy up in our luxury accommodations with a fireplace, complimentary hot chocolate, and warm cookies delivered daily. Your package includes breakfast each morning and a special winter-themed dinner experience. Take advantage of our indoor heated pool and hot tub facilities, and receive a 20% discount on all spa treatments. Book before December 15th for an additional night free.</p>
                         </div>
                     </div>
