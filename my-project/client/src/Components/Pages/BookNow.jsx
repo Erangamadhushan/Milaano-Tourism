@@ -66,9 +66,9 @@ const BookNow = () => {
                     </div>
                     <div className='grid grid-cols-1  gap-5 mt-5'>
                         <div className='bg-white p-2 rounded-lg'>
-                            <p className='text-[1.5em] font-bold text-blue-500'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00 /Per Day`}</span></p>
+                            <p className='text-[1.5em] font-bold text-zinc-600'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-zinc-500'>{`  Rs. `}{roomDetails.room_price} {`.00 /Per Day`}</span></p>
                             <p className='text-gray-500'>{roomDetails.room_description}</p>
-                            <p className='text-blue-500 py-4'>Room Features</p>
+                            <p className='text-zinc-600 py-4'>Room Features</p>
                             <ul>
                                 {
                                     roomDetails.room_features.map((feature, index) => (
@@ -96,7 +96,7 @@ const BookNow = () => {
                     
                 <div className="grid grid-cols-1 p-5 py-3">
                     <div>
-                        <h3 className="text-3xl text-center text-blue-500 font-bold">Check Out</h3>
+                        <h3 className="text-3xl text-center text-zinc-600 font-bold">Check Out</h3>
                     </div>
                     <form ref={formRef} onSubmit={formSubmission} className="grid grid-cols-1">
                         <div className="grid grid-cols-1 py-4">
@@ -106,13 +106,13 @@ const BookNow = () => {
                                 <div className="p-2">
                                     <p>First Name :</p>
                                 </div>
-                                    <input type="text" placeholder="First Name" name='firstname' className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto"  required/>
+                                    <input type="text" placeholder="First Name" name='firstname' className="border border-zinc-600 p-2 rounded-lg w-[95%] mx-auto"  required/>
                                 </div>
                                 <div>
                                 <div className="p-2">
                                     <p>Last Name :</p>
                                 </div>
-                                    <input type="text" placeholder="Last Name" name="lastname" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
+                                    <input type="text" placeholder="Last Name" name="lastname" className="border border-zinc-600 p-2 rounded-lg w-[95%] mx-auto" required/>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="email" placeholder="example@gmail.com" name='email' className="border border-blue-400 p-2 mx-auto rounded-lg w-[95%]" required/>
+                                    <input type="email" placeholder="example@gmail.com" name='email' className="border border-zinc-600 p-2 mx-auto rounded-lg w-[95%]" required/>
                                 </div>
                                 
                             </div>
@@ -133,24 +133,24 @@ const BookNow = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-2">
                                 <div>
-                                    <input type="text" name='address' placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-blue-400 p-2 rounded-lg w-[95%] mx-auto" required/>
+                                    <input type="text" name='address' placeholder="Araliya Mawatha, Maddawaththa, Matara" className="border border-zinc-600 p-2 rounded-lg w-[95%] mx-auto" required/>
                                 </div>
                                 
                             </div>
                             <div className="grid grid-cols-1 gap-2 py-4">
                                 <div>
                                     <label htmlFor='phononumber'>Phone Number :</label>
-                                    <input type="tel" name='phonenumber' placeholder="011-1212321" className="border border-blue-400 mx-auto p-2 rounded-lg w-[95%]" required/>
+                                    <input type="tel" name='phonenumber' placeholder="011-1212321" className="border border-zinc-600 mx-auto p-2 rounded-lg w-[95%]" required/>
                                 </div>
                                 
                             </div>
                             <div className="grid grid-cols-1 gap-2 py-4">
                                 <div>
                                     <label htmlFor='special_request'>Special Request :</label><br/>
-                                    <textarea rows="8" name='request' placeholder="Any special request you have" className="border border-blue-400 w-[95%] mx-auto resize-none p-2 rounded-lg"></textarea>
+                                    <textarea rows="8" name='request' placeholder="Any special request you have" className="border border-zinc-600 w-[95%] mx-auto resize-none p-2 rounded-lg"></textarea>
                                 </div>
                                 <div className='w-full  text-white'>
-                                    <button type="submit" className="bg-blue-700 w-[95%] mx-auto text-center text-white p-2 py-3 text-xl rounded-lg">Complete Booking</button>
+                                    <button type="submit" className="bg-zinc-600 w-[95%] mx-auto text-center text-white p-2 py-3 text-xl rounded-lg">Complete Booking</button>
                                 </div>
                             </div>
                         </div>

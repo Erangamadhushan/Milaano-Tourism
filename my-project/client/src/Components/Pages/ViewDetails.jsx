@@ -19,9 +19,9 @@ const BookNow = () => {
                 </div>
                 <div className='grid grid-cols-1 p-5'>
                     <div className='bg-white p-2 rounded-lg'>
-                        <p className='text-[1.5em] font-bold text-blue-500'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00/Per Day`}</span></p>
+                        <p className='text-[1.5em] font-bold text-zinc-600'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-zinc-600'>{`  Rs. `}{roomDetails.room_price} {`.00/Per Day`}</span></p>
                         <p className='text-gray-500'>{roomDetails.room_description}</p>
-                        <p className='text-blue-500 py-4'>Room Features</p>
+                        <p className='text-zinc-600 py-4'>Room Features</p>
                         <ul>
                             {
                                 roomDetails.room_features.map((feature, index) => (
@@ -39,7 +39,7 @@ const BookNow = () => {
                     </div>
                 </div>
                 <div>
-                    <a href="/exploreroom" className="rounded-md bg-blue-500 text-white p-3 hover:bg-blue-600">Explore More Rooms</a>
+                    <a href="/exploreroom" className="rounded-md bg-zinc-600 text-white p-3 hover:bg-zinc-800">Explore More Rooms</a>
                 </div>
             </div>
         </>
