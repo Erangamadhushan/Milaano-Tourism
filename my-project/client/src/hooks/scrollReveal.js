@@ -26,15 +26,15 @@ const useScrollReveal = (options = {}) => {
         interval: 100,
     });
 
-    sr.reveal(`.scroll-up-500`, {
+    sr.reveal(`.scroll-up-200`, {
         origin: 'bottom',
         interval: 100,
-        delay: 300
+        delay: 200
     });
-  sr.reveal(`.scroll-up-700`, {
+  sr.reveal(`.scroll-up-500`, {
     origin: 'bottom',
     interval: 100,
-    delay: 700
+    delay: 500
   });
     sr.reveal(`.scroll-items-200`) ,{
       origin: 'bottom',

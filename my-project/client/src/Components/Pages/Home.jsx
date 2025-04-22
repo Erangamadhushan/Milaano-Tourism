@@ -25,7 +25,7 @@ function Home() {
     }
     const myhoverContent = {
         position:"absolute", width:"100%", height:"100%", top:0, left:0, justifyContent:"center", 
-        alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#2196fa"
+        alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#52525b"
     }
 
     return (
@@ -60,10 +60,10 @@ function Home() {
                         </div>
                         <div className="w-[95%] mx-auto md:float-left max-w-[350px] scroll-up">
                             <img src={aboutImage} className="rounded-[15%]" alt="introduce about content "/>
-                            <div className="absolute top-[-20%] left-[-15%] w-[60%] h-full scroll-up-500">
+                            <div className="absolute top-[-20%] left-[-15%] w-[60%] h-full scroll-up-200">
                                 <img src={introduceAbout[1]} className="rounded-[15%]" alt="introduce about content "/>
                             </div>
-                            <div className="absolute bottom-[-20%] right-[-15%] w-[55%] he-full scroll-up-700">
+                            <div className="absolute bottom-[-20%] right-[-15%] w-[55%] he-full scroll-up-500">
                                 <img src={introduceAbout[2]} className="rounded-[15%]" alt="introduce about content "/>
                             </div>
                         </div>

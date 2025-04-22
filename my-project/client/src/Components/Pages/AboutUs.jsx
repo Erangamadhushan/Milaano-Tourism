@@ -1,6 +1,6 @@
 import React  from "react";
 import useScrollReveal from '../../hooks/scrollReveal.js';
-import { staff} from "../../assets/About/content.js";
+import { staff } from "../../assets/About/content.js";
 export default function AboutUs() {
     useScrollReveal();
     return (
@@ -31,7 +31,7 @@ export default function AboutUs() {
                             return (
                                 <div className="w-[90%] md:w-[300px] bg-white shadow-lg rounded-lg p-3 m-2 scroll-up" key={index}>
                                     <img src={item.image} alt="" className="h-[200px] object-cover " />
-                                    <h1 className="text-[1.5em] font-bold text-blue-500 text-center py-3">{item.name}</h1>
+                                    <h1 className="text-[1.5em] font-bold text-zinc-600 text-center py-3">{item.name}</h1>
                                     <p className="text-lg font-semibold">{item.role}</p>
                                     <p className="text-gray-500">{item.email}</p>
                                     <div className="flex justify-center items-center gap-2 py-3">
