@@ -20,7 +20,8 @@ app.use(express.json());
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+  .catch(err => console.error('MongoDB connection error:', err)
+);
 
 // Sample route
 app.get('/api', (req, res) => {
@@ -28,8 +29,8 @@ app.get('/api', (req, res) => {
 });
 
 // Routes
-// app.use('/api/items', require('./routes/items'));
-// app.use('/api/users', require('./routes/users'));
+app.use('/api/items', require('./routes/items'));
+app.use('/api/users', require('./routes/users'));
 
 // Start server
 const PORT = process.env.PORT || 5000;
