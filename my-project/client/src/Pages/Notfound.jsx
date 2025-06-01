@@ -1,7 +1,7 @@
 import react from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import useScrollReveal from '../hooks/scrollReveal.js';
 
 function Notfound() {
     useScrollReveal();

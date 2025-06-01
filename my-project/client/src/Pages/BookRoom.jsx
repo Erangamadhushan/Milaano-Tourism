@@ -1,5 +1,5 @@
 import React, {useState}  from "react";
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import useScrollReveal from '../hooks/scrollReveal.js';
 
 function BookRoom() {
     useScrollReveal();

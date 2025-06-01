@@ -1,6 +1,6 @@
 import React from "react";
-import { explorerContent } from "../../assets/Explorermore/explorerContent.js"
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import { explorerContent } from "../assets/Explorermore/explorerContent.js"
+import useScrollReveal from '../hooks/scrollReveal.js';
 const Explorermore = () => {
     useScrollReveal();
   return (

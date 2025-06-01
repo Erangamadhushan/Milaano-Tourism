@@ -1,6 +1,6 @@
 import React  from "react";
-import { destinationGuide } from "../../assets/Findout/content";
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import { destinationGuide } from "../assets/Findout/content.js";
+import useScrollReveal from '../hooks/scrollReveal.js';
 function Findout() {
     useScrollReveal();
     return (

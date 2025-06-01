@@ -1,6 +1,6 @@
 import React  from "react";
-import useScrollReveal from '../../hooks/scrollReveal.js';
-import { staff } from "../../assets/About/content.js";
+import useScrollReveal from '../hooks/scrollReveal.js';
+import { staff } from "../assets/About/content.js";
 export default function AboutUs() {
     useScrollReveal();
     return (
