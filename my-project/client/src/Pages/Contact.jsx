@@ -1,6 +1,6 @@
 import React  from "react";
-import { developers, contact, contactContent } from "../../assets/Contact/contact";
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import { developers, contact, contactContent } from "../assets/Contact/contact.js";
+import useScrollReveal from '../hooks/scrollReveal.js';
 export default function Contact() {
     useScrollReveal();
     return (

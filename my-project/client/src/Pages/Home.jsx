@@ -1,8 +1,8 @@
 import React, {useEffect, useState}  from "react";
-import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg, introduceAbout }  from '../../assets/Home/HomeResource.js';
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg, introduceAbout }  from '../assets/Home/HomeResource.js';
+import useScrollReveal from '../hooks/scrollReveal.js';
 import RoomCategory from "./RoomCategory.jsx";
-import { roomContent } from '../../assets/Home/rooms/content.js';
+import { roomContent } from '../assets/Home/rooms/content.js';
 
 
 function Home() {

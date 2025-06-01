@@ -1,6 +1,6 @@
 import React  from "react";
-import { services, subServices } from "../../assets/Services/content";
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import { services, subServices } from "../assets/Services/content.js";
+import useScrollReveal from '../hooks/scrollReveal.js';
 export default function Service() {
     useScrollReveal();
     return (

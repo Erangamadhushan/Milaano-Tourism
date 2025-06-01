@@ -1,8 +1,8 @@
 import react from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { roomContent } from '../../assets/Explorerroom/content.js';
-import useScrollReveal from '../../hooks/scrollReveal.js';
+import { roomContent } from '../assets/Explorerroom/content.js';
+import useScrollReveal from '../hooks/scrollReveal.js';
 import BookNow from './BookNow.jsx';
 import RoomCategory from './RoomCategory.jsx';
 
