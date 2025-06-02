@@ -3,7 +3,14 @@ import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg, in
 import useScrollReveal from '../hooks/scrollReveal.js';
 import RoomCategory from "./RoomCategory.jsx";
 import { roomContent } from '../assets/Home/rooms/content.js';
+
+import { exclusiveOffers } from '../contents/home/exclusive.js';
+import { NewsLatter } from "../Components/forms/NewsLatter";
+// -----------------------------------------------------------------------------------
 import { Hero } from "../Components/ui/Home/Hero.jsx";
+import { Exclusive } from "../Components/ui/Home/Exclusive";
+import { BookRoom } from "../Components/ui/Home/BookRoom.jsx";
+import { EXplorerIslandStories } from "../Components/ui/Home/ExplorerIslandStories";
 
 function Home() {
 
@@ -16,10 +23,7 @@ function Home() {
     },[])
 
     useScrollReveal();
-    const myImgStyles = {
-        backgroundSize:"cover"
-    }
-
+    const myImgStyles = { backgroundSize:"cover" }
     const subContentParent = {
         position:"relative", justifyContent:"center", alignItems:"center",overflow:"hidden"
     }
@@ -27,7 +31,7 @@ function Home() {
         position:"absolute", width:"100%", height:"100%", top:0, left:0, justifyContent:"center", 
         alignItems:"center", padding:".8em", transitionProperty:"hover", transitionDuraton:3, backgroundColor:"#52525b"
     }
-
+    
     return (
         <>
             <div className="grid gap-5 bg-blue-50">
@@ -117,42 +121,18 @@ function Home() {
                         <h2 className="text-center text-zinc-700 font-semibold py-5 text-[1.5em] md:text-[2.5em] scroll-reveal">Exclusive Hotel Offers</h2>
                     </div>
                     <div className="flex flex-wrap justify-center items-center py-5">
-                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Weekend Escape Package</h2>
-                            <p class="text-center">Treat yourself to a perfect weekend getaway with our all-inclusive Weekend Escape Package. Enjoy luxurious accommodations for two nights, complimentary breakfast in bed each morning, and a special welcome amenity upon arrival. Unwind with included access to our premium spa facilities and take advantage of late checkout on Sunday. Book now and receive a $50 dining credit to use at any of our award-winning restaurants.</p>
-                        </div>
-                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
-                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Family Adventure Bundle</h2>
-                            <p class="text-center">Create unforgettable memories with our Family Adventure Bundle. Stay in our spacious family suite with separate sleeping areas for parents and children. The package includes daily breakfast for the whole family, complimentary kids' club access, and a special children welcome gift. Parents will appreciate the included evening babysitting service, perfect for enjoying a romantic dinner. Book for 3+ nights and receive tickets to local family attractions.</p>
-                        </div>
-                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
-                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Business Success Package</h2>
-                            <p class="text-center">Designed for the discerning business traveler, our Business Success Package combines comfort with productivity. Enjoy early check-in and late checkout, premium high-speed Wi-Fi, daily breakfast, and complimentary pressing of two garments per stay. Your package includes access to our executive lounge with all-day refreshments and dedicated workspaces. Plus, receive a $30 credit per day for our 24-hour room service—perfect for those late-night work sessions.</p>
-                        </div>
-                        <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300  scroll-up">
-                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Romantic Getaway</h2>
-                            <p class="text-center">Spark romance with our specially curated Romantic Getaway package. Your experience begins with champagne and chocolate-covered strawberries in your upgraded deluxe room or suite. Enjoy a candlelit dinner for two at our signature restaurant and wake up to breakfast in bed the following morning. The package includes a couple massage at our spa and rose petal turndown service. Create the perfect backdrop for your special moments together.</p>
-                        </div>
-                        <div className="w-[95%] max-w-[350px] my-4 mx-auto  p-4 shadow-xl shadow-zinc-300  scroll-up">
-                            <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Seasonal Special: Winter Warmth Retreat</h2>
-                            <p class="text-center">Escape the winter chill with our limited-time Winter Warmth Retreat. Cozy up in our luxury accommodations with a fireplace, complimentary hot chocolate, and warm cookies delivered daily. Your package includes breakfast each morning and a special winter-themed dinner experience. Take advantage of our indoor heated pool and hot tub facilities, and receive a 20% discount on all spa treatments. Book before December 15th for an additional night free.</p>
-                        </div>
+                        {
+                            exclusiveOffers.map((offer, index ) => {
+                                return (
+                                    <Exclusive key={index} title={offer.title} description={offer.description} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="relative w-[100%] scroll-up  min-h-[80vh] p-5 bg-zinc-500 mx-auto my-20 flex gap-5" style={{backgroundImage:`url(${introduceAbout[3]})`,backgroundSize:"cover"}}>
-                    <div className="grid grid-cols-1 md:grid-cols-2 ">
-                        <div className="p-5 w-[95%] max-w-[800px] mx-auto justify-center">
-                             <h2 className="text-white font-bold text-[1.75em] md:text-[3em]">Discover A Brand Luxurious Hotel</h2>
-                             <p className="text-white text-[1.25em] md:text-[1.75] py-5">Our opulent rooms and suites redefine luxury with handcrafted furniture, Egyptian cotton linens, and panoramic views. Indulge in marble bathrooms with rainfall showers, smart climate control, and curated mini-bars featuring artisanal selections for an unparalleled retreat.</p>
-                             <div className="py-4">
-                                <a href="/bookroom" className=" hover:bg-zinc-400 m-4 my-10 p-5 hover:text-white duration-300 bg-white text-zinc-500 font-bold ">Book Room</a>
-                             </div>
-                        </div>
-                        
-                    </div>
+                    <BookRoom/>
                 </div>
-                
-                
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10 scroll-reveal" >
@@ -168,12 +148,9 @@ function Home() {
                     {
                         destinations.map((item, index) => {
                             return (
-                                <>
-                                    <div className="" >
-                                        <img className="h-uato w-full object-cover" src={item} alt=""/>
-                                    </div>
-                                    
-                                </>
+                                <div className="" >
+                                    <img className="h-uato w-full object-cover" src={item} alt=""/>
+                                </div>
                             )
                         })
                     }
@@ -181,10 +158,10 @@ function Home() {
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 p-5 py-10 scroll-reveal">
-                <div className="p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div className="p-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015322.2095558839!2d80.18777706428749!3d6.250238567687185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bad9013377%3A0x44238fe850f6f47e!2sSouthern%20Province!5e0!3m2!1sen!2slk!4v1736763874158!5m2!1sen!2slk" loading="lazy" style={{width:'95%',margin:'auto',height:'350px'}} referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div className="p-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div className="p-5">
                     <div className="">
                         <h2 className="text-[3.5em] font-extrabold text-zinc-500">Things to do</h2>
                         <p className="text-[2.5em] text-zinc-500">in Sri Lanka</p>
@@ -196,53 +173,18 @@ function Home() {
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center scroll-reveal">
                 <h1 className="text-[2.5em] text-black text-center py-10 md:text-left font-semibold px-5">Explorer More Island Stories</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2 py-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2 py-5">
                     <div className="grid gap-2">
-                        <div style={subContentParent} className="group">
-                            <div>
-                                <img src={recaps[0]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
-                            </div>
-                            <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="p-10 text-white text-[1em] md:text-[1.5em] text-center">Golden sands meet turquoise waters along Sri Lanka stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
-                            </div>
-                        </div>
+                        <EXplorerIslandStories recaps={recaps[0]} content="Golden sands meet turquoise waters along Sri Lanka stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon."/>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2" style={subContentParent} >
-                            <div style={subContentParent} className="group">
-                                <div>
-                                    <img src={recaps[1]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
-                                </div>
-                                <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-white text-[1em]">Golden sands meet turquoise waters along Sri Lanka stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon.</p>
-                                </div>
-                            </div>
-                            <div style={subContentParent} className="group">
-                                <div>
-                                    <img src={recaps[2]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
-                                </div>
-                                <div style={myhoverContent} className="hidden  group-hover:flex duration-1000">
-                                    <p className="text-center text-white">The railway journey through Sri Lanka offers one of the world most scenic rides. Vintage trains wind through misty mountains, tea plantations, and dense forests, providing breathtaking panoramas at every turn.</p>
-                                </div>
-                            </div>
+                            <EXplorerIslandStories recaps={recaps[1]} content="Golden sands meet turquoise waters along Sri Lanka stunning coastline. Palm trees sway in gentle breezes while local fishing boats dot the horizon."/>
+                            <EXplorerIslandStories recaps={recaps[2]} content="The railway journey through Sri Lanka offers one of the world most scenic rides. Vintage trains wind through misty mountains, tea plantations, and dense forests, providing breathtaking panoramas at every turn."/>
                         </div>
-                        <div style={subContentParent} className="group">
-                            <div>
-                                <img src={recaps[3]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
-                            </div>
-                            <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="text-white text-center text-[1em] md:text-[1.5em]">Lush hillside plantations produce world-renowned Ceylon tea. Workers skillfully pluck tender leaves from emerald slopes, contributing to the country signature export.</p>
-                            </div>
-                        </div>
+                        <EXplorerIslandStories recaps={recaps[3]} content="Lush hillside plantations produce world-renowned Ceylon tea. Workers skillfully pluck tender leaves from emerald slopes, contributing to the country signature export."/>
                     </div>
-                    <div className="grid gap-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div className="grid gap-3">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2" >
-                            <div style={subContentParent} className="group">
-                                <div>
-                                    <img src={recaps[4]} class="w-[100%] " style={myImgStyles} alt="default Image"/>
-                                </div>
-                                <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-center text-white">This ancient rock fortress rises dramatically from the jungle, topped with the ruins of King Kasyapa palace. Its frescoes and mirror wall attract visitors worldwide.</p>
-                                </div>
-                            </div>
+                            <EXplorerIslandStories recaps={recaps[4]} content="This ancient rock fortress rises dramatically from the jungle, topped with the ruins of King Kasyapa palace. Its frescoes and mirror wall attract visitors worldwide."/>
                             <div style={subContentParent} >
                                 <div className="group">
                                     <div>
@@ -254,46 +196,18 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div style={subContentParent} className="group">
-                            <div>
-                                <img src={recaps[6]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
-                            </div>
-                            <div style={myhoverContent} className="hidden  group-hover:flex">
-                                <p className="text-center text-white text-[1em] md:text-[1.5em]">This UNESCO World Heritage site houses remarkable biodiversity, with endemic birds, butterflies, and rare plant species thriving in its dense rainforest.</p>
-                            </div>
-                        </div>
+                        <EXplorerIslandStories recaps={recaps[6]} content="This UNESCO World Heritage site houses remarkable biodiversity, with endemic birds, butterflies, and rare plant species thriving in its dense rainforest."/>
                         <div className="grid">
-                            <div style={subContentParent} className="group">
-                                <div>
-                                    <img src={recaps[8]} class="w-[100%]" style={myImgStyles} alt="default Image"/>
-                                </div>
-                                <div style={myhoverContent} className="hidden  group-hover:flex">
-                                    <p className="text-center text-white text-[1em] md:text-[1.5em]">Sri Lanka ancient capital showcases towering stupas, sacred Bodhi trees, and intricate stone carvings from the island earliest Buddhist civilization.</p>
-                                </div> 
-                            </div>
+                            <EXplorerIslandStories recaps={recaps[8]} content="Sri Lanka ancient capital showcases towering stupas, sacred Bodhi trees, and intricate stone carvings from the island earliest Buddhist civilization."/>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto p-5 bg-mainColor my-1">
-                <div>
-                    <h3 className="text-3xl px-5 font-semibold text-zinc-500">Subscribe Our Newslatter</h3>
-                </div>
-                <form action="">
-                    <div className=" grid grid-cols-1 content-center items-center justify-center p-5 gap-3 md:grid-cols-2">
-                        <div className="w-full">
-                            <input type="text" id="newslatterEmail" placeholder="example123@gmail.com" className="w-full border border-zinc-400 text-zinc-500 focus:outline-none hover:outline-none p-4" name="newslatterEmail" required/>
-                        </div>
-                        <div className="">
-                            <input type="submit" className=" text-lg bg-zinc-600 text-white p-4 px-7 hover:bg-zinc-800 cursor-pointer" value="Subscribe"/>
-                        </div>
-                    </div>
-                </form>
+                <NewsLatter />
             </div>
-            
         </>
     )
 }
-
 export default Home
