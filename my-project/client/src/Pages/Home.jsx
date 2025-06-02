@@ -10,7 +10,10 @@ import { NewsLatter } from "../Components/forms/NewsLatter";
 import { Hero } from "../Components/ui/Home/Hero.jsx";
 import { Exclusive } from "../Components/ui/Home/Exclusive";
 import { BookRoom } from "../Components/ui/Home/BookRoom.jsx";
+import { ServiceOverview } from "../Components/ui/Home/ServiceOverview";
 import { EXplorerIslandStories } from "../Components/ui/Home/ExplorerIslandStories";
+import { DestinationDirection } from '../Components/ui/Home/DestinationDirection';
+import { DoThingsDirection } from '../Components/ui/Home/DoThingsDirection';
 
 function Home() {
 
@@ -54,53 +57,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div>
-                <div className="relative p-3">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 items-center md:grid-cols- py-[3em] float:left">
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold">Rooms</h2>
-                            <p className="text-gray-500 text-center">Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold">Staff & Service</h2>
-                            <p className="text-gray-500 text-center">Our dedicated team delivers exceptional hospitality with 24/7 attentive service. From swift check-in to personalized concierge assistance, our professional staff anticipates your needs with warmth and efficiency, ensuring every moment of your stay exceeds expectations.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold">Dining & Food</h2>
-                            <p className="text-gray-500 text-center">Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold">Wellness & Recreation</h2>
-                            <p className="text-gray-500 text-center">Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[0]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold">Business & Events</h2>
-                            <p className="text-gray-500 text-center">Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold">Location & Accessibility</h2>
-                            <p className="text-gray-500 text-center">Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[1]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl  font-bold">Technology & Connectivity</h2>
-                            <p className="text-gray-500 text-center">Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs.</p>
-                        </div>
-                        <div className="w-[95%] scroll-items max-w-[320px] mx-auto  min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 ">
-                            <img src={icons[2]} className="w-[50px] mx-auto" alt="available rooms"/>
-                            <h2 className="text-black text-center text-xl font-bold">Safety & Security</h2>
-                            <p className="text-gray-500 text-center">Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed.</p>
-                        </div>
-                    </div>
+                
+                <ServiceOverview />
                     
-                </div>
-                </div>
                 <div className="relative grid mx-auto">
                     <div className="py-5 mx-auto">
                         <h2 className="text-[1.25em] md:text-[1.75em] lg:text-[2.5em] py-3 text-center lg:text-justify text-zinc-500 font-semibold ">------- Our Rooms -------</h2>
@@ -136,14 +95,9 @@ function Home() {
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center grid-cols-1 md:grid-cols-2 p-5 py-10 scroll-reveal" >
-                <div className="p-5" >
-                    <div className="">
-                        <h2 className="text-[3.5em] font-extrabold text-zinc-500">Destination  Guide</h2>
-                        <p className="text-[2.5em] text-zinc-500">Holiday in Sri Lanka</p>
-                        <p className="text-lg py-10">Sri Lanka is a meeting place of friendly faces who share their homes and trade; a space for spiritual healing; a land for learning from the old and the new; a hub of commercial activity; a spot for tranquility. Sri Lanka casts a spell unlike anywhere else. It draws people in, not with artificial attractions and grand gestures, but by spellbinding soul and sincerity.</p>
-                        <a href="/findout" className="border border-zinc-500 p-5 text-lg hover:bg-zinc-500 hover:text-white">Find Out More </a>
-                    </div>
-                </div>
+
+                <DestinationDirection />
+
                 <div className="p-5 grid">
                     {
                         destinations.map((item, index) => {
@@ -158,17 +112,7 @@ function Home() {
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 p-5 py-10 scroll-reveal">
-                <div className="p-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015322.2095558839!2d80.18777706428749!3d6.250238567687185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bad9013377%3A0x44238fe850f6f47e!2sSouthern%20Province!5e0!3m2!1sen!2slk!4v1736763874158!5m2!1sen!2slk" loading="lazy" style={{width:'95%',margin:'auto',height:'350px'}} referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div className="p-5">
-                    <div className="">
-                        <h2 className="text-[3.5em] font-extrabold text-zinc-500">Things to do</h2>
-                        <p className="text-[2.5em] text-zinc-500">in Sri Lanka</p>
-                        <p className="text-lg py-10">We want to share Sri Lanka extraordinarily diverse and authentic story with the rest of the world. We want to help you discover the many thousands of different ways in which you can fall in love with our home & plan the perfect trip; local experts, local perspective and all the best tips on where to eat, what to do, who to meet, how to get there and where to make your next favourite memory.</p>
-                        <a href="/findout" className="border border-zinc-500 p-5 text-lg hover:bg-zinc-500 hover:text-white">Find Out More </a>
-                    </div>
-                </div>
+                <DoThingsDirection /> 
             </div>
 
             <div className="relative w-[100%] max-w-[1320px] mx-auto grid justify-center scroll-reveal">
