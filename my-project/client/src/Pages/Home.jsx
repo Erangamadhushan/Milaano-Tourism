@@ -3,7 +3,7 @@ import { mainImg, latest, events, destinations, recaps, icons, luxuryRoomImg, in
 import useScrollReveal from '../hooks/scrollReveal.js';
 import RoomCategory from "./RoomCategory.jsx";
 import { roomContent } from '../assets/Home/rooms/content.js';
-
+import { Hero } from "../Components/ui/Home/Hero.jsx";
 
 function Home() {
 
@@ -31,27 +31,8 @@ function Home() {
     return (
         <>
             <div className="grid gap-5 bg-blue-50">
-                {
-                    mainImg.map((item) => {
-                        return (
-                            <>
-                                <div className="w-full min-h-[90vh] flex justify-center items-center bg-gray-200" style={{backgroundImage:`url(${item})`,backgroundSize:"cover"}}>
-                                    <div className="w-[100%] p-5 min-h-[90vh] text-center bg-[#222222a0] mx-auto">
-                                        <div className="w-[100%] md:w-[60%] mx-auto min-h-[90vh] grid place-items-center items-center">
-                                            <div className="scroll-reveal">
-                                                <h1 className=" text-[1.5em] md:text-[3em]  text-gray-100 font-bold py-3">Milaano Hotels, Your Luxury Gateway to Sri Lankan Paradise</h1>
-                                                <p className="text-lg text-white">Welcome to Milaano Hotels, where international travelers discover the true essence of Sri Lankan hospitality. Nestled along Sri Lanka pristine coastline, our exclusive property offers a perfect blend of luxury, comfort, and authentic cultural experiences designed specifically for our foreign guests.</p>
-                                                <div className="py-4 my-3">
-                                                    <a href="/explorermore" class="mt-5 bg-zinc-500 text-white text-lg p-5 px-[50px] font-semibold hover:bg-zinc-600">Explorer </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </>
-                        )
-                    })
-                }
+                <Hero />
+                
                 <div className="flex flex-row py-5 max-w-[1420px] mx-auto my-10">
                     <div className="relative p-3">
                         <div className="w-[95%] mx-auto md:float-left max-w-[900px] scroll-up">
@@ -122,7 +103,6 @@ function Home() {
                         <h2 className="text-[1.25em] md:text-[2.25em] lg:text-[2.5em] py-3 text-center lg:text-justify text-zinc-500 font-semibold">Explorer Our Rooms</h2>
                     </div>
                     <div className="relative py-5 max-w-[1380px] flex flex-wrap justify-center items-center mx-auto">
-                        
                         {
                             roomContent.map((roomDetails) => {
                                 return (
@@ -136,7 +116,6 @@ function Home() {
                     <div>
                         <h2 className="text-center text-zinc-700 font-semibold py-5 text-[1.5em] md:text-[2.5em] scroll-reveal">Exclusive Hotel Offers</h2>
                     </div>
-                    {/*  */}
                     <div className="flex flex-wrap justify-center items-center py-5">
                         <div className="w-[95%] max-w-[350px] my-4 mx-auto p-4 shadow-xl shadow-zinc-300 scroll-up">
                             <h2 class="text-center text-[1.5em] text-zinc-700 py-3">Weekend Escape Package</h2>
