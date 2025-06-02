@@ -12,7 +12,7 @@ export const serviceOverview = [
     },
     {
         title: "Dining & Food",
-        icons: icons2,
+        icon: icons2,
         desc: "Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request."
     },
     {
