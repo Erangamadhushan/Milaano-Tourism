@@ -22,27 +22,27 @@ export const serviceOverview = [
     },
     {
         title: "Wellness & Recreation",
-        icons: icons3,
+        icon: icons3,
         desc: "Rejuvenate body and mind in our comprehensive wellness facilities. Our sparkling pool, state-of-the-art fitness center, and luxurious spa offer the perfect balance of exercise and relaxation. Expert therapists provide treatments using premium products for total renewal."
     },
     {
         title: "Business & Events",
-        icons: icons1,
+        icon: icons1,
         desc: "Sophisticated meeting spaces equipped with cutting-edge technology support productive business gatherings. Our versatile venues accommodate everything from intimate meetings to grand conferences, complemented by dedicated event planners ensuring flawless execution."
     },
     {
         title: "Location & Accessibility",
-        icons: icons2,
+        icon: icons2,
         desc: "Strategically positioned for convenience, our hotel offers easy access to major attractions and business districts. Comprehensive transportation options include secure parking, airport shuttles, and wheelchair accessibility throughout all facilities."
     },
     {
         title: "Technology & Connectivity",
-        icons: icons2,
+        icon: icons2,
         desc: "Stay seamlessly connected with complimentary high-speed Wi-Fi throughout. Smart room controls, multiple charging stations, and integrated entertainment systems create a tech-forward environment that supports both business and leisure needs."
     },
     {
         title: "Safety & Security",
-        icons: icons3, 
+        icon: icons3, 
         desc: "Your wellbeing is paramount with comprehensive security measures including 24/7 staff, advanced key card systems, discreet CCTV monitoring, and state-of-the-art fire safety. Medical assistance is readily available when needed."
     }
 ]
