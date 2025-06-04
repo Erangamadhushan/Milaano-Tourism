@@ -1,80 +1,27 @@
 import React  from "react";
 import { services, subServices } from "../assets/Services/content.js";
 import useScrollReveal from '../hooks/scrollReveal.js';
+
+// ---------------------------------------------------------------------------------------
+// This component displays the main services offered by the tourism company.
+
+import MainServices from "../Components/ui/Service/MainServices";
+import SubServices from '../Components/ui/Service/SubServices';
 export default function Service() {
     useScrollReveal();
     return (
         <>
             <div className="grid py-5 my-10 scroll-down" >
-                <h2 className="text-[2.5em] text-center text-zinc-700">Welcome to Milaano Tourism - Your Complete Travel Solutions </h2>
+                <h2 className="text-[2em] font-bold md:text-[3em] text-center text-zinc-700">Welcome to Milaano Tourism - Your Complete Travel Solutions </h2>
                 <p className="text-center text-[1.25em] text-zinc-700"> Your gateway to unforgettable experience and luxury accommodations</p>
             </div>
 
             <div className="grid grid-cols-1 mx-auto py-4">
-                <div>
-                    {
-                        services.map((service, index) => {
-                            return (
-                                <div className="p-5 my-10  mx-auto w-[95%] max-w-[1000px] scroll-reveal shadow-md" >
-                                    <h2 className="text-3xl font-bold text-zinc-700 pb-3 ">{service.title}</h2>
-                                    <hr/>
-                                    <h3 className="text-2xl font-semibold text-zinc-700 py-3 underline">{service.subTitle}</h3>
-                                    <p className=" text-xl py-2">{service.description}</p>
-                                    <ul>
-                                        {
-                                            service.ex.map((example) => {
-                                                return (
-                                                    <li className=" text-lg text-black">{example}</li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                    <p className="py-2 text-lg text-zinc-700 underline">{service.featureTitle}</p>
-                                    <ul className="py-4">
-                                        {
-                                            service.featureList.map((feature) => {
-                                                return (
-                                                    <li className="py-2 text-md text-black">{feature}</li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                    <div className="py-3">
-                                        <a href="./findout" className="my-5 p-5 px-10 text-white bg-coral">Find Out</a>
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+               <MainServices />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 mx-auto">
-                {
-                    subServices.map((subservice) => {
-                        return (
-                            <div className="p-5 scroll-up py-5 my-5  mx-auto w-[95%] max-w-[600px] shadow-lg">
-                                <h2 className="text-3xl text-zinc-700 py-3">{subservice.title}</h2>
-                                <p className="text-xl">{subservice.subTitle}</p>
-                                <ul className="py-4">
-                                    {
-                                        subservice.item.map((item) => {
-                                            return (
-                                                <li className="py-1">
-                                                    <p className=" text-lg">{item.title}</p>
-                                                    <p className="">-{item.content}</p>
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                                <div className="py-3">
-                                    <a href="./findout" className="my-5 p-5 px-10 text-white bg-coral">Find Out</a>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
+                <SubServices />
             </div>
 
             <div className=" p-5 py-[2em] my-5 mx-auto w-[95%] max-w-[1000px] scroll-up">
