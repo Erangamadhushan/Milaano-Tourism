@@ -1,5 +1,3 @@
-import React  from "react";
-import { services, subServices } from "../assets/Services/content.js";
 import useScrollReveal from '../hooks/scrollReveal.js';
 
 // ---------------------------------------------------------------------------------------

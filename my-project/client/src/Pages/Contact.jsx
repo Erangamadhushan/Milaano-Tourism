@@ -1,6 +1,11 @@
 import React  from "react";
 import { developers, contact, contactContent } from "../assets/Contact/contact.js";
 import useScrollReveal from '../hooks/scrollReveal.js';
+
+// ---------------------------------------------------------------------------------------
+// This component displays the contact information and details for the tourism company.
+import { ListItem } from '../Components/ui/contact/ListItem';
+
 export default function Contact() {
     useScrollReveal();
     return (
@@ -55,9 +60,9 @@ export default function Contact() {
                             <h3 className="text-2xl text-zinc-500">{contactContent[3].responseTitle}</h3>
                             <ul>
                                 {
-                                    contactContent[3].responseDetails.map((details) => {
+                                    contactContent[3].responseDetails.map((details, index) => {
                                         return (
-                                            <li>{details}</li>
+                                            <ListItem key={index} content={details}/>
                                         )
                                     })
                                 }
@@ -70,9 +75,9 @@ export default function Contact() {
                             <h3 className="text-zinc-500 text-2xl">{contactContent[4].socialTitle}</h3>
                             <ul>
                                 {
-                                    contactContent[4].socialMedia.map((details) => {
+                                    contactContent[4].socialMedia.map((details, index) => {
                                         return (
-                                            <li>{details}</li>
+                                            <ListItem key={index} content={details}/>
                                         )
                                     })
                                 }

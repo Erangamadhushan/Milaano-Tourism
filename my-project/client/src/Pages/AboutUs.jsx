@@ -9,7 +9,6 @@ export default function AboutUs() {
     useScrollReveal();
     return (
         <>
-            
             <div className=" py-5">
 
                 <AboutIntro />
