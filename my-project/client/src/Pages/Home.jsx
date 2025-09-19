@@ -37,14 +37,14 @@ function Home() {
     
     return (
         <>
-            <div className="grid gap-5 bg-blue-50">
+            <div className="grid gap-5 bg-white">
                 <Hero />
                 
                 <div className="flex flex-row py-5 max-w-[1420px] mx-auto my-10">
                     <div className="relative p-3">
                         <div className="w-[95%] mx-auto md:float-left max-w-[900px] scroll-up">
-                            <h2 className="text-[1.5em] md:text-[3em] lg:text-[5em] py-4 text-center lg:text-justify text-zinc-700 font-semibold">About Us</h2>
-                            <h2 className="text-[1.25em] lg:text-[2.5em] py-3 text-zinc-700">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
+                            <h2 className="text-[1.5em] md:text-[3em] lg:text-[4em] py-4 text-center lg:text-justify text-blue-600 font-semibold">About Us</h2>
+                            <h2 className="text-[1.25em] lg:text-[2.5em] py-3 text-blue-700">Unwind in our stunning infinity pool overlooking the Indian Ocean. Our poolside service ensures refreshing beverages and light snacks are always within reach as you soak in the tropical sunshine.</h2>
                         </div>
                         <div className="w-[95%] mx-auto md:float-left max-w-[350px] scroll-up">
                             <img src={aboutImage} className="rounded-[15%]" alt="introduce about content "/>

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 export default function Footer() {
     return (
         <div className="grid">
-            <div className="grid grid-cols-2 bg-zinc-700 md:grid-cols-4 custom:grid-cols-2">
+            <div className="grid grid-cols-2 bg-blue-700 md:grid-cols-4 custom:grid-cols-2">
                 <div className="grid p-5 py-10">
                     <a href="https://www.srilanka.travel/" className="text-white hover:text-zinc-900" target="_blank">Sri Lanka Travel</a>
                     <a href="https://nationalholidayresorts.lk/" className="text-white hover:text-zinc-900" target="_blank">National Holiday Resorts</a>
@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
 
             </div>
-            <div class="bg-zinc-800 p-3">
+            <div class="bg-blue-800 p-3">
                 <h1 className="text-white text-center">Powered by EM956 Community</h1>
             </div>
             

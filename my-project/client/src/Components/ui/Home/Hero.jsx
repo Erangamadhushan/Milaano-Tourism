@@ -2,7 +2,7 @@ import React from 'react';
 import { mainImg } from '../../../assets/Home/HomeResource';
 export function Hero() {
     return (
-        <div className="w-full min-h-[90vh] flex justify-center items-center bg-gray-200" style={{backgroundImage:`url(${mainImg})`,backgroundSize:"cover"}}>
+        <div className="w-full min-h-[90vh] flex justify-center items-center bg-blue-200" style={{backgroundImage:`url(${mainImg})`,backgroundSize:"cover"}}>
             <div className="w-[100%] p-5 min-h-[90vh] text-center bg-[#222222a0] mx-auto">
                 <div className="w-[100%] md:w-[60%] mx-auto min-h-[90vh] grid place-items-center items-center">
                     <div className="scroll-reveal">

@@ -7,7 +7,7 @@ export function ServiceOverview() {
                 {
                     serviceOverview.map((service, index) => {
                         return (
-                            <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 " key={`${index}-${service.title}`}>
+                            <div className="w-[95%] scroll-items max-w-[320px] mx-auto min-h-[200px] p-3 py-5 group rounded-xl hover:rounded-lg duration-500 border border-blue-500" key={`${index}-${service.title}`}>
                                 <img src={service.icon} className="w-[50px] mx-auto" alt={service.title}/>
                                 <h2 className="text-black text-center text-xl font-bold">{service.title}</h2>
                                 <p className="text-gray-500 text-center">{service.desc}</p>

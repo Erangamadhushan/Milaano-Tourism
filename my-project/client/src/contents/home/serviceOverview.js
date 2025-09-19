@@ -8,12 +8,12 @@ export const serviceOverview = [
     {
         title: "Rooms",
         icon: icons1,
-        desc: "Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. Each space features a smart TV, mini-bar, electronic safe, and coffee maker, ensuring a restful stay with all conveniences at your fingertips."
+        desc: "Our elegantly appointed rooms and suites offer premium comfort with plush bedding, modern amenities, and meticulous cleanliness. "
     },
     {
         title: "Dining & Food",
         icon: icons2,
-        desc: "Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options. Special dietary requirements are thoughtfully accommodated upon request."
+        desc: "Savor culinary excellence at our diverse dining venues. From gourmet restaurants to casual cafés, we offer fresh, locally-sourced cuisine, 24-hour room service, and comprehensive breakfast options."
     },
     {
         title: "Staff & Service",

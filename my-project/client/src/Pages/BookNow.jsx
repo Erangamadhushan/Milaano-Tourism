@@ -70,9 +70,9 @@ const BookNow = () => {
                     </div>
                     <div className='grid grid-cols-1  gap-5 mt-5'>
                         <div className='bg-white p-2 rounded-lg'>
-                            <p className='text-[1.5em] font-bold text-zinc-600'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-zinc-500'>{`  Rs. `}{roomDetails.room_price} {`.00 /Per Day`}</span></p>
+                            <p className='text-[1.5em] font-bold text-blue-600'>{roomDetails.room_type} <br/><span className='text-[1.6em] font-bold text-blue-500'>{`  Rs. `}{roomDetails.room_price} {`.00 /Per Day`}</span></p>
                             <p className='text-gray-500'>{roomDetails.room_description}</p>
-                            <p className='text-zinc-600 py-4'>Room Features</p>
+                            <p className='text-blue-600 py-4'>Room Features</p>
                             <ul>
                                 {
                                     roomDetails.room_features.map((feature, index) => (
@@ -98,9 +98,9 @@ const BookNow = () => {
                 </div>
 
                 <div>
-                    <div className="grid grid-cols-1 p-5 py-3">
+                    <div className="grid grid-cols-1 p-8 py-3">
                         <div>
-                            <h3 className="text-3xl text-center text-zinc-600 font-bold">Check Out</h3>
+                            <h3 className="text-3xl text-center text-blue-600 font-bold">Check Out</h3>
                         </div>
                         
                         <BookingRoomForm formRef={formRef} formSubmission={formSubmission} />

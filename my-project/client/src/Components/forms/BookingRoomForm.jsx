@@ -53,7 +53,7 @@ export default function BookingRoomForm({formRef, formSubmission}) {
                         <textarea rows="8" name='request' placeholder="Any special request you have" className="border border-zinc-600 w-[95%] mx-auto resize-none p-2 rounded-lg"></textarea>
                     </div>
                     <div className='w-full  text-white'>
-                        <button type="submit" className="bg-zinc-600 w-[95%] mx-auto text-center text-white p-2 py-3 text-xl rounded-lg">Complete Booking</button>
+                        <button type="submit" className="bg-blue-600 w-[95%] mx-auto text-center text-white p-2 py-3 text-xl rounded-lg">Complete Booking</button>
                     </div>
                 </div>
             </div>
