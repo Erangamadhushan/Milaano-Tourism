@@ -11,10 +11,7 @@ const app = express();
 
 // Middleware
 // For more specific CORS options
-app.use(cors({
-    origin: 'http://localhost:5173', // Your React app's address on port 3000
-    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']
-}));
+
 app.use(express.json());
 
 // MongoDB Connection
