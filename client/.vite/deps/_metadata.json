@@ -2,7 +2,48 @@
   "hash": "9268bd2e",
   "configHash": "085445b2",
   "lockfileHash": "81a46085",
-  "browserHash": "35099fd3",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "be15d9be",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "a7f5a203",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c144dab6",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "df723cb1",
+      "needsInterop": false
+    },
+    "scrollreveal": {
+      "src": "../../node_modules/scrollreveal/dist/scrollreveal.es.js",
+      "file": "scrollreveal.js",
+      "fileHash": "abd544a7",
+      "needsInterop": false
+    },
+    "sweetalert2": {
+      "src": "../../node_modules/sweetalert2/dist/sweetalert2.esm.all.js",
+      "file": "sweetalert2.js",
+      "fileHash": "c26efe42",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-DBUGNT2R": {
+      "file": "chunk-DBUGNT2R.js"
+    },
+    "chunk-VUPZMC2T": {
+      "file": "chunk-VUPZMC2T.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
 }
