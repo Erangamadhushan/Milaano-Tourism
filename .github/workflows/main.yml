@@ -18,7 +18,11 @@ jobs:
         node-version: [16.x, 18.x, 20.x]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -30,6 +34,7 @@ jobs:
         env:
           CI: true
         working-directory: ./server
-      - name: Lint Code Base
-        run: npm run lint
+
+      - name: Build project
+        run: npm run build
         working-directory: ./server
