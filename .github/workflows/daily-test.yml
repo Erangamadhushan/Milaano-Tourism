@@ -1,0 +1,12 @@
+name: Daily Task
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # Runs every day at midnight UTC
+
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a reminder
+        run: echo "Don't forget to review your project today!"
